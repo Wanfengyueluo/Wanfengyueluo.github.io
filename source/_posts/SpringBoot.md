@@ -1,7 +1,9 @@
 ---
 title: SpringBoot
 date: 2020-02-17 15:46:49
-tags:
+summary: Spring Boot笔记
+categories: Spring Boot
+tags: Spring Boot
 ---
 
 # 入门

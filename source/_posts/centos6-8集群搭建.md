@@ -1,6 +1,8 @@
 ---
 title: centos6.8集群搭建
 date: 2020-05-29 15:30:49
+summary: Centos6.8集群搭建
+categories: Hadoop
 tags: [集群,MySQL,Redis]
 ---
 
