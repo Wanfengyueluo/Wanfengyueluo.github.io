@@ -3,7 +3,9 @@ title: Hadoop学习笔记
 date: 2020-06-07 10:45:51
 summary: Hadoop学习笔记
 categories: Hadoop
-tags: [Hadoop,大数据]
+tags: 
+	- Hadoop
+	- 大数据
 ---
 
 # Hadoop基础
