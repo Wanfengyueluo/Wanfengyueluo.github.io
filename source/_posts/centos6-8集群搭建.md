@@ -326,3 +326,34 @@ SSH免密登录
   - `docker pull rabbitmq:management`
   - `docker run -d -p 5672:5672 -p 15672:15672 --name rabbitmq rabbitmq:management`
   - 
+
+
+
+
+
+
+
+
+
+Ubuntu18.04更换阿里镜像
+
+1. 查找源配置文件
+
+   `find / -name sources.list`
+
+2. 修改source.list
+
+   ```
+   deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+   deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+   deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+   deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+   deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+   deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+   deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+   ```
+
+3. `sudo apt-get update`
