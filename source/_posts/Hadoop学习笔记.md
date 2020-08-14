@@ -12,7 +12,7 @@ tags:
 
 ## HDFS
 
-![HDFS Architecture](./Hadoop学习笔记/hdfsarchitecture.png)
+![HDFS Architecture](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/hdfsarchitecture.png)
 
 ### 1. NameNode
 

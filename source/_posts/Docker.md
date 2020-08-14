@@ -94,3 +94,7 @@ sudo service docker restart
 | 中国科学技术大学       | [https://docker.mirrors.ustc.edu.cn](https://docker.mirrors.ustc.edu.cn/) |
 | 阿里云                 | https://<你的ID>.mirror.aliyuncs.com                         |
 
+![](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/26010.jpg)
+
+
+

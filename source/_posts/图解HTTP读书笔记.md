@@ -94,11 +94,11 @@ HTTP报文，用于HTTP协议交互的信息称为HTTP报文，大致分为报�
 
 请求报文和响应报文结构：
 
-![请求报文和响应报文结构](图解HTTP读书笔记/请求报文和响应报文结构.png)
+![请求报文和响应报文结构](F:\yueluo\source\_posts\图解HTTP读书笔记\请求报文和响应报文结构.png)
 
 请求报文和响应报文实例：
 
-![请求报文和响应报文实例](图解HTTP读书笔记//请求报文和响应报文实例.png)
+![请求报文和响应报文实例](F:\yueluo\source\_posts\图解HTTP读书笔记\请求报文和响应报文实例.png)
 
 - 请求行，包含用于请求的方法，请求URI和HTTP版本
 - 状态行，包含表明响应结果的状态码，原因短语和HTTP版本
@@ -133,7 +133,7 @@ MIME(Multipurpose Internet Mail Extensions，多用途因特网邮件扩展)
 
 ## 返回结果的HTTP状态码
 
-![状态码的类别](图解HTTP读书笔记/状态码的类别.png)
+![状态码的类别](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/状态码的类别.png)
 
 - 2XX成功
   - 200 OK
@@ -160,7 +160,7 @@ MIME(Multipurpose Internet Mail Extensions，多用途因特网邮件扩展)
 
 - 代理
 
-  ![代理](图解HTTP读书笔记/代理.png)
+  ![代理](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/代理.png)
 
   代理是一种由转发功能的应用程序
 
@@ -173,7 +173,7 @@ MIME(Multipurpose Internet Mail Extensions，多用途因特网邮件扩展)
 
 - 网关
 
-  ![网关](图解HTTP读书笔记/网关.png)
+  ![网关](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/网关.png)
 
   网关是转发其他服务器通信数据的服务器
 
@@ -181,7 +181,7 @@ MIME(Multipurpose Internet Mail Extensions，多用途因特网邮件扩展)
 
 - 隧道
 
-  ![隧道](图解HTTP读书笔记/隧道.png)
+  ![隧道](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/隧道.png)
 
   隧道在相隔甚远的客户端和服务器两者之间进行中转，并保持双方通信连接的应用程序
 
@@ -193,7 +193,7 @@ HTTP请求报文，由方法、URI、HTTP版本、HTTP首部字段等部分构�
 
 ## IP地址、子网掩码、网关
 
-![IP、子网掩码、网关的解释](图解HTTP读书笔记/IP、子网掩码、网关的解释.png)
+![IP、子网掩码、网关的解释](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/IP、子网掩码、网关的解释.png)
 
 IP地址 = 网络地址 + 主机地址
 
