@@ -94,7 +94,7 @@ HTTP报文，用于HTTP协议交互的信息称为HTTP报文，大致分为报�
 
 请求报文和响应报文结构：
 
-![请求报文和响应报文结构](F:\yueluo\source\_posts\图解HTTP读书笔记\请求报文和响应报文结构.png)
+<img src="F:\yueluo\source\_posts\图解HTTP读书笔记\请求报文和响应报文结构.png" alt="请求报文和响应报文结构" style="zoom:50%;" />
 
 请求报文和响应报文实例：
 

@@ -139,7 +139,7 @@ x.shape  #(2,3)
 
 ### 神经网络剖析
 
-![Python深度学习/网络、层、损失函数和优化器之间的关系](Python深度学习/1596804041440.png)
+![Python深度学习/网络、层、损失函数和优化器之间的关系](https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/1596804041440.png)
 
 #### 层：深度学习的基础组件
 
