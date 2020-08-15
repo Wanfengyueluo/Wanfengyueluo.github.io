@@ -574,3 +574,10 @@ icp:
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
 jsDelivr:
   url: https://cdn.jsdelivr.net/gh/Wanfengyueluo/Wanfengyueluo.github.io
+
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'twilight'
+  line_number: false    # default false
+  custom_css:
