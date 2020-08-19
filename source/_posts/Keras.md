@@ -232,7 +232,7 @@ model.fit(x_train, y_train, batch_size=32, epochs=10)
 score = model.evaluate(x_test, y_test, batch_size=32)
 ```
 
-## 2. Keras 函数式API
+## 2.	 Keras 函数式API
 
 ### 例一：全连接网络
 
@@ -464,9 +464,184 @@ assert conv.get_input_shape_at(0) == (None, 32, 32, 3)
 assert conv.get_input_shape_at(1) == (None, 64, 64, 3)
 ```
 
+### Inception 模型
 
+```python
+from keras.layers import Conv2D, MaxPooling2D, Input
 
+input_img = Input(shape=(256, 256, 3))
 
+tower_1 = Conv2D(64, (1, 1), padding='same', activation='relu')(input_img)
+tower_1 = Conv2D(64, (3, 3), padding='same', activation='relu')(tower_1)
+
+tower_2 = Conv2D(64, (1, 1), padding='same', activation='relu')(input_img)
+tower_2 = Conv2D(64, (5, 5), padding='same', activation='relu')(tower_2)
+
+tower_3 = MaxPooling2D((3, 3), strides=(1, 1), padding='same')(input_img)
+tower_3 = Conv2D(64, (1, 1), padding='same', activation='relu')(tower_3)
+
+output = keras.layers.concatenate([tower_1, tower_2, tower_3], axis=1)
+```
+
+### 卷积层上的残差连接
+
+```python
+from keras.layers import Conv2D, Input
+
+# 输入张量为 3 通道 256x256 图像
+x = Input(shape=(256, 256, 3))
+# 3 输出通道（与输入通道相同）的 3x3 卷积核
+y = Conv2D(3, (3, 3), padding='same')(x)
+# 返回 x + y
+z = keras.layers.add([x, y])
+```
+
+### 共享视觉模型
+
+```python
+from keras.layers import Conv2D, MaxPooling2D, Input, Dense, Flatten
+from keras.models import Model
+
+# 首先，定义视觉模型
+digit_input = Input(shape=(27, 27, 1))
+x = Conv2D(64, (3, 3))(digit_input)
+x = Conv2D(64, (3, 3))(x)
+x = MaxPooling2D((2, 2))(x)
+out = Flatten()(x)
+
+vision_model = Model(digit_input, out)
+
+# 然后，定义区分数字的模型
+digit_a = Input(shape=(27, 27, 1))
+digit_b = Input(shape=(27, 27, 1))
+
+# 视觉模型将被共享，包括权重和其他所有
+out_a = vision_model(digit_a)
+out_b = vision_model(digit_b)
+
+concatenated = keras.layers.concatenate([out_a, out_b])
+out = Dense(1, activation='sigmoid')(concatenated)
+
+classification_model = Model([digit_a, digit_b], out)
+```
+
+### 视觉问答模型
+
+```python
+from keras.layers import Conv2D, MaxPooling2D, Flatten
+from keras.layers import Input, LSTM, Embedding, Dense
+from keras.models import Model, Sequential
+
+# 首先，让我们用 Sequential 来定义一个视觉模型。
+# 这个模型会把一张图像编码为向量。
+vision_model = Sequential()
+vision_model.add(Conv2D(64, (3, 3), activation='relu', padding='same', input_shape=(224, 224, 3)))
+vision_model.add(Conv2D(64, (3, 3), activation='relu'))
+vision_model.add(MaxPooling2D((2, 2)))
+vision_model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+vision_model.add(Conv2D(128, (3, 3), activation='relu'))
+vision_model.add(MaxPooling2D((2, 2)))
+vision_model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+vision_model.add(Conv2D(256, (3, 3), activation='relu'))
+vision_model.add(Conv2D(256, (3, 3), activation='relu'))
+vision_model.add(MaxPooling2D((2, 2)))
+vision_model.add(Flatten())
+
+# 现在让我们用视觉模型来得到一个输出张量：
+image_input = Input(shape=(224, 224, 3))
+encoded_image = vision_model(image_input)
+
+# 接下来，定义一个语言模型来将问题编码成一个向量。
+# 每个问题最长 100 个词，词的索引从 1 到 9999.
+question_input = Input(shape=(100,), dtype='int32')
+embedded_question = Embedding(input_dim=10000, output_dim=256, input_length=100)(question_input)
+encoded_question = LSTM(256)(embedded_question)
+
+# 连接问题向量和图像向量：
+merged = keras.layers.concatenate([encoded_question, encoded_image])
+
+# 然后在上面训练一个 1000 词的逻辑回归模型：
+output = Dense(1000, activation='softmax')(merged)
+
+# 最终模型：
+vqa_model = Model(inputs=[image_input, question_input], outputs=output)
+
+# 下一步就是在真实数据上训练模型。
+```
+
+### 视频问答模型
+
+```python
+from keras.layers import TimeDistributed
+
+video_input = Input(shape=(100, 224, 224, 3))
+# 这是基于之前定义的视觉模型（权重被重用）构建的视频编码
+encoded_frame_sequence = TimeDistributed(vision_model)(video_input)  # 输出为向量的序列
+encoded_video = LSTM(256)(encoded_frame_sequence)  # 输出为一个向量
+
+# 这是问题编码器的模型级表示，重复使用与之前相同的权重：
+question_encoder = Model(inputs=question_input, outputs=encoded_question)
+
+# 让我们用它来编码这个问题：
+video_question_input = Input(shape=(100,), dtype='int32')
+encoded_video_question = question_encoder(video_question_input)
+
+# 这就是我们的视频问答模式：
+merged = keras.layers.concatenate([encoded_video, encoded_video_question])
+output = Dense(1000, activation='softmax')(merged)
+video_qa_model = Model(inputs=[video_input, video_question_input], outputs=output)
+```
+
+## 3. Sequential模型API
+
+### Sequential模型方法
+
+#### compile
+
+用于配置训练模型
+
+```python
+compile(optimizer,loss=None,metrics=None,loss_weights=None,sample_weight=None,weighted_metrics=None,traget_tensors=None)
+```
+
+##### 参数
+
+- **optimizer**: 字符串（优化器名）或者优化器对象。
+- **loss**: 字符串（目标函数名）或目标函数。
+- **metrics**: 在训练和测试期间的模型评估标准。
+- **loss_weights**: 指定标量系数（Python浮点数）的可选列表或字典，用于加权不同模型输出的损失贡献。
+- **sample_weight_mode**: 如果你需要执行按时间步采样权重（2D 权重），请将其设置为 `temporal`。
+- **weighted_metrics**: 在训练和测试期间，由 sample_weight 或 class_weight 评估和加权的度量标准列表。
+- **target_tensors**: 默认情况下，Keras 将为模型的目标创建一个占位符，在训练过程中将使用目标数据。
+
+##### 异常
+
+- **ValueError**: 如果 `optimizer`, `loss`, `metrics` 或 `sample_weight_mode` 这些参数不合法。
+
+#### fit
+
+以固定数量的轮次训练模型
+
+```python
+fit(x=None, y=None, batch_size=None, epochs=1, verbose=1, callbacks=None, validation_split=0.0, validation_data=None, shuffle=True, class_weight=None, sample_weight=None, initial_epoch=0, steps_per_epoch=None, validation_steps=None)
+```
+
+##### 参数
+
+- **x**: 训练数据的 Numpy 数组。 如果模型中的输入层被命名，你也可以传递一个字典，将输入层名称映射到 Numpy 数组。 如果从本地框架张量馈送（例如 TensorFlow 数据张量）数据，x 可以是 `None`（默认）。
+- **y**: 目标（标签）数据的 Numpy 数组。 如果模型中的输出层被命名，你也可以传递一个字典，将输出层名称映射到 Numpy 数组。 如果从本地框架张量馈送（例如 TensorFlow 数据张量）数据，y 可以是 `None`（默认）。
+- **batch_size**: 整数或 `None`。每次提度更新的样本数。如果未指定，默认为 32.
+- **epochs**: 整数。训练模型迭代轮次。一个轮次是在整个 `x` 或 `y` 上的一轮迭代。请注意，与 `initial_epoch` 一起，`epochs` 被理解为 「最终轮次」。模型并不是训练了 `epochs` 轮，而是到第 `epochs` 轮停止训练。
+- **verbose**: 0, 1 或 2。日志显示模式。 0 = 安静模式, 1 = 进度条, 2 = 每轮一行。
+- **callbacks**: 一系列的 `keras.callbacks.Callback` 实例。一系列可以在训练时使用的回调函数。
+- **validation_split**: 在 0 和 1 之间浮动。用作验证集的训练数据的比例。模型将分出一部分不会被训练的验证数据，并将在每一轮结束时评估这些验证数据的误差和任何其他模型指标。验证数据是混洗之前 `x` 和`y` 数据的最后一部分样本中。
+- **validation_data**: 元组 `(x_val，y_val)` 或元组 `(x_val，y_val，val_sample_weights)`，用来评估损失，以及在每轮结束时的任何模型度量指标。模型将不会在这个数据上进行训练。这个参数会覆盖 `validation_split`。
+- **shuffle**: 布尔值（是否在每轮迭代之前混洗数据）或者 字符串 (`batch`)。`batch` 是处理 HDF5 数据限制的特殊选项，它对一个 batch 内部的数据进行混洗。当 `steps_per_epoch` 非 `None` 时，这个参数无效。
+- **class_weight**: 可选的字典，用来映射类索引（整数）到权重（浮点）值，用于加权损失函数（仅在训练期间）。这可能有助于告诉模型 「更多关注」来自代表性不足的类的样本。
+- **sample_weight**: 训练样本的可选 Numpy 权重数组，用于对损失函数进行加权（仅在训练期间）。您可以传递与输入样本长度相同的平坦（1D）Numpy 数组（权重和样本之间的 1：1 映射），或者在时序数据的情况下，可以传递尺寸为 `(samples, sequence_length)` 的 2D 数组，以对每个样本的每个时间步施加不同的权重。在这种情况下，你应该确保在 `compile()` 中指定 `sample_weight_mode="temporal"`。
+- **initial_epoch**: 开始训练的轮次（有助于恢复之前的训练）。
+- **steps_per_epoch**: 在声明一个轮次完成并开始下一个轮次之前的总步数（样品批次）。使用 TensorFlow 数据张量等输入张量进行训练时，默认值 `None` 等于数据集中样本的数量除以 batch 的大小，如果无法确定，则为 1。
+- **validation_steps**: 只有在指定了 `steps_per_epoch`时才有用。停止前要验证的总步数（批次样本）。
 
 
 
