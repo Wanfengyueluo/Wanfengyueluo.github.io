@@ -45,7 +45,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -99,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -138,7 +138,17 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
-prism_plugin:
-  mode: 'preprocess' # realtime/preprocess
-  theme: 'default'
-  line_number: false # default false
+# prism_plugin:
+#   mode: 'preprocess' # realtime/preprocess
+#   theme: 'default'
+#   line_number: false # default false
+
+
+  kramed:
+    gfm: true
+    pedantic: false
+    sanitize: false
+    tables: true
+    breaks: true
+    smartLists: true
+    smartypants: true

@@ -8,6 +8,8 @@ tags:
 	- Vuex
 ---
 
+![Centralized State Management for Vue.js.](https://raw.githubusercontent.com/vuejs/vuex/dev/docs/.vuepress/public/vuex.png)
+
 ### 项目初始化
 
 初始化项目，项目目录为：
