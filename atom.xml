@@ -3,10 +3,10 @@
   <title>月落晓山的博客</title>
   
   <subtitle>我们不能在动荡的生活里撒野~</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="https://wanfengyueluo.github.io/atom.xml" rel="self"/>
   
   <link href="https://wanfengyueluo.github.io/"/>
-  <updated>2020-08-04T13:27:38.870Z</updated>
+  <updated>2020-11-05T07:36:56.658Z</updated>
   <id>https://wanfengyueluo.github.io/</id>
   
   <author>
@@ -17,34 +17,172 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vuex入门</title>
+    <link href="https://wanfengyueluo.github.io/2020/11/04/vuex-ru-men/"/>
+    <id>https://wanfengyueluo.github.io/2020/11/04/vuex-ru-men/</id>
+    <published>2020-11-04T07:29:35.000Z</published>
+    <updated>2020-11-05T07:36:56.658Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vuejs/vuex/dev/docs/.vuepress/public/vuex.png&quot; alt=&quot;Centralized State Management for</summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="https://wanfengyueluo.github.io/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://wanfengyueluo.github.io/tags/Vue/"/>
+    
+    <category term="Vuex" scheme="https://wanfengyueluo.github.io/tags/Vuex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java异常处理</title>
+    <link href="https://wanfengyueluo.github.io/2020/08/19/java-yi-chang-chu-li/"/>
+    <id>https://wanfengyueluo.github.io/2020/08/19/java-yi-chang-chu-li/</id>
+    <published>2020-08-19T12:25:34.000Z</published>
+    <updated>2020-08-19T12:40:16.010Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Java异常处理手段&quot;&gt;&lt;a href=&quot;#Java异常处理手段&quot; class=&quot;headerlink&quot; title=&quot;Java异常处理手段&quot;&gt;&lt;/a&gt;Java异常处理手段&lt;/h2&gt;&lt;h3 id=&quot;try-catch&quot;&gt;&lt;a href=&quot;#try-catch&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://wanfengyueluo.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://wanfengyueluo.github.io/tags/Java/"/>
+    
+    <category term="Java异常" scheme="https://wanfengyueluo.github.io/tags/Java%E5%BC%82%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java核心技术卷一</title>
+    <link href="https://wanfengyueluo.github.io/2020/08/19/java-he-xin-ji-zhu-juan-yi/"/>
+    <id>https://wanfengyueluo.github.io/2020/08/19/java-he-xin-ji-zhu-juan-yi/</id>
+    <published>2020-08-19T12:22:53.000Z</published>
+    <updated>2020-08-19T12:24:15.787Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Day01&quot;&gt;&lt;a href=&quot;#Day01&quot; class=&quot;headerlink&quot; title=&quot;Day01&quot;&gt;&lt;/a&gt;Day01&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;[x] P164&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;安装库源文件和文档&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://wanfengyueluo.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://wanfengyueluo.github.io/tags/Java/"/>
+    
+    <category term="Java核心技术卷" scheme="https://wanfengyueluo.github.io/tags/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%8D%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker</title>
+    <link href="https://wanfengyueluo.github.io/2020/08/08/docker/"/>
+    <id>https://wanfengyueluo.github.io/2020/08/08/docker/</id>
+    <published>2020-08-08T06:30:19.000Z</published>
+    <updated>2020-08-14T12:43:48.915Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Ubuntu18-04安装Docker&quot;&gt;&lt;a href=&quot;#Ubuntu18-04安装Docker&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://wanfengyueluo.github.io/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://wanfengyueluo.github.io/tags/Docker/"/>
+    
+    <category term="Ubuntu18.04" scheme="https://wanfengyueluo.github.io/tags/Ubuntu18-04/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python深度学习</title>
+    <link href="https://wanfengyueluo.github.io/2020/08/07/python-shen-du-xue-xi/"/>
+    <id>https://wanfengyueluo.github.io/2020/08/07/python-shen-du-xue-xi/</id>
+    <published>2020-08-07T07:55:48.000Z</published>
+    <updated>2020-08-25T02:07:42.624Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;神经网络的数据表示&quot;&gt;&lt;a href=&quot;#神经网络的数据表示&quot; class=&quot;headerlink&quot; title=&quot;神经网络的数据表示&quot;&gt;&lt;/a&gt;神经网络的数据表示&lt;/h3&gt;&lt;h4 id=&quot;标量（0D张量）&quot;&gt;&lt;a href=&quot;#标量（0D张量）&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="机器学习" scheme="https://wanfengyueluo.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="机器学习" scheme="https://wanfengyueluo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="Keras" scheme="https://wanfengyueluo.github.io/tags/Keras/"/>
+    
+    <category term="深度学习" scheme="https://wanfengyueluo.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Keras</title>
     <link href="https://wanfengyueluo.github.io/2020/08/03/keras/"/>
     <id>https://wanfengyueluo.github.io/2020/08/03/keras/</id>
     <published>2020-08-03T13:20:55.000Z</published>
-    <updated>2020-08-04T13:27:38.870Z</updated>
+    <updated>2020-08-17T11:26:11.855Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;“我要忘了你的样子，像鱼忘了海的味道”——像鱼&lt;/p&gt;
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;“我要忘了你的样子，像鱼忘了海的味道——像鱼”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;1-Keras-Sequentical顺序模型&quot;&gt;&lt;a href=&quot;#1-Keras-Sequentical顺序模型&quot;
+&lt;h2 id=&quot;1-Keras-Sequentical顺序模型&quot;&gt;&lt;a href=&quot;#1-Keras-Sequentical顺序模型&quot;</summary>
         
       
     
-    </summary>
     
     
-      <category term="机器学习" scheme="https://wanfengyueluo.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://wanfengyueluo.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="机器学习" scheme="https://wanfengyueluo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://wanfengyueluo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="Keras" scheme="https://wanfengyueluo.github.io/tags/Keras/"/>
+    <category term="Keras" scheme="https://wanfengyueluo.github.io/tags/Keras/"/>
     
   </entry>
   
@@ -53,20 +191,20 @@
     <link href="https://wanfengyueluo.github.io/2020/08/01/2020-8/"/>
     <id>https://wanfengyueluo.github.io/2020/08/01/2020-8/</id>
     <published>2020-08-01T05:20:22.000Z</published>
-    <updated>2020-08-01T05:55:55.713Z</updated>
+    <updated>2020-08-14T13:05:10.051Z</updated>
     
-    <summary type="html">
     
-      &lt;blockquote&gt;
+    <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;“愿你逐梦成真，不负年少所想”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;2020-8/2020.8.jpg&quot; alt=&quot;你好，八月~&quot;&gt;&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/2020.8.jpg&quot; alt=&quot;你好，八月~&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-      <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
     
   </entry>
   
@@ -75,23 +213,23 @@
     <link href="https://wanfengyueluo.github.io/2020/07/13/ji-qi-xue-xi-bi-ji/"/>
     <id>https://wanfengyueluo.github.io/2020/07/13/ji-qi-xue-xi-bi-ji/</id>
     <published>2020-07-13T02:25:15.000Z</published>
-    <updated>2020-08-01T05:55:55.782Z</updated>
+    <updated>2020-08-14T12:53:27.775Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h1 id=&quot;机器学习笔记&quot;&gt;&lt;a href=&quot;#机器学习笔记&quot; class=&quot;headerlink&quot; title=&quot;机器学习笔记&quot;&gt;&lt;/a&gt;机器学习笔记&lt;/h1&gt;&lt;h2 id=&quot;决策树&quot;&gt;&lt;a href=&quot;#决策树&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h1 id=&quot;机器学习笔记&quot;&gt;&lt;a href=&quot;#机器学习笔记&quot; class=&quot;headerlink&quot; title=&quot;机器学习笔记&quot;&gt;&lt;/a&gt;机器学习笔记&lt;/h1&gt;&lt;h2 id=&quot;决策树&quot;&gt;&lt;a href=&quot;#决策树&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
+    <category term="机器学习" scheme="https://wanfengyueluo.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="ML" scheme="https://wanfengyueluo.github.io/tags/ML/"/>
+    
+    <category term="ML" scheme="https://wanfengyueluo.github.io/tags/ML/"/>
     
   </entry>
   
@@ -100,25 +238,25 @@
     <link href="https://wanfengyueluo.github.io/2020/06/10/tong-ji-xue-xi-fang-fa/"/>
     <id>https://wanfengyueluo.github.io/2020/06/10/tong-ji-xue-xi-fang-fa/</id>
     <published>2020-06-10T06:23:36.000Z</published>
-    <updated>2020-08-01T05:55:55.791Z</updated>
+    <updated>2020-08-26T06:31:26.583Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h1 id=&quot;李航《统计学习方法》笔记&quot;&gt;&lt;a href=&quot;#李航《统计学习方法》笔记&quot; class=&quot;headerlink&quot; title=&quot;李航《统计学习方法》笔记&quot;&gt;&lt;/a&gt;李航《统计学习方法》笔记&lt;/h1&gt;&lt;h2 id=&quot;概论&quot;&gt;&lt;a href=&quot;#概论&quot;
+    <summary type="html">&lt;h1 id=&quot;李航《统计学习方法》笔记&quot;&gt;&lt;a href=&quot;#李航《统计学习方法》笔记&quot; class=&quot;headerlink&quot; title=&quot;李航《统计学习方法》笔记&quot;&gt;&lt;/a&gt;李航《统计学习方法》笔记&lt;/h1&gt;&lt;h2 id=&quot;概论&quot;&gt;&lt;a href=&quot;#概论&quot;</summary>
         
       
     
-    </summary>
     
     
+    <category term="机器学习" scheme="https://wanfengyueluo.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="机器学习" scheme="https://wanfengyueluo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="统计学习" scheme="https://wanfengyueluo.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://wanfengyueluo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="统计学习" scheme="https://wanfengyueluo.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -127,25 +265,25 @@
     <link href="https://wanfengyueluo.github.io/2020/06/07/hadoop-xue-xi-bi-ji/"/>
     <id>https://wanfengyueluo.github.io/2020/06/07/hadoop-xue-xi-bi-ji/</id>
     <published>2020-06-07T02:45:51.000Z</published>
-    <updated>2020-08-01T05:55:55.716Z</updated>
+    <updated>2020-08-14T12:50:02.454Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h1 id=&quot;Hadoop基础&quot;&gt;&lt;a href=&quot;#Hadoop基础&quot; class=&quot;headerlink&quot; title=&quot;Hadoop基础&quot;&gt;&lt;/a&gt;Hadoop基础&lt;/h1&gt;&lt;h2 id=&quot;HDFS&quot;&gt;&lt;a href=&quot;#HDFS&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h1 id=&quot;Hadoop基础&quot;&gt;&lt;a href=&quot;#Hadoop基础&quot; class=&quot;headerlink&quot; title=&quot;Hadoop基础&quot;&gt;&lt;/a&gt;Hadoop基础&lt;/h1&gt;&lt;h2 id=&quot;HDFS&quot;&gt;&lt;a href=&quot;#HDFS&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
+    <category term="Hadoop" scheme="https://wanfengyueluo.github.io/categories/Hadoop/"/>
     
-      <category term="Hadoop" scheme="https://wanfengyueluo.github.io/tags/Hadoop/"/>
     
-      <category term="大数据" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    <category term="Hadoop" scheme="https://wanfengyueluo.github.io/tags/Hadoop/"/>
+    
+    <category term="大数据" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
@@ -154,28 +292,17 @@
     <link href="https://wanfengyueluo.github.io/2020/06/01/idea-kuai-jie-jian-hui-zong/"/>
     <id>https://wanfengyueluo.github.io/2020/06/01/idea-kuai-jie-jian-hui-zong/</id>
     <published>2020-06-01T13:42:51.000Z</published>
-    <updated>2020-08-01T05:55:55.726Z</updated>
+    <updated>2020-08-05T05:32:38.952Z</updated>
     
-    <summary type="html">
     
-      &lt;h1 id=&quot;一、Ctrl-快捷键&quot;&gt;&lt;a href=&quot;#一、Ctrl-快捷键&quot; class=&quot;headerlink&quot; title=&quot;一、Ctrl 快捷键&quot;&gt;&lt;/a&gt;&lt;strong&gt;一、Ctrl 快捷键&lt;/strong&gt;&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Ctrl + F    在当前文件进行文本查找 （必备）
-Ctrl + R    在当前文件进行文本替换 （必备）
-Ctrl + Z    撤销 （必备）
-Ctrl + Y    删除光标所在行 或 删除选中的行 （必备）
-Ctrl + X    剪切光标所在行 或 剪切选择内容
-Ctrl + C    复制光标所在行 或 复制选择内容
-Ctrl + D    复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备）Ctrl + W    递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围（必备）
-Ctrl + E    显示最近打开的文件记录列表 （必备）
-Ctrl + N    根据输入的 名/类名 查找类文件 （必备）
-Ctrl + G    在当前文件跳转到指定行处
-Ctrl + J    插入自定义动态代码模板 （必备）
-Ctrl + P    方法参数提示显示 （必备）&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
+    <summary type="html">&lt;h1 id=&quot;一、Ctrl-快捷键&quot;&gt;&lt;a href=&quot;#一、Ctrl-快捷键&quot; class=&quot;headerlink&quot; title=&quot;一、Ctrl 快捷键&quot;&gt;&lt;/a&gt;&lt;strong&gt;一、Ctrl 快捷键&lt;/strong&gt;&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + F    在当前文件进行文本查找 （必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + R    在当前文件进行文本替换 （必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + Z    撤销 （必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + Y    删除光标所在行 或 删除选中的行 （必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + X    剪切光标所在行 或 剪切选择内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + C    复制光标所在行 或 复制选择内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + D    复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备）Ctrl + W    递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围（必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + E    显示最近打开的文件记录列表 （必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + N    根据输入的 名/类名 查找类文件 （必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + G    在当前文件跳转到指定行处&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + J    插入自定义动态代码模板 （必备）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + P    方法参数提示显示 （必备）&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
-      <category term="IDEA" scheme="https://wanfengyueluo.github.io/tags/IDEA/"/>
+    <category term="IDE" scheme="https://wanfengyueluo.github.io/categories/IDE/"/>
+    
+    
+    <category term="IDEA" scheme="https://wanfengyueluo.github.io/tags/IDEA/"/>
     
   </entry>
   
@@ -184,25 +311,25 @@ Ctrl + P    方法参数提示显示 （必备）&lt;/code&gt;&lt;/pre&gt;
     <link href="https://wanfengyueluo.github.io/2020/06/01/da-shu-ju-kai-fa-huan-jing-da-jian/"/>
     <id>https://wanfengyueluo.github.io/2020/06/01/da-shu-ju-kai-fa-huan-jing-da-jian/</id>
     <published>2020-06-01T11:39:31.000Z</published>
-    <updated>2020-08-01T05:55:55.757Z</updated>
+    <updated>2020-08-05T11:30:10.661Z</updated>
     
-    <summary type="html">
     
-      &lt;h1 id=&quot;大数据开发环境搭建笔记&quot;&gt;&lt;a href=&quot;#大数据开发环境搭建笔记&quot; class=&quot;headerlink&quot; title=&quot;大数据开发环境搭建笔记&quot;&gt;&lt;/a&gt;大数据开发环境搭建笔记&lt;/h1&gt;&lt;h2 id=&quot;1-虚拟机基本设置&quot;&gt;&lt;a href=&quot;#1-虚拟机基本设置&quot; class=&quot;headerlink&quot; title=&quot;1.虚拟机基本设置&quot;&gt;&lt;/a&gt;1.虚拟机基本设置&lt;/h2&gt;&lt;h2 id=&quot;2-JDK安装配置&quot;&gt;&lt;a href=&quot;#2-JDK安装配置&quot; class=&quot;headerlink&quot; title=&quot;2.JDK安装配置&quot;&gt;&lt;/a&gt;2.JDK安装配置&lt;/h2&gt;&lt;ul&gt;
+    <summary type="html">&lt;h1 id=&quot;大数据开发环境搭建笔记&quot;&gt;&lt;a href=&quot;#大数据开发环境搭建笔记&quot; class=&quot;headerlink&quot; title=&quot;大数据开发环境搭建笔记&quot;&gt;&lt;/a&gt;大数据开发环境搭建笔记&lt;/h1&gt;&lt;h2 id=&quot;1-虚拟机基本设置&quot;&gt;&lt;a href=&quot;#1-虚拟机基本设置&quot; class=&quot;headerlink&quot; title=&quot;1.虚拟机基本设置&quot;&gt;&lt;/a&gt;1.虚拟机基本设置&lt;/h2&gt;&lt;h2 id=&quot;2-JDK安装配置&quot;&gt;&lt;a href=&quot;#2-JDK安装配置&quot; class=&quot;headerlink&quot; title=&quot;2.JDK安装配置&quot;&gt;&lt;/a&gt;2.JDK安装配置&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;下载并解压jdk&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;配置JDK环境变量&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;#JAVA_HOME
-export JAVA_HOME=(jdk安装目录)
-export PATH=$PATH:$JAVA_HOME/bin&lt;/code&gt;&lt;/pre&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;export JAVA_HOME=(jdk安装目录)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;export PATH=$PATH:$JAVA_HOME/bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
+&lt;/ul&gt;</summary>
     
     
     
-      <category term="大数据" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    <category term="Hadoop" scheme="https://wanfengyueluo.github.io/categories/Hadoop/"/>
+    
+    
+    <category term="Hadoop" scheme="https://wanfengyueluo.github.io/tags/Hadoop/"/>
+    
+    <category term="大数据" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
@@ -211,39 +338,18 @@ export PATH=$PATH:$JAVA_HOME/bin&lt;/code&gt;&lt;/pre&gt;
     <link href="https://wanfengyueluo.github.io/2020/06/01/2020-6/"/>
     <id>https://wanfengyueluo.github.io/2020/06/01/2020-6/</id>
     <published>2020-06-01T08:09:07.000Z</published>
-    <updated>2020-08-01T05:55:55.712Z</updated>
+    <updated>2020-08-05T05:28:30.252Z</updated>
     
-    <summary type="html">
     
-      &lt;h1 id=&quot;2020-6&quot;&gt;&lt;a href=&quot;#2020-6&quot; class=&quot;headerlink&quot; title=&quot;2020.6&quot;&gt;&lt;/a&gt;2020.6&lt;/h1&gt;&lt;h2 id=&quot;6-1&quot;&gt;&lt;a href=&quot;#6-1&quot; class=&quot;headerlink&quot; title=&quot;6.1&quot;&gt;&lt;/a&gt;6.1&lt;/h2&gt;&lt;h3 id=&quot;1431-拥有最多糖果的孩子-candy-candy-candy-lollipop-lollipop&quot;&gt;&lt;a href=&quot;#1431-拥有最多糖果的孩子-candy-candy-candy-lollipop-lollipop&quot; class=&quot;headerlink&quot; title=&quot;1431.拥有最多糖果的孩子:candy::candy::candy::lollipop::lollipop:&quot;&gt;&lt;/a&gt;1431.拥有最多糖果的孩子:candy::candy::candy::lollipop::lollipop:&lt;/h3&gt;&lt;p&gt;:black_nib:解题思路：&lt;em&gt;真就是儿童节&lt;/em&gt;先找到最大值,然后遍历相加比较即可&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;class Solution &amp;amp;#123;
-    public List&amp;lt;Boolean&amp;gt; kidsWithCandies(int[] candies, int extraCandies) &amp;amp;#123;
-        List&amp;lt;Boolean&amp;gt; res = new ArrayList&amp;lt;&amp;gt;();
-        if (candies.length == 0) &amp;amp;#123;
-            return res;
-        &amp;amp;#125;
-        int max = candies[0];
-        for (int candy : candies) &amp;amp;#123;
-            if (max &amp;lt; candy) &amp;amp;#123;
-                max = candy;
-            &amp;amp;#125;
-        &amp;amp;#125;
-        for (int i = 0; i &amp;lt; candies.length; i++) &amp;amp;#123;
-            if (max &amp;lt;= candies[i] + extraCandies) &amp;amp;#123;
-                res.add(true);
-            &amp;amp;#125; else &amp;amp;#123;
-                res.add(false);
-            &amp;amp;#125;
-        &amp;amp;#125;
-        return res;
-    &amp;amp;#125;
-&amp;amp;#125;&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
+    <summary type="html">&lt;h1 id=&quot;2020-6&quot;&gt;&lt;a href=&quot;#2020-6&quot; class=&quot;headerlink&quot; title=&quot;2020.6&quot;&gt;&lt;/a&gt;2020.6&lt;/h1&gt;&lt;h2 id=&quot;6-1&quot;&gt;&lt;a href=&quot;#6-1&quot; class=&quot;headerlink&quot; title=&quot;6.1&quot;&gt;&lt;/a&gt;6.1&lt;/h2&gt;&lt;h3 id=&quot;1431-拥有最多糖果的孩子-candy-candy-candy-lollipop-lollipop&quot;&gt;&lt;a href=&quot;#1431-拥有最多糖果的孩子-candy-candy-candy-lollipop-lollipop&quot; class=&quot;headerlink&quot; title=&quot;1431.拥有最多糖果的孩子:candy::candy::candy::lollipop::lollipop:&quot;&gt;&lt;/a&gt;1431.拥有最多糖果的孩子&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;🍬&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f36c.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;🍬&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f36c.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;🍬&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f36c.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;🍭&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;🍭&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;✒&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;解题思路：&lt;em&gt;真就是儿童节&lt;/em&gt;先找到最大值,然后遍历相加比较即可&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;{&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; List&amp;lt;Boolean&amp;gt; &lt;span class=&quot;title&quot;&gt;kidsWithCandies&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] candies, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; extraCandies)&lt;/span&gt; &lt;/span&gt;{&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        List&amp;lt;Boolean&amp;gt; res = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ArrayList&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (candies.length == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; res;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; max = candies[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; candy : candies) {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (max &amp;lt; candy) {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                max = candy;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; candies.length; i++) {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (max &amp;lt;= candies[i] + extraCandies) {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                res.add(&lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                res.add(&lt;span class=&quot;keyword&quot;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; res;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
-      <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
     
   </entry>
   
@@ -252,46 +358,21 @@ export PATH=$PATH:$JAVA_HOME/bin&lt;/code&gt;&lt;/pre&gt;
     <link href="https://wanfengyueluo.github.io/2020/06/01/linux-wang-luo-ji-chu/"/>
     <id>https://wanfengyueluo.github.io/2020/06/01/linux-wang-luo-ji-chu/</id>
     <published>2020-06-01T04:42:38.000Z</published>
-    <updated>2020-08-01T05:55:55.726Z</updated>
+    <updated>2020-08-05T05:33:08.369Z</updated>
     
-    <summary type="html">
     
-      &lt;h1 id=&quot;Linux网络基础笔记&quot;&gt;&lt;a href=&quot;#Linux网络基础笔记&quot; class=&quot;headerlink&quot; title=&quot;Linux网络基础笔记&quot;&gt;&lt;/a&gt;Linux网络基础笔记&lt;/h1&gt;&lt;h2 id=&quot;Linux配置IP地址&quot;&gt;&lt;a href=&quot;#Linux配置IP地址&quot; class=&quot;headerlink&quot; title=&quot;Linux配置IP地址&quot;&gt;&lt;/a&gt;Linux配置IP地址&lt;/h2&gt;&lt;h3 id=&quot;修改网络配置文件&quot;&gt;&lt;a href=&quot;#修改网络配置文件&quot; class=&quot;headerlink&quot; title=&quot;修改网络配置文件&quot;&gt;&lt;/a&gt;修改网络配置文件&lt;/h3&gt;&lt;ol&gt;
+    <summary type="html">&lt;h1 id=&quot;Linux网络基础笔记&quot;&gt;&lt;a href=&quot;#Linux网络基础笔记&quot; class=&quot;headerlink&quot; title=&quot;Linux网络基础笔记&quot;&gt;&lt;/a&gt;Linux网络基础笔记&lt;/h1&gt;&lt;h2 id=&quot;Linux配置IP地址&quot;&gt;&lt;a href=&quot;#Linux配置IP地址&quot; class=&quot;headerlink&quot; title=&quot;Linux配置IP地址&quot;&gt;&lt;/a&gt;Linux配置IP地址&lt;/h2&gt;&lt;h3 id=&quot;修改网络配置文件&quot;&gt;&lt;a href=&quot;#修改网络配置文件&quot; class=&quot;headerlink&quot; title=&quot;修改网络配置文件&quot;&gt;&lt;/a&gt;修改网络配置文件&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;网卡信息文件&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;vim /etc/sysconfig/network-scripts/ifcfg-eth0
----------------------------------------------
-#代网卡设备名
-DEVICE=eth0
-#是否自动获取IP（none、static表示手动，dhcp表示自动）
-BOOTPROTO=static
-#MAC地址
-HWADDR=xx:xx:xx:xx
-#是否由Network Manager图形管理工具托管
-NM_CONTROLLED=yes
-#是否随网络服务启动，eth0生效
-ONBOOT=yes
-#类型为以太网
-TYPE=Ethernet
-#唯一标识码
-UUID=xxxxxxxxxxxxxxxx
-#IP地址
-IPADDR=x.x.x.x
-#子网掩码
-NETMASK=x.x.x.x
-#网关
-GATEWAY=x.x.x.x
-#DNS
-DNS1=x.x.x.x
-#不允许非root用户控制此网卡
-USERCTL=no&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&lt;/ol&gt;
-    
-    </summary>
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim /etc/sysconfig/network-scripts/ifcfg-eth0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---------------------------------------------&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;代网卡设备名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DEVICE=eth0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;是否自动获取IP（none、static表示手动，dhcp表示自动）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;BOOTPROTO=static&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;MAC地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HWADDR=xx:xx:xx:xx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;是否由Network Manager图形管理工具托管&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;NM_CONTROLLED=yes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;是否随网络服务启动，eth0生效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ONBOOT=yes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;类型为以太网&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TYPE=Ethernet&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;唯一标识码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;UUID=xxxxxxxxxxxxxxxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;IP地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;IPADDR=x.x.x.x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;子网掩码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;NETMASK=x.x.x.x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;网关&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;GATEWAY=x.x.x.x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;DNS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DNS1=x.x.x.x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;不允许非root用户控制此网卡&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;USERCTL=no&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;/ol&gt;</summary>
     
     
     
-      <category term="网络" scheme="https://wanfengyueluo.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="Linux" scheme="https://wanfengyueluo.github.io/categories/Linux/"/>
     
-      <category term="Linux" scheme="https://wanfengyueluo.github.io/tags/Linux/"/>
+    
+    <category term="网络" scheme="https://wanfengyueluo.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="Linux" scheme="https://wanfengyueluo.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -300,37 +381,25 @@ USERCTL=no&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&lt;/ol&gt;
     <link href="https://wanfengyueluo.github.io/2020/05/29/centos6-8-ji-qun-da-jian/"/>
     <id>https://wanfengyueluo.github.io/2020/05/29/centos6-8-ji-qun-da-jian/</id>
     <published>2020-05-29T07:30:49.000Z</published>
-    <updated>2020-08-01T05:55:55.734Z</updated>
+    <updated>2020-08-08T09:17:40.220Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;关机：halt&lt;/p&gt;
+    <summary type="html">&lt;p&gt;关机：halt&lt;/p&gt;
 &lt;p&gt;重启：reboot&lt;/p&gt;
 &lt;p&gt;修改本机ip：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;vim /etc/sysconfig/network-scripts/ifcfg-eth0 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;DEVICE=eth0
-HWADDR=00:0C:29:81:D1:F5
-TYPE=Ethernet
-UUID=2934354a-b8b3-4fcd-9bd4-8bb9142b87ce
-ONBOOT=yes
-NM_CONTROLLED=yes
-BOOTPROTO=static
-IPADDR=192.168.2.128
-GATEWAY=192.168.2.1
-BROADCAST=192.168.2.255
-DNS1=8.8.8.8
-DNS2=114.114.114.114
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim /etc/sysconfig/network-scripts/ifcfg-eth0 &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;DEVICE=eth0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HWADDR=00:0C:29:81:D1:F5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TYPE=Ethernet&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;UUID=2934354a-b8b3-4fcd-9bd4-8bb9142b87ce&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ONBOOT=yes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;NM_CONTROLLED=yes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;BOOTPROTO=static&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;IPADDR=192.168.2.128&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;GATEWAY=192.168.2.1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;BROADCAST=192.168.2.255&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DNS1=8.8.8.8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DNS2=114.114.114.114&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
-      <category term="集群" scheme="https://wanfengyueluo.github.io/tags/%E9%9B%86%E7%BE%A4/"/>
+    <category term="Hadoop" scheme="https://wanfengyueluo.github.io/categories/Hadoop/"/>
     
-      <category term="MySQL" scheme="https://wanfengyueluo.github.io/tags/MySQL/"/>
     
-      <category term="Redis" scheme="https://wanfengyueluo.github.io/tags/Redis/"/>
+    <category term="集群" scheme="https://wanfengyueluo.github.io/tags/%E9%9B%86%E7%BE%A4/"/>
+    
+    <category term="MySQL" scheme="https://wanfengyueluo.github.io/tags/MySQL/"/>
+    
+    <category term="Redis" scheme="https://wanfengyueluo.github.io/tags/Redis/"/>
     
   </entry>
   
@@ -339,21 +408,21 @@ DNS2=114.114.114.114
     <link href="https://wanfengyueluo.github.io/2020/04/05/2020-4-5/"/>
     <id>https://wanfengyueluo.github.io/2020/04/05/2020-4-5/</id>
     <published>2020-04-05T08:09:21.000Z</published>
-    <updated>2020-08-01T05:55:55.711Z</updated>
+    <updated>2020-08-05T05:28:25.676Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;460-LFU缓存&quot;&gt;&lt;a href=&quot;#460-LFU缓存&quot; class=&quot;headerlink&quot; title=&quot;460.LFU缓存&quot;&gt;&lt;/a&gt;460.LFU缓存&lt;/h2&gt;&lt;p&gt;&lt;span class=&quot;github-emoji&quot; style=&quot;color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8) center/contain&quot; data-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8&quot;&gt;✒&lt;/span&gt;解题思路：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;460-LFU缓存&quot;&gt;&lt;a href=&quot;#460-LFU缓存&quot; class=&quot;headerlink&quot; title=&quot;460.LFU缓存&quot;&gt;&lt;/a&gt;460.LFU缓存&lt;/h2&gt;&lt;p&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;✒&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;解题思路：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;使用堆（优先队列）存放节点的使用频次&lt;/li&gt;
 &lt;li&gt;将频次作为map的key，每个频次对应一个节点链表，并且节点进入链表有先后顺序&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
+&lt;/ol&gt;</summary>
     
     
     
-      <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
     
   </entry>
   
@@ -362,11 +431,10 @@ DNS2=114.114.114.114
     <link href="https://wanfengyueluo.github.io/2020/04/05/tu-jie-http-du-shu-bi-ji/"/>
     <id>https://wanfengyueluo.github.io/2020/04/05/tu-jie-http-du-shu-bi-ji/</id>
     <published>2020-04-05T01:02:10.000Z</published>
-    <updated>2020-08-01T05:55:55.746Z</updated>
+    <updated>2020-08-14T13:21:54.458Z</updated>
     
-    <summary type="html">
     
-      &lt;h1 id=&quot;图解HTTP&quot;&gt;&lt;a href=&quot;#图解HTTP&quot; class=&quot;headerlink&quot; title=&quot;图解HTTP&quot;&gt;&lt;/a&gt;图解HTTP&lt;/h1&gt;&lt;h2 id=&quot;了解Web及网络基础&quot;&gt;&lt;a href=&quot;#了解Web及网络基础&quot; class=&quot;headerlink&quot; title=&quot;了解Web及网络基础&quot;&gt;&lt;/a&gt;了解Web及网络基础&lt;/h2&gt;&lt;p&gt;HTTP(HyperText Transfer Protocol，超文本传输协议)：&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;图解HTTP&quot;&gt;&lt;a href=&quot;#图解HTTP&quot; class=&quot;headerlink&quot; title=&quot;图解HTTP&quot;&gt;&lt;/a&gt;图解HTTP&lt;/h1&gt;&lt;h2 id=&quot;了解Web及网络基础&quot;&gt;&lt;a href=&quot;#了解Web及网络基础&quot; class=&quot;headerlink&quot; title=&quot;了解Web及网络基础&quot;&gt;&lt;/a&gt;了解Web及网络基础&lt;/h2&gt;&lt;p&gt;HTTP(HyperText Transfer Protocol，超文本传输协议)：&lt;/p&gt;
 &lt;p&gt;IP协议的作用是将各种数据包传送给对方，需要两个重要的条件&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;IP地址，指明节点被分配的地址&lt;/li&gt;
@@ -376,15 +444,16 @@ DNS2=114.114.114.114
 &lt;ul&gt;
 &lt;li&gt;URI(Uniform Resource Identifier)，统一资源标识符&lt;/li&gt;
 &lt;li&gt;URL(Uniform Resource Locator)，统一资源定位符&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
+&lt;/ul&gt;</summary>
     
     
     
-      <category term="网络" scheme="https://wanfengyueluo.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="复试" scheme="https://wanfengyueluo.github.io/categories/%E5%A4%8D%E8%AF%95/"/>
     
-      <category term="复试" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%8D%E8%AF%95/"/>
+    
+    <category term="网络" scheme="https://wanfengyueluo.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="复试" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%8D%E8%AF%95/"/>
     
   </entry>
   
@@ -393,20 +462,20 @@ DNS2=114.114.114.114
     <link href="https://wanfengyueluo.github.io/2020/04/05/shu-ju-ku-xi-tong-yuan-li-zhi-shi-dian-zheng-li/"/>
     <id>https://wanfengyueluo.github.io/2020/04/05/shu-ju-ku-xi-tong-yuan-li-zhi-shi-dian-zheng-li/</id>
     <published>2020-04-05T00:50:04.000Z</published>
-    <updated>2020-08-01T05:55:55.776Z</updated>
+    <updated>2020-08-14T12:55:32.408Z</updated>
     
-    <summary type="html">
     
-      &lt;h1 id=&quot;数据库系统原理&quot;&gt;&lt;a href=&quot;#数据库系统原理&quot; class=&quot;headerlink&quot; title=&quot;数据库系统原理&quot;&gt;&lt;/a&gt;数据库系统原理&lt;/h1&gt;&lt;h2 id=&quot;事务&quot;&gt;&lt;a href=&quot;#事务&quot; class=&quot;headerlink&quot; title=&quot;事务&quot;&gt;&lt;/a&gt;事务&lt;/h2&gt;&lt;p&gt;事务指满足&lt;code&gt;ACID&lt;/code&gt;特性的一组操作，可以通过&lt;code&gt;Commit&lt;/code&gt;提交一个事务，也可以使用&lt;code&gt;Rollback&lt;/code&gt;进行回滚 。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E4%BA%8B%E5%8A%A1.png&quot; alt=&quot;1583059258400&quot;&gt;&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;h1 id=&quot;数据库系统原理&quot;&gt;&lt;a href=&quot;#数据库系统原理&quot; class=&quot;headerlink&quot; title=&quot;数据库系统原理&quot;&gt;&lt;/a&gt;数据库系统原理&lt;/h1&gt;&lt;h2 id=&quot;事务&quot;&gt;&lt;a href=&quot;#事务&quot; class=&quot;headerlink&quot; title=&quot;事务&quot;&gt;&lt;/a&gt;事务&lt;/h2&gt;&lt;p&gt;事务指满足&lt;code&gt;ACID&lt;/code&gt;特性的一组操作，可以通过&lt;code&gt;Commit&lt;/code&gt;提交一个事务，也可以使用&lt;code&gt;Rollback&lt;/code&gt;进行回滚 。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/事务.png&quot; alt=&quot;1583059258400&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-      <category term="复试" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%8D%E8%AF%95/"/>
+    <category term="复试" scheme="https://wanfengyueluo.github.io/categories/%E5%A4%8D%E8%AF%95/"/>
     
-      <category term="数据库" scheme="https://wanfengyueluo.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="复试" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%8D%E8%AF%95/"/>
+    
+    <category term="数据库" scheme="https://wanfengyueluo.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -415,23 +484,26 @@ DNS2=114.114.114.114
     <link href="https://wanfengyueluo.github.io/2020/04/04/2020-4-4/"/>
     <id>https://wanfengyueluo.github.io/2020/04/04/2020-4-4/</id>
     <published>2020-04-04T08:33:32.000Z</published>
-    <updated>2020-08-01T05:55:55.706Z</updated>
+    <updated>2020-08-05T05:28:22.158Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;42-接雨水&quot;&gt;&lt;a href=&quot;#42-接雨水&quot; class=&quot;headerlink&quot; title=&quot;42.接雨水&quot;&gt;&lt;/a&gt;42.接雨水&lt;/h2&gt;&lt;p&gt;&lt;span class=&quot;github-emoji&quot; style=&quot;color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8) center/contain&quot; data-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8&quot;&gt;✒&lt;/span&gt;解题思路：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;42-接雨水&quot;&gt;&lt;a href=&quot;#42-接雨水&quot; class=&quot;headerlink&quot; title=&quot;42.接雨水&quot;&gt;&lt;/a&gt;42.接雨水&lt;/h2&gt;&lt;p&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;✒&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;解题思路：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;暴力法，遍历每一列，找到左右边的最高点，当&lt;code&gt;min(left,right)&amp;gt;height[i]&lt;/code&gt;时可以存下雨水&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;DP，将每一列的左右最大高度存起来&lt;br&gt;$$&lt;br&gt;left[i] = max(left[i-1],height[i-1])&lt;br&gt;\&lt;br&gt;right[i] = max(right[i+1],height[i+1])&lt;br&gt;$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;DP，将每一列的左右最大高度存起来&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+left[i] = max(left[i-1],height[i-1])
+\\
+right[i] = max(right[i+1],height[i+1])&lt;/script&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
     
-    </summary>
     
     
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/categories/LeetCode/"/>
     
-      <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
+    
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
     
   </entry>
   
@@ -440,137 +512,21 @@ DNS2=114.114.114.114
     <link href="https://wanfengyueluo.github.io/2020/04/04/er-fen-tu/"/>
     <id>https://wanfengyueluo.github.io/2020/04/04/er-fen-tu/</id>
     <published>2020-04-04T05:43:57.000Z</published>
-    <updated>2020-08-01T05:55:55.739Z</updated>
+    <updated>2020-08-05T05:29:25.793Z</updated>
     
-    <summary type="html">
     
-      &lt;blockquote&gt;
+    <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;二分图，又叫二部图，是图论中的一种特殊模型。对于一个无向图&lt;code&gt;G=(V,E)&lt;/code&gt;，&lt;code&gt;G&lt;/code&gt;的顶点集&lt;code&gt;V&lt;/code&gt;划分为两个互不相交的子集&lt;code&gt;A&lt;/code&gt;和&lt;code&gt;B&lt;/code&gt;，并且边集&lt;code&gt;E&lt;/code&gt;中的每一条边连接的两个顶点一个在&lt;code&gt;A&lt;/code&gt;中，一个在&lt;code&gt;B&lt;/code&gt;中，这样的图称为二分图。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
+&lt;/blockquote&gt;</summary>
     
     
     
-      <category term="图论" scheme="https://wanfengyueluo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-      <category term="二分图" scheme="https://wanfengyueluo.github.io/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020-4-3</title>
-    <link href="https://wanfengyueluo.github.io/2020/04/03/2020-4-3/"/>
-    <id>https://wanfengyueluo.github.io/2020/04/03/2020-4-3/</id>
-    <published>2020-04-03T13:06:34.000Z</published>
-    <updated>2020-08-01T05:55:55.700Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;8-字符串转换整数-atoi&quot;&gt;&lt;a href=&quot;#8-字符串转换整数-atoi&quot; class=&quot;headerlink&quot; title=&quot;8.字符串转换整数(atoi)&quot;&gt;&lt;/a&gt;8.字符串转换整数(atoi)&lt;/h2&gt;&lt;p&gt;&lt;span class=&quot;github-emoji&quot; style=&quot;color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8) center/contain&quot; data-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8&quot;&gt;✒&lt;/span&gt;解题思路：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;主要在于判断数值是否溢出，使用&lt;code&gt;result&amp;gt;(Integer.MAX_VALUE-digit)/10&lt;/code&gt;来判断溢出&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
+    <category term="Algorithm" scheme="https://wanfengyueluo.github.io/categories/Algorithm/"/>
     
     
+    <category term="图论" scheme="https://wanfengyueluo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
     
-      <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020-4-2</title>
-    <link href="https://wanfengyueluo.github.io/2020/04/02/2020-4-2/"/>
-    <id>https://wanfengyueluo.github.io/2020/04/02/2020-4-2/</id>
-    <published>2020-04-02T09:47:10.000Z</published>
-    <updated>2020-08-01T05:55:55.692Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1267-统计参与通信的服务器&quot;&gt;&lt;a href=&quot;#1267-统计参与通信的服务器&quot; class=&quot;headerlink&quot; title=&quot;1267.统计参与通信的服务器&quot;&gt;&lt;/a&gt;1267.统计参与通信的服务器&lt;/h2&gt;&lt;p&gt;&lt;span class=&quot;github-emoji&quot; style=&quot;color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8) center/contain&quot; data-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2712.png?v8&quot;&gt;✒&lt;/span&gt;解题思路：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;统计每行和每列的服务器数量，只要&lt;code&gt;grid[i][j]&lt;/code&gt;处，第&lt;code&gt;i&lt;/code&gt;行和第&lt;code&gt;j&lt;/code&gt;列存在的服务器数量&lt;code&gt;&amp;gt;1&lt;/code&gt;就可以通信。&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机网络知识点整理</title>
-    <link href="https://wanfengyueluo.github.io/2020/04/02/ji-suan-ji-wang-luo-zhi-shi-dian-zheng-li/"/>
-    <id>https://wanfengyueluo.github.io/2020/04/02/ji-suan-ji-wang-luo-zhi-shi-dian-zheng-li/</id>
-    <published>2020-04-02T09:26:47.000Z</published>
-    <updated>2020-08-01T05:55:55.798Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;计算机网络复习&quot;&gt;&lt;a href=&quot;#计算机网络复习&quot; class=&quot;headerlink&quot; title=&quot;计算机网络复习&quot;&gt;&lt;/a&gt;计算机网络复习&lt;/h1&gt;&lt;h2 id=&quot;网络模型&quot;&gt;&lt;a href=&quot;#网络模型&quot; class=&quot;headerlink&quot; title=&quot;网络模型&quot;&gt;&lt;/a&gt;网络模型&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png&quot; alt=&quot;计算机网络模型&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="网络" scheme="https://wanfengyueluo.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="复试" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%8D%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>并查集</title>
-    <link href="https://wanfengyueluo.github.io/2020/04/02/bing-cha-ji/"/>
-    <id>https://wanfengyueluo.github.io/2020/04/02/bing-cha-ji/</id>
-    <published>2020-04-02T06:51:46.000Z</published>
-    <updated>2020-08-01T05:55:55.763Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;并查集知识点汇总&quot;&gt;&lt;a href=&quot;#并查集知识点汇总&quot; class=&quot;headerlink&quot; title=&quot;并查集知识点汇总&quot;&gt;&lt;/a&gt;并查集知识点汇总&lt;/h1&gt;&lt;h2 id=&quot;基于id的并查集&quot;&gt;&lt;a href=&quot;#基于id的并查集&quot; class=&quot;headerlink&quot; title=&quot;基于id的并查集&quot;&gt;&lt;/a&gt;基于id的并查集&lt;/h2&gt;&lt;p&gt;思路：设置&lt;code&gt;id&lt;/code&gt;数组，数组的每个元素是元素标识。初始化每个元素的值都不一样，如果值一样表示属于同一个集合内的元素。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="并查集" scheme="https://wanfengyueluo.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020-4-1</title>
-    <link href="https://wanfengyueluo.github.io/2020/04/01/2020-4-1/"/>
-    <id>https://wanfengyueluo.github.io/2020/04/01/2020-4-1/</id>
-    <published>2020-04-01T14:47:01.000Z</published>
-    <updated>2020-08-01T05:55:55.685Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1111-有效括号的嵌套深度&quot;&gt;&lt;a href=&quot;#1111-有效括号的嵌套深度&quot; class=&quot;headerlink&quot; title=&quot;1111.有效括号的嵌套深度&quot;&gt;&lt;/a&gt;1111.有效括号的嵌套深度&lt;/h2&gt;&lt;p&gt;:black_nib:解题思路：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;一道看不懂的题…&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;public class Solution &amp;amp;#123;
-    public int[] maxDepthAfterSplit(String seq) &amp;amp;#123;
-        int[] ans = new int [seq.length()];
-        int idx = 0;
-        for(char c: seq.toCharArray()) &amp;amp;#123;
-            ans[idx++] = c == &#39;(&#39; ? idx &amp;amp; 1 : ((idx + 1) &amp;amp; 1);
-        &amp;amp;#125;
-        return ans;
-    &amp;amp;#125;
-&amp;amp;#125;&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
+    <category term="二分图" scheme="https://wanfengyueluo.github.io/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
     
   </entry>
   
