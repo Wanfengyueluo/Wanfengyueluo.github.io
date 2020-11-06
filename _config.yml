@@ -51,12 +51,6 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
-  enable: false
-  preprocess: true
-  line_number: false
-  tab_replace: ''
-
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -110,9 +104,9 @@ deploy:
 
 
 
-search:
-  path: search.xml
-  field: post
+# search:
+#   path: search.xml
+#   field: post
 
 
 permalink_pinyin:
@@ -128,15 +122,15 @@ githubEmojis:
   customEmojis:
 
 
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
+# feed:
+#   type: atom
+#   path: atom.xml
+#   limit: 20
+#   hub:
+#   content:
+#   content_limit: 140
+#   content_limit_delim: ' '
+#   order_by: -date
 
 # prism_plugin:
 #   mode: 'preprocess' # realtime/preprocess
