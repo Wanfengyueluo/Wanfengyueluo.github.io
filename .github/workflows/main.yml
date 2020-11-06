@@ -38,4 +38,6 @@ jobs:
       env: 
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY}}
       run: |
+        git config --global user.email "1936390227@qq.com"
+        git config --global user.name "wanfeng"
         hexo d
