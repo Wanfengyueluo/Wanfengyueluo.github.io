@@ -38,7 +38,7 @@ jobs:
           hexo clean
           hexo g
       - name: Build and Deploy
-        uses: Wanfengyueluo/Wanfengyueluo.github.io@master
+        uses: Wanfengyueluo/Wanfengyueluo.github.io@hexo
         env: 
           PERSONAL_TOKEN: ${{ secrets.DEPLOY_KEY }}
           PUBLISH_REPOSITORY: Wanfengyueluo/Wanfengyueluo.github.io
