@@ -1,7 +1,7 @@
 ---
 title: Java核心技术卷一
 date: 2020-08-19 20:22:53
-summary: Java核心技术卷一笔记，从零开始摸爬滚打~
+description: Java核心技术卷一笔记，从零开始摸爬滚打~
 categories: Java
 tags: 
 	- Java

@@ -1,7 +1,7 @@
 ---
 title: Vuex入门
 date: 2020-11-04 15:29:35
-summary: Vuex笔记
+description: Vuex笔记
 categories: Vue
 tags: 
 	- Vue

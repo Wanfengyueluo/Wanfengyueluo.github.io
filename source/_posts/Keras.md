@@ -1,7 +1,7 @@
 ---
 title: Keras
 date: 2020-08-03 21:20:55
-summary: Keras中文文档笔记，从零开始摸爬滚打~
+description: Keras中文文档笔记，从零开始摸爬滚打~
 categories: 机器学习
 tags: 
 	- 机器学习

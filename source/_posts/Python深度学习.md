@@ -1,7 +1,7 @@
 ---
 title: Python深度学习
 date: 2020-08-07 15:55:48
-summary: Python深度学习笔记，从零开始摸爬滚打~
+description: Python深度学习笔记，从零开始摸爬滚打~
 categories: 机器学习
 tags: 
 	- 机器学习

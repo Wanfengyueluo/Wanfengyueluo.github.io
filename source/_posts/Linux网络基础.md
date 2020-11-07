@@ -1,7 +1,7 @@
 ---
 title: Linux网络基础
 date: 2020-06-01 12:42:38
-summary: Linux网络基础
+description: Linux网络基础
 categories: Linux
 tags: [网络,Linux]
 toc: true
