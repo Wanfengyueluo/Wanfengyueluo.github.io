@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>踩坑记录之CentOS登录问题</title>
+      <link href="2020/12/03/cai-keng-ji-lu-zhi-centos-deng-lu-wen-ti/"/>
+      <url>2020/12/03/cai-keng-ji-lu-zhi-centos-deng-lu-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/note_cover1.png" alt="image-20201203104847731"></p><p>最近登录虚拟机，发现正确的用户和密码无法登录，出现如下图的问题提示：</p><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201203105125584.png" alt="image-20201203105125584"></p><p>刚好前几天看《Linux就该这么学》这本书上有讲述如何重置root管理员密码的内容，索性尝试一下。</p><ol><li>重启系统</li></ol><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201203105803864.png" alt="image-20201203105803864"></p><ol><li>在进入系统之前选中第一行，点击<code>e</code>进入该选项</li></ol><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201203105826300.png" alt="image-20201203105826300"></p><ol><li>进入的编辑模式是这样的：</li></ol><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201203110226134.png" alt="image-20201203110226134"></p><ol><li>往下找，找到<code>linux16</code>这一行，在末尾<code>UTF-8</code>后面进行编辑，空格之后输入<code>rd.break</code>，换行的时候会自动加上换行符<code>\</code>，然后<code>Ctrl + X</code>运行该程序。</li></ol><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201203110336712.png" alt="image-20201203110336712"></p><ol><li>大概30秒后会进入下面的界面，即系统的紧急救援模式。依次输入以下命令，然后等待系统重启。</li></ol><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mount -o remount,rw /sysroot</span><br><span class="line">chroot /sysroot</span><br><span class="line">passwd</span><br><span class="line">rouch /.autorelabel</span><br><span class="line">exit</span><br><span class="line">reboot</span><br></pre></td></tr></tbody></table></figure><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201203110554935.png" alt="image-20201203110554935"></p><ol><li>完成！</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 踩坑记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 踩坑 </tag>
+            
+            <tag> CentOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CCS权威指南笔记</title>
+      <link href="2020/11/11/ccs-quan-wei-zhi-nan-bi-ji/"/>
+      <url>2020/11/11/ccs-quan-wei-zhi-nan-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h1><h2 id="伪类和伪元素"><a href="#伪类和伪元素" class="headerlink" title="伪类和伪元素"></a>伪类和伪元素</h2><h3 id="链接伪类"><a href="#链接伪类" class="headerlink" title="链接伪类"></a>链接伪类</h3><p><img src="C:\Users\wan\AppData\Roaming\Typora\typora-user-images\image-20201111093808310.png" alt="链接伪类"></p><h3 id="动态伪类"><a href="#动态伪类" class="headerlink" title="动态伪类"></a>动态伪类</h3><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201111094011241.png" alt="动态伪类"></p><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20201111094025916.png" alt="动态伪类"></p><h3 id="静态伪类"><a href="#静态伪类" class="headerlink" title="静态伪类"></a>静态伪类</h3><p><code>:first-child</code></p><p>选择元素的第一个子元素</p><h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><ul><li><p>设置首字母样式</p><p><code>p:first-letter{font-size:200%;}</code></p></li><li><p>设置第一行的样式</p><p><code>p:first-line{color:purple;}</code></p></li><li><p>设置之前元素的样式</p><p><code>h2:before{content:"}}";color:sliver;}</code></p></li><li><p>设置之后元素的样式</p><p><code>body:after{cpntent: "The End.";}</code></p></li></ul><h1 id="浮动和定位"><a href="#浮动和定位" class="headerlink" title="浮动和定位"></a>浮动和定位</h1><h2 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h2><p><code>float:left|right|none|inherit</code></p><h3 id="浮动元素"><a href="#浮动元素" class="headerlink" title="浮动元素"></a>浮动元素</h3><ul><li>对于浮动元素，会以某种方式将浮动元素从文档的正常流中删除，不过还是会影响布局</li><li>浮动元素的外边距存在并且不会合并</li></ul><h3 id="包含块（containning-block）"><a href="#包含块（containning-block）" class="headerlink" title="包含块（containning block）"></a>包含块（containning block）</h3><p>浮动元素的包含块是其最近的块级祖先元素</p><ul><li><p>浮动元素的左右外边界不能超过其包含块的左右内边界</p></li><li><p>浮动元素的左（或右）外边界必须是源文档中之前出现的左浮动（或右浮动）元素的右（左）外边界，除非后出现浮动元素的顶端在先出现浮动元素的底端下面</p><blockquote><p>这个规则的好处在于，所有浮动内容都是可见的</p></blockquote></li><li><p>左浮动元素的右外边界不会在其右边右浮动元素的左外边界的右边。一个右浮动元素的左外边界不会在其左边任何左浮动元素的右外边界的左边。</p><blockquote><p>防止浮动元素相互重叠</p></blockquote></li><li><p>一个浮动元素的顶端不能比其父元素的内顶端更高。如果一个浮动元素在两个合并外边距之间，放置这个浮动元素时就好像在两个元素之间有一个块级元素。</p><blockquote><p>该规则前半部分可以防止浮动元素一直浮动到文档的顶端。第二部分则是对某些情况下的对齐进行微调。</p></blockquote></li><li><p>浮动元素的顶端不能比之前所有浮动元素或块级元素的顶端更高。</p><blockquote><p>即要求浮动元素不能一直浮动到其父元素的顶端，另外，浮动元素的顶端也不可能比之前出现的浮动元素的顶端更高</p></blockquote></li><li><p>如果源文档中一个浮动元素之前出现另一个元素，浮动元素的顶端不能比包含该元素所生成框的任何行框的顶端更高</p><blockquote><p>进一步限制元素的 向上浮动，不允许元素浮动到包含该元素之前内容的行的顶端之上。</p></blockquote></li><li><p>左（或右）浮动元素的左边（右边）有另一个浮动元素，前者的右外边界不能在其包含块的右（左）边界的右边（左边）</p><blockquote><p>就是说，浮动元素不能超出其包含元素的边界，除非它太宽，本身都无法放下。</p></blockquote></li><li><p>浮动元素必须尽可能高地放置</p></li><li><p>左浮动元素必须向左尽可能远，右浮动元素则必须向右尽可能远，位置越高，就会向右或向左浮动得越远。</p></li></ul><h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><p><code>clear: none|left|right|both</code></p><h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p><code>position: static|relative|absolute|fixed|inherit</code></p><ul><li><p>static</p><p>元素框正常生成</p></li><li><p>relative</p><p>元素框偏移某个距离。元素仍保持其未定位之前的形状，它原本所占据的空间仍保留</p></li><li><p>absolute</p><p>元素框从文档流完全删除，并相对于其包含块定位，包含块可能是文档中的另一个元素或者是初始化包含块。元素原先在正常文档流中所占的空间会关闭，就好像该元素原来不存在一样。元素定位后会生成一个块级框，而不论原来它在正常流中生成何种类型的框。</p></li><li><p>fixed</p><p>类似于absolute，不过其包含块是视窗本身</p></li></ul><p><code>relative</code>、<code>absolute</code>、<code>fixed</code>三个属性值有一个共同点，都是相对于某个基点的定位，不同之处在于基点不同。这三种定位都不会对其他元素的位置产生影响，因此元素之间可能产生重叠。</p><ul><li><p>relative，相对于默认位置进行偏移，即定位基点是元素的默认位置</p></li><li><p>absolute，相对于上级元素（一般是父元素）进行偏移，即定位基点是父元素</p><blockquote><p>限制条件：定位基点（一般是父元素）不能是<code>static</code>定位，否则定位基点就会变成整个网页的根元素<code>html</code></p><p>注意，<code>absolute</code>定位的元素会被“正常页面流”忽略，即在“正常页面流”中，该元素所占空间为零，周边元素不受影响。</p></blockquote></li><li><p>fixed，相对于浏览器窗口（<code>viewport</code>）进行偏移，即定位基点是浏览器窗口，这会导致元素的位置不随页面滚动而变化，如同固定在网页上一样。</p></li></ul><h3 id="内容溢出与裁剪"><a href="#内容溢出与裁剪" class="headerlink" title="内容溢出与裁剪"></a>内容溢出与裁剪</h3><h4 id="溢出"><a href="#溢出" class="headerlink" title="溢出"></a>溢出</h4><p><code>overflow: visible | hidden | scroll | auto | inherit</code></p><ul><li><p>visible</p><p>visible表示元素的内容在元素框之外也可见，不会改变框的形状 </p></li><li><p>hidden</p><p>元素的内容会在元素框的边界处剪裁，不过不会提供滚动区域</p></li><li><p>scroll</p><p>元素内容会在元素框的边界处剪裁，溢出的部分无法看到，会出现滚动条</p></li><li><p>auto</p></li><li><p>inherit</p></li></ul><p>如果一个绝对定位元素的内容溢出其内容框，而且<code>overflow</code>设置为要求剪裁该内容，可以通过<code>clip</code>改变剪裁区域的形状</p><p><code>clip: rect(top,right,bottom,left) | auto | inherit</code></p><h4 id="元素可见性"><a href="#元素可见性" class="headerlink" title="元素可见性"></a>元素可见性</h4><p><code>visibility: visible | hidden | collapse | inherit</code></p><ul><li><p>visible</p><p>元素可见</p></li><li><p>hidden</p><p>元素处于不可见状态，但是会影响文档的布局</p><blockquote><p>与display: none的区别，display不仅不显示，而且会从文档中删除，对文档的布局没有任何影响</p></blockquote></li><li><p>collapse</p><p>只在CSS表显示中使用，对于非表元素，collapse与hidden含义相同</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+            <tag> Web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Spring-Boot学习笔记</title>
       <link href="2020/11/09/spring-boot-xue-xi-bi-ji/"/>
       <url>2020/11/09/spring-boot-xue-xi-bi-ji/</url>
