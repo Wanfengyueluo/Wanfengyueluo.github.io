@@ -198,9 +198,9 @@ SSH免密登录
 
      > 如果忘记密码或者想重新初始化，可以先将mysql/data目录中文件删除，然后再执行初始化命令
 
-6. 配置my.cof
+6. 配置my.cnf
 
-   `vim /etc/my.cof`
+   `vim /etc/my.cnf`
 
    ```shell
    [mysqld]
