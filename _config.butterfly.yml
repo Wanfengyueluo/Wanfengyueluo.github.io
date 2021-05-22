@@ -34,7 +34,7 @@ code_word_wrap: false
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
-  enable: false
+  enable: true
   copyright:
     enable: false
     limit_count: 50
@@ -635,7 +635,7 @@ aside:
       link: https://github.com/Wanfengyueluo/
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 但行好事，莫问前程~
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all

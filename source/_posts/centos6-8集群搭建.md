@@ -175,7 +175,7 @@ SSH免密登录
 
 ## Centos6.8安装MySQL5.7
 
-1. 下载https://dev.mysql.com/downloads/mysql,选择对应版本，上传到虚拟机，解压
+1. 下载 https://dev.mysql.com/downloads/mysql,  (wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz) 选择对应版本，上传到虚拟机，解压
 
 2. 卸载系统自带MySQL`rpm -qa|grep mysql`，若存在则`yum remove ***`
 
@@ -254,7 +254,7 @@ SSH免密登录
 
 ## Centos6.8安装Redis
 
-1. 下载http://download.redis.io/releases/redis-5.0.8.tar.gz解压
+1. 下载 http://download.redis.io/releases/redis-5.0.8.tar.gz 解压
 
 2. 进入redis目录，`make && make install`
 
