@@ -4,6 +4,8 @@ tags:
   - 剑指Offer
   - LeetCode
   - 链表
+  - 栈
+  - 递归
 categories:
   - 剑指Offer
 date: 2021-05-22 16:34:39
