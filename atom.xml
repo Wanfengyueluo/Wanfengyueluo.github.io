@@ -6,7 +6,7 @@
   <link href="https://wanfengyueluo.github.io/atom.xml" rel="self"/>
   
   <link href="https://wanfengyueluo.github.io/"/>
-  <updated>2021-05-23T10:42:26.346Z</updated>
+  <updated>2021-05-24T01:47:30.906Z</updated>
   <id>https://wanfengyueluo.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指Offer24-反转链表</title>
+    <link href="https://wanfengyueluo.github.io/2021/05/24/jian-zhi-offer24-fan-zhuan-lian-biao/"/>
+    <id>https://wanfengyueluo.github.io/2021/05/24/jian-zhi-offer24-fan-zhuan-lian-biao/</id>
+    <published>2021-05-24T01:47:30.000Z</published>
+    <updated>2021-05-24T01:47:30.906Z</updated>
+    
+    <content type="html"><![CDATA[<p><span class="github-emoji"><span>📄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c4.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>题目描述：</p><p>定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。</p><p><span class="github-emoji"><span>🤔</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f914.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>思路：</p><p>思路一：</p><blockquote><p>思路参考 <a href="https://www.algomooc.com/347.html">吴师兄的图解剑指 Offer 结构化专栏</a></p></blockquote><p>使用三个指针，分别为 pre、cur、next，其中 pre 初始为 null，也是最终返回的链表头节点，cur 指向当前链表的头节点，next 为 cur 节点的下一个节点，遍历 cur 指针直至为 null，将 cur 的下一指针进行反转指向 pre ，然后将三个指针依次向后移动，最终返回 pre。</p><p><span class="github-emoji"><span>☕</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>代码：</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (head == <span class="keyword">null</span>) {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    }</span><br><span class="line">    ListNode pre = <span class="keyword">null</span>;</span><br><span class="line">    ListNode cur = head;</span><br><span class="line">    <span class="keyword">if</span> (cur.next == <span class="keyword">null</span>) {</span><br><span class="line">        <span class="keyword">return</span> cur;</span><br><span class="line">    }</span><br><span class="line">    ListNode next = cur.next;</span><br><span class="line">    <span class="keyword">while</span> (next != <span class="keyword">null</span>) {</span><br><span class="line">        cur.next = pre;</span><br><span class="line">        pre = cur;</span><br><span class="line">        cur = next;</span><br><span class="line">        next = next.next;</span><br><span class="line">    }</span><br><span class="line">    cur.next = pre;</span><br><span class="line">    pre = cur;</span><br><span class="line">    <span class="keyword">return</span> pre;</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><p><span class="github-emoji"><span>☕</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>代码写法二：</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (head == <span class="keyword">null</span>) {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    }</span><br><span class="line">    ListNode pre = <span class="keyword">null</span>;</span><br><span class="line">    ListNode cur = head;</span><br><span class="line">    <span class="keyword">if</span> (cur.next == <span class="keyword">null</span>) {</span><br><span class="line">        <span class="keyword">return</span> cur;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span> (cur != <span class="keyword">null</span>) {</span><br><span class="line">        ListNode next = cur.next;</span><br><span class="line">        cur.next = pre;</span><br><span class="line">        pre = cur;</span><br><span class="line">        cur = next;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> pre;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><span class="github-emoji"><span>☕</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>代码写法三:</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>{</span><br><span class="line">    ListNode q = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">while</span>(head!=<span class="keyword">null</span>){</span><br><span class="line">        ListNode p = head;</span><br><span class="line">        head = head.next;</span><br><span class="line">        p.next = q;</span><br><span class="line">        q=p;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> q;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><blockquote><p>LeetCode 上有关于递归的解法，需要继续学习</p></blockquote><p><span class="github-emoji"><span>🤔</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f914.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>思路二：</p><blockquote><p>思路参考 LeetCode 题解</p></blockquote><p>通过递归，每次返回反转的链表头节点，反转步骤为</p><p><code>pre.next.next = pre;</code></p><p><code>pre.next = null;</code></p><p><span class="github-emoji"><span>☕</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>代码：</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>{</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 思路2 ：</span></span><br><span class="line"><span class="comment"> * 递归</span></span><br><span class="line"><span class="comment"> * pre.next.next = pre</span></span><br><span class="line"><span class="comment"> * pre.next = null</span></span><br><span class="line"><span class="comment"> * */</span></span><br><span class="line">    <span class="keyword">if</span> (head == <span class="keyword">null</span> || head.next == <span class="keyword">null</span>) {</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    }</span><br><span class="line">    ListNode newHead = reverseList(head.next);</span><br><span class="line">    head.next.next = head;</span><br><span class="line">    head.next = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">return</span> newHead;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;📄&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f4c4.png?v8&quot; aria-hidden=</summary>
+      
+    
+    
+    
+    <category term="剑指Offer" scheme="https://wanfengyueluo.github.io/categories/%E5%89%91%E6%8C%87Offer/"/>
+    
+    
+    <category term="剑指Offer" scheme="https://wanfengyueluo.github.io/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+    <category term="LeetCode" scheme="https://wanfengyueluo.github.io/tags/LeetCode/"/>
+    
+    <category term="链表" scheme="https://wanfengyueluo.github.io/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+    <category term="递归" scheme="https://wanfengyueluo.github.io/tags/%E9%80%92%E5%BD%92/"/>
+    
+    <category term="双指针" scheme="https://wanfengyueluo.github.io/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指Offer22-链表中倒数第K个节点</title>
@@ -472,29 +504,6 @@
     <category term="机器学习" scheme="https://wanfengyueluo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="统计学习" scheme="https://wanfengyueluo.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hadoop学习笔记</title>
-    <link href="https://wanfengyueluo.github.io/2020/06/07/hadoop-xue-xi-bi-ji/"/>
-    <id>https://wanfengyueluo.github.io/2020/06/07/hadoop-xue-xi-bi-ji/</id>
-    <published>2020-06-07T02:45:51.000Z</published>
-    <updated>2020-11-07T13:01:13.105Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hadoop基础"><a href="#Hadoop基础" class="headerlink" title="Hadoop基础"></a>Hadoop基础</h1><h2 id="HDFS"><a href="#HDFS" class="headerlink" title="HDFS"></a>HDFS</h2><p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/hdfsarchitecture.png" alt="HDFS Architecture"></p><h3 id="1-NameNode"><a href="#1-NameNode" class="headerlink" title="1. NameNode"></a>1. NameNode</h3><ul><li>管理HDFS的名称空间</li><li>配置副本策略</li><li>管理数据块（Block）映射信息</li><li>处理客户端读写请求</li></ul><h3 id="2-DataNode"><a href="#2-DataNode" class="headerlink" title="2. DataNode"></a>2. DataNode</h3><ul><li>存储实际的数据块</li><li>执行数据块的读写操作</li></ul><h3 id="3-Client"><a href="#3-Client" class="headerlink" title="3. Client"></a>3. Client</h3><ul><li>文件切分，文件上传HDFS时，CLient将文件切分成Block，然后进行上传</li><li>与NameNode交互，获取文件的位置信息</li><li>与DataNode交互，读取或写入数据</li><li>Client提供一些命令来管理HDFS，比如NameNode格式化</li><li>Client通过一些命令来访问HDFS，比如对HDFS增删改查操作</li></ul><h3 id="4-Secondary-NameNode"><a href="#4-Secondary-NameNode" class="headerlink" title="4.Secondary NameNode"></a>4.Secondary NameNode</h3><ul><li>辅助NameNode，分担工作量，比如定期合并fsimage和edits，并推送给NameNode</li><li>紧急情况下，辅助恢复nameNode</li><li>并非NameNode的热备，不能马上替换挂掉的NameNode并提供服务</li></ul><h2 id="MapReduce"><a href="#MapReduce" class="headerlink" title="MapReduce"></a>MapReduce</h2><h2 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h2>]]></content>
-    
-    
-    <summary type="html">Hadoop学习笔记</summary>
-    
-    
-    
-    <category term="Hadoop" scheme="https://wanfengyueluo.github.io/categories/Hadoop/"/>
-    
-    
-    <category term="Hadoop" scheme="https://wanfengyueluo.github.io/tags/Hadoop/"/>
-    
-    <category term="大数据" scheme="https://wanfengyueluo.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
