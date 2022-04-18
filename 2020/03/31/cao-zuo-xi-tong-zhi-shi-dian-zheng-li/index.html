@@ -1,0 +1,506 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>操作系统知识点整理 | 月落晓山的博客</title><meta name="keywords" content="复试,操作系统"><meta name="author" content="月落"><meta name="copyright" content="月落"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="操作系统知识点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作系统知识点整理">
+<meta property="og:url" content="https://wanfengyueluo.github.io/2020/03/31/cao-zuo-xi-tong-zhi-shi-dian-zheng-li/index.html">
+<meta property="og:site_name" content="月落晓山的博客">
+<meta property="og:description" content="操作系统知识点">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wanfengyueluo.github.io/img/cover5.jpg">
+<meta property="article:published_time" content="2020-03-31T14:01:04.000Z">
+<meta property="article:modified_time" content="2021-06-03T13:31:51.773Z">
+<meta property="article:author" content="月落">
+<meta property="article:tag" content="复试">
+<meta property="article:tag" content="操作系统">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wanfengyueluo.github.io/img/cover5.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://wanfengyueluo.github.io/2020/03/31/cao-zuo-xi-tong-zhi-shi-dian-zheng-li/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 月落","link":"链接: ","source":"来源: 月落晓山的博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '操作系统知识点整理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-06-03 21:31:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="月落晓山的博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover5.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">月落晓山的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">操作系统知识点整理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-03-31T14:01:04.000Z" title="发表于 2020-03-31 22:01:04">2020-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-03T13:31:51.773Z" title="更新于 2021-06-03 21:31:51">2021-06-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%8D%E8%AF%95/">复试</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>18分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="操作系统知识点整理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h1><h2 id="操作系统的概念"><a href="#操作系统的概念" class="headerlink" title="操作系统的概念"></a>操作系统的概念</h2><p>操作系统，控制和管理整个计算机系统的硬件和软件资源，并合理的组织调度计算机的工作和资源的分配。</p>
+<span id="more"></span>
+<h2 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h2><ol>
+<li>并发，指两个或多个时间在同一时间间隔内发生（并行指同时发生），在多道程序环境下，一段时间内宏观上有多个程序在同时执行，单处理器环境下只能有一个程序执行，故在微观上这些程序是在分时的交替进行。在操作系统中，引入进程的目的是使程序并发执行。</li>
+<li><p>共享，指系统中的资源可供内存中多个并发执行的进程共同使用。共享有两种方式：</p>
+<ul>
+<li>互斥共享，某些资源在同一时间内只允许一个进程访问该资源。</li>
+<li>同时访问，一些资源允许多个进程在宏观上同时访问。</li>
+</ul>
+<blockquote>
+<p>并发和共享是操作系统的两个最基本的特征，两者之间又是互为存在条件的：</p>
+<ul>
+<li>共享是以并发为条件的，若程序不能并发执行，就不存在资源共享的问题。</li>
+<li>若系统不能对资源共享进行有效的管理，程序的并发执行也会受到影响，甚至无法运行。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>虚拟，指把物理上的实体变为若干逻辑上的对应物。在操作系统中利用虚拟技术实现虚拟处理器、虚拟内存和虚拟外部设备。操作系统的虚拟技术分为：</p>
+<ul>
+<li>时分复用技术</li>
+<li>空分复用技术</li>
+</ul>
+</li>
+<li>异步，在多道程序环境下，允许多个程序并发执行，但是由于资源有限，进程的执行是以不可知的速度向前推进，这就是进程的异步性。</li>
+</ol>
+<h2 id="操作系统的功能"><a href="#操作系统的功能" class="headerlink" title="操作系统的功能"></a>操作系统的功能</h2><h3 id="操作系统作为计算机资源的管理者"><a href="#操作系统作为计算机资源的管理者" class="headerlink" title="操作系统作为计算机资源的管理者"></a>操作系统作为计算机资源的管理者</h3><ol>
+<li>处理器管理，在多道程序环境下，处理器的分配和运行是以进程为基本单位，因此处理器管理可以看作是对进程的管理。进程管理的主要功能有进程控制、进程同步、进程通信、死锁处理、处理器调度等。</li>
+<li>存储器管理，主要任务是为多道程序的运行提供良好的环境，方便用户使用以及提高内存的利用率。存储器管理的主要功能有内存分配、地址映射、内存保护与共享和内存扩充等。</li>
+<li>文件管理，主要包括文件的存储空间管理、目录管理以及文件读写管理和保护等。</li>
+<li>设备管理，主要任务是完成用户的<code>I/O</code>请求，方便用户使用各种设备以及提高设备的利用率。设备管理的主要功能有设备管理、设备分配、设备处理和虚拟设备等。</li>
+</ol>
+<h3 id="操作系统作为用户与计算机硬件系统的接口"><a href="#操作系统作为用户与计算机硬件系统的接口" class="headerlink" title="操作系统作为用户与计算机硬件系统的接口"></a>操作系统作为用户与计算机硬件系统的接口</h3><ol>
+<li>命令接口，用户利用这些操作命令组织和控制作业的执行，主要有联机命令接口和脱机命令接口两种方式。</li>
+<li>程序接口，由一组系统调用命令组成。系统调用指用户在程序中调用操作系统所提供的一些子功能。</li>
+</ol>
+<h2 id="操作系统的结构"><a href="#操作系统的结构" class="headerlink" title="操作系统的结构"></a>操作系统的结构</h2><ul>
+<li>简单结构</li>
+<li>模块化结构</li>
+<li>分层式结构</li>
+<li>微内核结构</li>
+</ul>
+<h2 id="操作系统的发展与分类"><a href="#操作系统的发展与分类" class="headerlink" title="操作系统的发展与分类"></a>操作系统的发展与分类</h2><ol>
+<li>手工操作阶段</li>
+<li>脱机输入输出阶段</li>
+<li>批处理阶段<ol>
+<li>单道批处理系统，自动行、顺序性、单道性。</li>
+<li>多道批处理系统，宏观上并行，微观上串行。</li>
+</ol>
+</li>
+<li>分时操作系统阶段<br>将处理器的运行时间分成时间片，按时间片轮流把处理器分配给各联机作业使用。其特点是同时性、交互性、独立性、及时性。</li>
+<li>实时操作系统阶段<br>实时性和可靠性。</li>
+<li>网络操作系统和分布式计算机系统阶段</li>
+<li>个人计算机操作系统阶段</li>
+</ol>
+<h2 id="操作系统的运行环境"><a href="#操作系统的运行环境" class="headerlink" title="操作系统的运行环境"></a>操作系统的运行环境</h2><h3 id="1-操作系统的运行机制"><a href="#1-操作系统的运行机制" class="headerlink" title="1. 操作系统的运行机制"></a>1. 操作系统的运行机制</h3><p>在计算机系统中<code>CPU</code>执行两种不同性质的程序，一种是操作系统内核程序，另一种使用户程序。操作系统在具体实现上划分为用户态和核心态以区分两种程序。操作系统内核包括四个方面的内容：</p>
+<ul>
+<li>时钟管理<ul>
+<li>提供系统时间</li>
+<li>通过时钟中断的管理，实现进程的切换</li>
+</ul>
+</li>
+<li>中断机制，目的是提高多道程序运行环境中<code>CPU</code>的利用率。<strong>现代操作系统使考中断驱动的软件。</strong></li>
+<li>原语，不可再分割的操作。</li>
+<li>系统控制的数据结构及处理，如作业控制快、进程控制块、设备控制快、各类链表、消息队列、缓冲区、空闲区登记表、内存分配表等。为了实现有效的管理，系统需要一些基本的操作，常见的操作有如下三种：<ul>
+<li>进程管理：进程状态管理、进程调度和分配、创建和撤掉进程控制块的队列维护等。</li>
+<li>存储器管理：存储器的空间分配和回收管理、内存信息保护程序、代码对换程序等。</li>
+<li>设备管理：缓冲区管理、设备分配和回收等。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-中断和异常的概念"><a href="#2-中断和异常的概念" class="headerlink" title="2. 中断和异常的概念"></a>2. 中断和异常的概念</h3><ul>
+<li>中断<code>（Interruption）</code>也称为外中断，指来自<code>CPU</code>执行指令以外的事件发生，如设备发出的<code>I/O</code>结束中断、时钟中断等。这一类中断与当前运行的程序无关，可细分为硬中断和软中断。硬中断是硬件产生的，软中断是软件产生的。</li>
+<li>异常<code>（Exception）</code>也称为内中断、陷入。指来自<code>CPU</code>执行指令内部的事件，如程序的非法操作码、地址越界、虚存系统的缺页以及专门的陷入指令等。对异常的处理一般要依赖当前程序的运行现场，而且异常不能被屏蔽，一旦出现异常立即处理。</li>
+</ul>
+<h1 id="2-进程管理"><a href="#2-进程管理" class="headerlink" title="2. 进程管理"></a>2. 进程管理</h1><h2 id="进程的概念和特征"><a href="#进程的概念和特征" class="headerlink" title="进程的概念和特征"></a>进程的概念和特征</h2><h3 id="进程的概念"><a href="#进程的概念" class="headerlink" title="进程的概念"></a>进程的概念</h3><p>在多道程序环境下，允许多个程序并发执行，此时它们失去封闭性，具有间断性和不可再现的特征。为此引入进程的概念，以便更好的描述和控制程序的并发执行，实现操作系统的并发性和共享性。</p>
+<p>进程控制块<code>（PCB）</code>用来描述进程的基本情况和运行状态，进而控制和管理进程。程序段】数据段和PCB三部分构成了进程实体。所谓创建进程，实质上是创建进程实体中的<code>PCB</code>；而撤销进程实质上是撤销进程实体的<code>PCB</code>。</p>
+<blockquote>
+<p>引入进程实体的概念后，我们将进程定义为：进程是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。</p>
+</blockquote>
+<h3 id="进程的特征"><a href="#进程的特征" class="headerlink" title="进程的特征"></a>进程的特征</h3><ul>
+<li>动态性，进程最基本的特征。进程是程序的一次执行过程，有创建、活动、暂停、终止等过程，具有一定的生命周期，是动态产生、变化和消亡的。</li>
+<li>并发性，多个进程实体在一段时间内同时运行。</li>
+<li>独立性，进程是独立获得资源和接受调度的基本单位。</li>
+<li>异步性，由于进程间相互制约，进程的执行具有间断性，即进程按各自独立的、不可预知的速度向前推进。异步性会导致执行结果的不可再现性，因此操作系统中必须配置相应的进程同步机制。</li>
+<li>结构性，每个进程都配置一个<code>PCB</code>对其进行描述。从结构上看，进程实体是由程序段、数据段和<code>PCB</code>三部分组成。</li>
+</ul>
+<h2 id="进程的状态和转换"><a href="#进程的状态和转换" class="headerlink" title="进程的状态和转换"></a>进程的状态和转换</h2><ol>
+<li>创建状态，进程正在被创建，还没进入就绪状态。</li>
+<li>就绪状态，获得了除<code>CPU</code>外的所有所需资源，一旦得到处理器便可运行。</li>
+<li>运行状态，程序获得<code>CPU</code>。</li>
+<li>阻塞状态，进程正在等待某一事件而暂停运行，如等待资源不可用或等待输入输出完成。即使<code>CPU</code>空闲，该进程也不能运行。</li>
+<li>结束状态，进程执行完成，释放资源。</li>
+</ol>
+<h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>创建进程（创建原语）：</p>
+<ul>
+<li>为新进程分配一个进程标识号，并申请一个空白的<code>PCB</code>；</li>
+<li>为进程分配资源，如新进程的程序和数据及所需的空间等；</li>
+<li>初始化<code>PCB</code>，主要包括初始化标识信息、初始化处理器状态信息、初始化处理器控制信息等；</li>
+<li>如果进程就绪队列未满，就将新进程加入到就绪队列，等待调度运行。</li>
+</ul>
+<p>终止进程（撤销原语）：</p>
+<ul>
+<li>根据进程标识符，检索<code>PCB</code>，从中读取进程的状态；</li>
+<li>若被终止的进程处于执行状态，立即终止该进程，将处理器资源分配给其他进程；</li>
+<li>若该进程还有子进程，则应将其所有子进程终止；</li>
+<li>将该进程所拥有的资源归还给父进程或者操作系统；</li>
+<li>将该进程<code>PCB</code>从队列中删除。</li>
+</ul>
+<blockquote>
+<p>正在执行的进程，由于需要等待某些事件的发生，如请求资源失败等，由系统自动执行阻塞原语，将进程由运行状态变为阻塞状态。进程阻塞是进程自身的一种主动行为。</p>
+</blockquote>
+<p>进程切换的过程：</p>
+<ul>
+<li>保存处理器上下文，包括程序计数器和其他寄存器；</li>
+<li>更新<code>PCB</code>；</li>
+<li>把进程的<code>PCB</code>移入相应的队列，如就绪队列、阻塞队列；</li>
+<li>选择另一个进程执行，并更新其<code>PCB</code>，更新内存管理的数据结构；</li>
+<li>恢复处理器的上下文。</li>
+</ul>
+<h2 id="进程的组织"><a href="#进程的组织" class="headerlink" title="进程的组织"></a>进程的组织</h2><p>进程是操作系统资源分配和独立运行的基本单位。</p>
+<ul>
+<li><p>进程控制块<code>PCB</code>，常驻内存，是进程存在的唯一标识</p>
+<p>主要包括：进程描述信息、进程控制和管理信息、资源分配清单和处理器相关信息。</p>
+</li>
+<li><p>程序段，被调度到<code>CPU</code>执行的程序代码段。</p>
+</li>
+<li><p>数据段，可以是进程对应的程序加工处理的原始数据，也可以是程序执行产生的中间结果。</p>
+</li>
+</ul>
+<h2 id="进程的通信"><a href="#进程的通信" class="headerlink" title="进程的通信"></a>进程的通信</h2><ul>
+<li><p>共享内存</p>
+<p>在通信的进程之间存在一块可以直接访问的共享空间，实现进程间的信息交换，需要使用同步互斥工具。</p>
+</li>
+<li><p>消息传递</p>
+<p>在消息传递系统中，进程间的数据交换是以格式化的Message为单位的。</p>
+</li>
+<li><p>管道通信</p>
+<p>是消息传递的一种特殊方式。</p>
+</li>
+</ul>
+<h2 id="线程的概念和多线程模型"><a href="#线程的概念和多线程模型" class="headerlink" title="线程的概念和多线程模型"></a>线程的概念和多线程模型</h2><p>引入进程是为了多道程序设计并发执行，提高资源利用率和系统吞吐量。引入线程是为了减少程序在并发执行时所付出的时空开销，提高系统的并发性能。</p>
+<p>线程是一个基本的CPU执行单元，也是程序流的最小单元，由线程ID、程序计数器、寄存器集合和堆栈组成。线程是进程中的一个实体，是系统独立调度和分配的基本单位。</p>
+<h3 id="线程与进程的比较："><a href="#线程与进程的比较：" class="headerlink" title="线程与进程的比较："></a>线程与进程的比较：</h3><ul>
+<li>调度，线程是独立调度的基本单位，进程是资源分配的基本单位</li>
+<li>拥有资源，进程是拥有资源的基本单位，而线程不拥有系统资源</li>
+<li>并发性，不仅进程之间可以并发执行，线程之间也可以并发执行</li>
+<li>系统开销，线程开销小</li>
+<li>地址空间和其他资源，进程的地址空间相互独立，而同一进程的线程之间共享进程的资源</li>
+<li>通信，线程间通信可以直接读写进程数据段来进行通信</li>
+</ul>
+<h3 id="线程的实现方法："><a href="#线程的实现方法：" class="headerlink" title="线程的实现方法："></a>线程的实现方法：</h3><ul>
+<li>用户级线程</li>
+<li>内核级线程</li>
+</ul>
+<h3 id="多线程模型："><a href="#多线程模型：" class="headerlink" title="多线程模型："></a>多线程模型：</h3><ul>
+<li>多对一，将多个用户级线程映射到一个内核级线程，线程管理在用户空间完成</li>
+<li>一对一</li>
+<li>多对多</li>
+</ul>
+<h2 id="调度的概念"><a href="#调度的概念" class="headerlink" title="调度的概念"></a>调度的概念</h2><p>处理器调度是对处理器进行分配，按照一定的算法在就绪队列中选择一个进程并将处理器分配给它运行，是操作系统设计的核心问题。</p>
+<p><strong>三级调度</strong>：</p>
+<ul>
+<li>作业调度，又称高级调度。主要任务是按一定的原则将外存上处于后备状态的作业中选择一个或几个分配内存、输出输出设备等必要资源，并建立相应进程。</li>
+<li>中级调度，又称内存调度。目的是提高内存利用率和系统吞吐率。将那些暂时不能运行的进程调至外存等待，把此时的进程状态称为挂起状态。当挂起状态的进程已具备运行条件并且内存有空闲时，由中级调度决定把哪些进程重新调入内存进入就绪队列。</li>
+<li>进程调度，又称低级调度。主要任务是按照某种方法和策略从就绪队列中选择一个进程分配处理器。</li>
+</ul>
+<h2 id="调度的时机、切换与过程"><a href="#调度的时机、切换与过程" class="headerlink" title="调度的时机、切换与过程"></a>调度的时机、切换与过程</h2><h2 id="进程调度方式"><a href="#进程调度方式" class="headerlink" title="进程调度方式"></a>进程调度方式</h2><ul>
+<li><p>非剥夺调度，指当一个进程正在处理器上执行时，即使有一个更为紧急的进程进入就绪状态，仍然让正在执行的进程继续执行。</p>
+</li>
+<li><p>剥夺调度，指当一个进程正在处理器上执行时，若有一个更为紧急的进程进入就绪状态，立即暂停正在执行的进程，将处理器分配给更为紧急的进程。</p>
+</li>
+</ul>
+<h2 id="调度的基本准则"><a href="#调度的基本准则" class="headerlink" title="调度的基本准则"></a>调度的基本准则</h2><ul>
+<li>CPU利用率</li>
+<li>系统吞吐量，表示单位时间内CPU完成作业的数量</li>
+<li>周转时间，指从作业提交到作业完成所经历的时间</li>
+<li>等待时间，指进程等待处理器时间之和</li>
+<li>响应时间，指从用户提交请求到系统首次产生响应的时间</li>
+</ul>
+<h2 id="典型的调度算法"><a href="#典型的调度算法" class="headerlink" title="典型的调度算法"></a>典型的调度算法</h2><ul>
+<li>FIFS 先来先服务调度</li>
+<li>SJF 短作业优先调度</li>
+<li>优先级调度</li>
+<li>高响应比优先调度</li>
+<li>时间片轮转调度</li>
+<li>多级反馈队列调度</li>
+</ul>
+<h2 id="进程同步的基本概念"><a href="#进程同步的基本概念" class="headerlink" title="进程同步的基本概念"></a>进程同步的基本概念</h2><p>多道程序设计环境下，进程并发执行，不同进程之间存在不同的制约关系。为了协调这些关系，达到资源共享和进程协作，避免进程间的冲突，引入进程同步的概念。</p>
+<ul>
+<li>临界资源，一次只允许一个进程访问的资源。访问临界资源的那段代码叫做临界区。</li>
+<li>同步</li>
+<li>互斥</li>
+</ul>
+<h2 id="实现临界区互斥的基本方法"><a href="#实现临界区互斥的基本方法" class="headerlink" title="实现临界区互斥的基本方法"></a>实现临界区互斥的基本方法</h2><h3 id="硬件实现方法"><a href="#硬件实现方法" class="headerlink" title="硬件实现方法"></a>硬件实现方法</h3><ul>
+<li>中断屏蔽</li>
+<li>硬件指令TestAndSet</li>
+</ul>
+<h2 id="信号量"><a href="#信号量" class="headerlink" title="信号量"></a>信号量</h2><h2 id="经典同步问题"><a href="#经典同步问题" class="headerlink" title="经典同步问题"></a>经典同步问题</h2><h2 id="死锁的概念"><a href="#死锁的概念" class="headerlink" title="死锁的概念"></a>死锁的概念</h2><p>死锁指多个进程因竞争资源而造成的僵局，若无外力作用，这些进程将无法继续向前推进。</p>
+<p><strong>死锁产生的必要条件</strong>：</p>
+<ul>
+<li>互斥条件</li>
+<li>不可剥夺条件</li>
+<li>请求和保持条件</li>
+<li>循环等待条件</li>
+</ul>
+<h2 id="死锁的处理策略"><a href="#死锁的处理策略" class="headerlink" title="死锁的处理策略"></a>死锁的处理策略</h2><h2 id="死锁避免"><a href="#死锁避免" class="headerlink" title="死锁避免"></a>死锁避免</h2><h2 id="死锁检测和解除"><a href="#死锁检测和解除" class="headerlink" title="死锁检测和解除"></a>死锁检测和解除</h2><p>死锁解除的方法：</p>
+<ul>
+<li>资源剥夺，挂起死锁进程并抢占其资源</li>
+<li>进程撤销，强制撤销一个或一部分进程并剥夺其资源</li>
+<li>进程回退，进程回退释放资源而不是被剥夺</li>
+</ul>
+<blockquote>
+<p>进程与程序</p>
+<p>死锁与饥饿</p>
+<p>进程同步互斥的区别和联系</p>
+<p>作业和进程的关系</p>
+</blockquote>
+<h1 id="3-内存管理"><a href="#3-内存管理" class="headerlink" title="3. 内存管理"></a>3. 内存管理</h1><h2 id="内存管理的概念"><a href="#内存管理的概念" class="headerlink" title="内存管理的概念"></a>内存管理的概念</h2><p>内存管理的功能：</p>
+<ul>
+<li>内存空间的分配与回收，包括内存的分配和共享</li>
+<li>地址转换，逻辑地址转换成物理地址</li>
+<li>内存空间的扩充，利用虚拟技术或自动覆盖技术，从逻辑上扩充内存</li>
+<li>存储保护，保证各作业在各自的存储空间内运行，互不干扰</li>
+</ul>
+<p>将用户程序编程在内存中执行的程序需要以下几个步骤：</p>
+<ul>
+<li>编译，由编译程序将用户源代码编译成若干目标模块</li>
+<li>链接，由链接程序将编译后形成的目标模块和所需库函数链接形成完整的装入模块</li>
+<li>装入，由装入程序将装入模块装入内存</li>
+</ul>
+<p>程序链接的三种方式：</p>
+<ul>
+<li>静态链接，在程序运行之前，将各目标模块以及所需的库函数链接成完整的可执行程序</li>
+<li>装入时动态链接，将用户源程序编译后得到的目标模块，再装入内存，采用边装入变链接的方式</li>
+<li>运行时动态链接，对某些目标模块的链接，是在程序执行中需要该模块时才进行链接</li>
+</ul>
+<p>装入模块装入内存的三种方式：</p>
+<ul>
+<li>绝对装入，在编译时，如果知道程序将驻留在内存中的某个位置，编译程序会产生绝对地址的目标代码</li>
+<li>可重定位装入，目标模块的起始地址为0，程序中的其他地址是相对于起始地址的（作业装入时需要足够的内存空间，否则不能装入）</li>
+<li>动态运行时装入（动态重定位），装入程序将装入模块装入内存后，没有立即将装入模块的相对地址转换成绝对地址，而是当程序真正执行时才进行地址转换</li>
+</ul>
+<h2 id="覆盖与交换"><a href="#覆盖与交换" class="headerlink" title="覆盖与交换"></a>覆盖与交换</h2><p>交换用于不同进程之间，覆盖用于同一进程</p>
+<h2 id="连续分配管理方式"><a href="#连续分配管理方式" class="headerlink" title="连续分配管理方式"></a>连续分配管理方式</h2><p>主要包括单一连续分配、固定分区分配、动态分区分配</p>
+<p>固定分区，优点是无外部碎片、可采用覆盖技术；缺点是有内部碎片、存储器利用率低</p>
+<p>动态分区，缺点是有外部碎片</p>
+<p>动态分区分配算法：</p>
+<ul>
+<li>首次适应</li>
+<li>最佳适应</li>
+<li>最坏适应</li>
+</ul>
+<h2 id="非连续分配管理方式"><a href="#非连续分配管理方式" class="headerlink" title="非连续分配管理方式"></a>非连续分配管理方式</h2><p>非连续分配方式允许一个程序分散装入不相邻的内存分区中，根据分区大小是否固定分为分页存储管理方式和分段存储管理方式。</p>
+<p>分页存储管理方式又根据运行作业时是否把作业的所有页面全部装入内存才能运行区分为基本分页存储管理和请求分页存储管理。</p>
+<blockquote>
+<p>固定分区产生内部碎片，动态分区产生外部碎片，对内存的利用率都比较低，故而引出分页思想：将内存空间划分为大小相等且固定的块，块作为主存的基本单位。每个进程也以块为单位进行划分，进程执行时，以块为单位申请主存中的块空间。</p>
+</blockquote>
+<p>地址转换，将逻辑地址中的页号转换为内存中物理地址的页号，借助于页表，过程如下：</p>
+<ul>
+<li>地址变换机构自动将有效地址分为页号和页内偏移量，用页号去检索页表，执行前先检查是否越界。</li>
+<li>将页表始址与页号和页表项长度的乘积相加，得到该页表项在页表中的位置，从而得到物理块号。</li>
+<li>将有效地址的页内偏移量送入物理地址寄存器的块内地址字段。</li>
+</ul>
+<blockquote>
+<p>分页管理从计算机的角度考虑，提高计算机性能和内存利用率，分页通过硬件机制实现，对用户完全透明</p>
+<p>分段管理从程序员的角度考虑，以满足方便编程、信息保护和共享、动态增长以及动态链接等多方面的需要。</p>
+</blockquote>
+<p>段表，每个进程都有一张逻辑空间与主存空间映射的段表，其中每一段表项对应进程的一个段，段表项记录该段在内存中的起始地址和段的长度。</p>
+<h2 id="虚拟内存的基本概念"><a href="#虚拟内存的基本概念" class="headerlink" title="虚拟内存的基本概念"></a>虚拟内存的基本概念</h2><p>虚拟内存基于局部性原理</p>
+<p>虚拟内存有三种实现方式</p>
+<ul>
+<li>请求分页存储管理</li>
+<li>请求分段存储管理</li>
+<li>请求段页式存储管理</li>
+</ul>
+<p>需要以下几个方面的硬件支持</p>
+<ul>
+<li>一定容量的内存和外存</li>
+<li>页表机制或段表机制</li>
+<li>中断机制，缺页中断</li>
+<li>地址转换机制，逻辑地址到物理地址的转换</li>
+</ul>
+<h2 id="请求分页管理方式"><a href="#请求分页管理方式" class="headerlink" title="请求分页管理方式"></a>请求分页管理方式</h2><h2 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h2><ul>
+<li>OPT最佳置换算法</li>
+<li>FIFO先进先出页面置换算法</li>
+<li>LRU最近最久未使用置换算法<ul>
+<li>寄存器支持</li>
+<li>特殊的栈结构</li>
+</ul>
+</li>
+<li>CLOCK置换算法</li>
+</ul>
+<h2 id="页面分配策略"><a href="#页面分配策略" class="headerlink" title="页面分配策略"></a>页面分配策略</h2><h2 id="抖动和工作集"><a href="#抖动和工作集" class="headerlink" title="抖动和工作集"></a>抖动和工作集</h2><p>抖动，指刚被换出的页面很快又要访问，需要重新调入，此时有需要再选一页调出。</p>
+<p>工作集，指在某段时间间隔内，进程要访问的页面集合，为了防止出现抖动现象，需要选择合适的驻留集（工作集）大小。</p>
+<h2 id="请求分段管理方式"><a href="#请求分段管理方式" class="headerlink" title="请求分段管理方式"></a>请求分段管理方式</h2><h2 id="请求段页式管理方式"><a href="#请求段页式管理方式" class="headerlink" title="请求段页式管理方式"></a>请求段页式管理方式</h2><h1 id="4-文件管理"><a href="#4-文件管理" class="headerlink" title="4. 文件管理"></a>4. 文件管理</h1><h2 id="文件的概念"><a href="#文件的概念" class="headerlink" title="文件的概念"></a>文件的概念</h2><p>数据项，是文件系统中最低级的数据组织形式，有两种类型：</p>
+<ul>
+<li>基本数据项，用于描述对象的某种属性的一个值</li>
+<li>组合数据项，由多个基本数据项组成</li>
+</ul>
+<p>记录，是一组相关的数据项集合，用于描述一个对象在某方面的属性</p>
+<p>文件，指一组相关信息的集合，分为有结构文件和无结构文件两种，一般包含如下属性：</p>
+<ul>
+<li>名称</li>
+<li>标识符，表示文件系统内文件的唯一标识，对用户不可读的内部名称</li>
+<li>类型</li>
+<li>位置</li>
+<li>大小</li>
+<li>保护，文件的访问控制信息</li>
+<li>时间、日期和用户标识</li>
+</ul>
+<p>所有文件的信息都保存在目录结构中，目录结构保存在外存上，文件信息在需要时调入内存。一般来说，目录条目包含文件名称及其唯一标识符，标识符定位其他属性的信息。</p>
+<p>操作系统为文件管理提供的系统调用：</p>
+<ul>
+<li>创建文件，要在文件系统中找到空间并且在目录中为文件创建条目</li>
+<li>写文件，需要维护一个写位置的指针</li>
+<li>读文件</li>
+<li>文件重定位</li>
+<li>删除文件</li>
+<li>截断文件</li>
+</ul>
+<h2 id="文件的逻辑结构"><a href="#文件的逻辑结构" class="headerlink" title="文件的逻辑结构"></a>文件的逻辑结构</h2><ul>
+<li>无结构文件，以字节为单位</li>
+<li>有结构文件<ul>
+<li>顺序文件</li>
+<li>索引文件</li>
+<li>索引顺序表</li>
+<li>直接文件或散列文件</li>
+</ul>
+</li>
+</ul>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p>文件控制块FCB是用来存放控制文件需要的各种信息的数据结构，以实现“按名存取”。FCB的有序集合称为文件目录，一个FCB就是一个文件目录项，FCB主要包含以下信息：</p>
+<ul>
+<li>基本信息：文件名、物理位置、逻辑结构、物理结构等</li>
+<li>存取控制信息：文件的存取权限等</li>
+<li>使用信息：文件建立时间、修改时间等</li>
+</ul>
+<p>索引节点，检索目录文件过程中只用到文件名，仅当找到一个目录项时，才需要从该目录项中读出该文件的物理地址，因此有的系统采用文件名与文件信息分开的方法，文件描述信息单独形成一个称为索引节点的数据结构，简称i节点。文件目录中的每个目录项仅由文件名和指向该文件所对应的i节点的指针构成</p>
+<h2 id="文件共享"><a href="#文件共享" class="headerlink" title="文件共享"></a>文件共享</h2><h2 id="文件保护"><a href="#文件保护" class="headerlink" title="文件保护"></a>文件保护</h2><h2 id="文件系统层次结构"><a href="#文件系统层次结构" class="headerlink" title="文件系统层次结构"></a>文件系统层次结构</h2><h2 id="目录实现"><a href="#目录实现" class="headerlink" title="目录实现"></a>目录实现</h2><h2 id="文件实现"><a href="#文件实现" class="headerlink" title="文件实现"></a>文件实现</h2><h2 id="磁盘的结构"><a href="#磁盘的结构" class="headerlink" title="磁盘的结构"></a>磁盘的结构</h2><h2 id="磁盘调度算法"><a href="#磁盘调度算法" class="headerlink" title="磁盘调度算法"></a>磁盘调度算法</h2><h2 id="磁盘的管理"><a href="#磁盘的管理" class="headerlink" title="磁盘的管理"></a>磁盘的管理</h2><h1 id="5-输入输出管理"><a href="#5-输入输出管理" class="headerlink" title="5. 输入输出管理"></a>5. 输入输出管理</h1><h2 id="IO设备"><a href="#IO设备" class="headerlink" title="IO设备"></a>IO设备</h2><h2 id="IO管理目标"><a href="#IO管理目标" class="headerlink" title="IO管理目标"></a>IO管理目标</h2><h2 id="IO管理功能"><a href="#IO管理功能" class="headerlink" title="IO管理功能"></a>IO管理功能</h2><h2 id="IO应用接口"><a href="#IO应用接口" class="headerlink" title="IO应用接口"></a>IO应用接口</h2><h2 id="设备控制器"><a href="#设备控制器" class="headerlink" title="设备控制器"></a>设备控制器</h2><h2 id="IO控制方式"><a href="#IO控制方式" class="headerlink" title="IO控制方式"></a>IO控制方式</h2><h2 id="IO层次结构"><a href="#IO层次结构" class="headerlink" title="IO层次结构"></a>IO层次结构</h2><h2 id="IO调度概念"><a href="#IO调度概念" class="headerlink" title="IO调度概念"></a>IO调度概念</h2><h2 id="高速缓存与缓冲区"><a href="#高速缓存与缓冲区" class="headerlink" title="高速缓存与缓冲区"></a>高速缓存与缓冲区</h2><h2 id="设备的分配与回收"><a href="#设备的分配与回收" class="headerlink" title="设备的分配与回收"></a>设备的分配与回收</h2><h2 id="SPOOLing（假脱机技术）"><a href="#SPOOLing（假脱机技术）" class="headerlink" title="SPOOLing（假脱机技术）"></a>SPOOLing（假脱机技术）</h2><h1 id="待完善的内容"><a href="#待完善的内容" class="headerlink" title="待完善的内容"></a>待完善的内容</h1><ul>
+<li>[ ] 虚拟技术</li>
+<li>[ ] 命令接口</li>
+<li>[ ] 程序接口</li>
+<li>[ ] 操作系统的结构</li>
+<li>[ ] 分时操作系统与实时操作系统的比较</li>
+<li>[ ] 进程的创建过程</li>
+<li>[ ] 进程的阻塞和唤醒</li>
+<li>[ ] 进程通信</li>
+<li>[ ] 进程调度的过程</li>
+<li>[ ] 调度算法</li>
+<li>[ ] 死锁的四个条件</li>
+<li>[ ] 死锁避免</li>
+<li>[ ] 死锁预防</li>
+<li>[ ] 死锁检测</li>
+<li>[ ] 覆盖与交换</li>
+</ul>
+<blockquote>
+<p>参考文档：<a target="_blank" rel="noopener" href="https://wizardforcel.gitbooks.io/wangdaokaoyan-os/content/index.html">https://wizardforcel.gitbooks.io/wangdaokaoyan-os/content/index.html</a></p>
+</blockquote>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%A4%8D%E8%AF%95/">复试</a><a class="post-meta__tags" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></div><div class="post_share"><div class="social-share" data-image="/img/cover5.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/04/01/ruan-jian-gong-cheng-zhi-shi-dian-zheng-li/"><img class="prev-cover" src="/img/cover4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">软件工程知识点整理</div></div></a></div><div class="next-post pull-right"><a href="/2020/03/30/2020-3-30/"><img class="next-cover" src="/img/cover5.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">2020-3-30</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/04/05/tu-jie-http-du-shu-bi-ji/" title="图解HTTP读书笔记"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-05</div><div class="title">图解HTTP读书笔记</div></div></a></div><div><a href="/2020/04/05/shu-ju-ku-xi-tong-yuan-li-zhi-shi-dian-zheng-li/" title="数据库系统原理知识点整理"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-05</div><div class="title">数据库系统原理知识点整理</div></div></a></div><div><a href="/2020/04/02/ji-suan-ji-wang-luo-zhi-shi-dian-zheng-li/" title="计算机网络知识点整理"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-02</div><div class="title">计算机网络知识点整理</div></div></a></div><div><a href="/2020/04/01/ruan-jian-gong-cheng-zhi-shi-dian-zheng-li/" title="软件工程知识点整理"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-01</div><div class="title">软件工程知识点整理</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">月落</div><div class="author-info__description">学习记录，日常随笔</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Wanfengyueluo/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Wanfengyueluo" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wanfengwind@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">但行好事，莫问前程~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">1. 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">操作系统的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.2.</span> <span class="toc-text">操作系统的特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-number">1.3.</span> <span class="toc-text">操作系统的功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BD%9C%E4%B8%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%84%E6%BA%90%E7%9A%84%E7%AE%A1%E7%90%86%E8%80%85"><span class="toc-number">1.3.1.</span> <span class="toc-text">操作系统作为计算机资源的管理者</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BD%9C%E4%B8%BA%E7%94%A8%E6%88%B7%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.2.</span> <span class="toc-text">操作系统作为用户与计算机硬件系统的接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.4.</span> <span class="toc-text">操作系统的结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%88%86%E7%B1%BB"><span class="toc-number">1.5.</span> <span class="toc-text">操作系统的发展与分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">1.6.</span> <span class="toc-text">操作系统的运行环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="toc-number">1.6.1.</span> <span class="toc-text">1. 操作系统的运行机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.6.2.</span> <span class="toc-text">2. 中断和异常的概念</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">2. 进程管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E7%89%B9%E5%BE%81"><span class="toc-number">2.1.</span> <span class="toc-text">进程的概念和特征</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.1.1.</span> <span class="toc-text">进程的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">2.1.2.</span> <span class="toc-text">进程的特征</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E5%92%8C%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.2.</span> <span class="toc-text">进程的状态和转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">2.3.</span> <span class="toc-text">进程控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%BB%84%E7%BB%87"><span class="toc-number">2.4.</span> <span class="toc-text">进程的组织</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%80%9A%E4%BF%A1"><span class="toc-number">2.5.</span> <span class="toc-text">进程的通信</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.6.</span> <span class="toc-text">线程的概念和多线程模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%AF%94%E8%BE%83%EF%BC%9A"><span class="toc-number">2.6.1.</span> <span class="toc-text">线程与进程的比较：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">2.6.2.</span> <span class="toc-text">线程的实现方法：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%EF%BC%9A"><span class="toc-number">2.6.3.</span> <span class="toc-text">多线程模型：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.7.</span> <span class="toc-text">调度的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E6%97%B6%E6%9C%BA%E3%80%81%E5%88%87%E6%8D%A2%E4%B8%8E%E8%BF%87%E7%A8%8B"><span class="toc-number">2.8.</span> <span class="toc-text">调度的时机、切换与过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E6%96%B9%E5%BC%8F"><span class="toc-number">2.9.</span> <span class="toc-text">进程调度方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%87%86%E5%88%99"><span class="toc-number">2.10.</span> <span class="toc-text">调度的基本准则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E7%9A%84%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="toc-number">2.11.</span> <span class="toc-text">典型的调度算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.12.</span> <span class="toc-text">进程同步的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E4%B8%B4%E7%95%8C%E5%8C%BA%E4%BA%92%E6%96%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95"><span class="toc-number">2.13.</span> <span class="toc-text">实现临界区互斥的基本方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A1%AC%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95"><span class="toc-number">2.13.1.</span> <span class="toc-text">硬件实现方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E9%87%8F"><span class="toc-number">2.14.</span> <span class="toc-text">信号量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98"><span class="toc-number">2.15.</span> <span class="toc-text">经典同步问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%BB%E9%94%81%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.16.</span> <span class="toc-text">死锁的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%BB%E9%94%81%E7%9A%84%E5%A4%84%E7%90%86%E7%AD%96%E7%95%A5"><span class="toc-number">2.17.</span> <span class="toc-text">死锁的处理策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%BB%E9%94%81%E9%81%BF%E5%85%8D"><span class="toc-number">2.18.</span> <span class="toc-text">死锁避免</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B%E5%92%8C%E8%A7%A3%E9%99%A4"><span class="toc-number">2.19.</span> <span class="toc-text">死锁检测和解除</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">3. 内存管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">3.1.</span> <span class="toc-text">内存管理的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2"><span class="toc-number">3.2.</span> <span class="toc-text">覆盖与交换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">3.3.</span> <span class="toc-text">连续分配管理方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">3.4.</span> <span class="toc-text">非连续分配管理方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">3.5.</span> <span class="toc-text">虚拟内存的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E5%88%86%E9%A1%B5%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">3.6.</span> <span class="toc-text">请求分页管理方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95"><span class="toc-number">3.7.</span> <span class="toc-text">页面置换算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%88%86%E9%85%8D%E7%AD%96%E7%95%A5"><span class="toc-number">3.8.</span> <span class="toc-text">页面分配策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%96%E5%8A%A8%E5%92%8C%E5%B7%A5%E4%BD%9C%E9%9B%86"><span class="toc-number">3.9.</span> <span class="toc-text">抖动和工作集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E5%88%86%E6%AE%B5%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">3.10.</span> <span class="toc-text">请求分段管理方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E6%AE%B5%E9%A1%B5%E5%BC%8F%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">3.11.</span> <span class="toc-text">请求段页式管理方式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86"><span class="toc-number">4.</span> <span class="toc-text">4. 文件管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">4.1.</span> <span class="toc-text">文件的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84"><span class="toc-number">4.2.</span> <span class="toc-text">文件的逻辑结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-number">4.3.</span> <span class="toc-text">目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB"><span class="toc-number">4.4.</span> <span class="toc-text">文件共享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%BF%9D%E6%8A%A4"><span class="toc-number">4.5.</span> <span class="toc-text">文件保护</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="toc-number">4.6.</span> <span class="toc-text">文件系统层次结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E5%AE%9E%E7%8E%B0"><span class="toc-number">4.7.</span> <span class="toc-text">目录实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0"><span class="toc-number">4.8.</span> <span class="toc-text">文件实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">4.9.</span> <span class="toc-text">磁盘的结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="toc-number">4.10.</span> <span class="toc-text">磁盘调度算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E7%9A%84%E7%AE%A1%E7%90%86"><span class="toc-number">4.11.</span> <span class="toc-text">磁盘的管理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%AE%A1%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">5. 输入输出管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E8%AE%BE%E5%A4%87"><span class="toc-number">5.1.</span> <span class="toc-text">IO设备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E7%AE%A1%E7%90%86%E7%9B%AE%E6%A0%87"><span class="toc-number">5.2.</span> <span class="toc-text">IO管理目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD"><span class="toc-number">5.3.</span> <span class="toc-text">IO管理功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E5%BA%94%E7%94%A8%E6%8E%A5%E5%8F%A3"><span class="toc-number">5.4.</span> <span class="toc-text">IO应用接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">5.5.</span> <span class="toc-text">设备控制器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">5.6.</span> <span class="toc-text">IO控制方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="toc-number">5.7.</span> <span class="toc-text">IO层次结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E8%B0%83%E5%BA%A6%E6%A6%82%E5%BF%B5"><span class="toc-number">5.8.</span> <span class="toc-text">IO调度概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E9%80%9F%E7%BC%93%E5%AD%98%E4%B8%8E%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="toc-number">5.9.</span> <span class="toc-text">高速缓存与缓冲区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E7%9A%84%E5%88%86%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6"><span class="toc-number">5.10.</span> <span class="toc-text">设备的分配与回收</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SPOOLing%EF%BC%88%E5%81%87%E8%84%B1%E6%9C%BA%E6%8A%80%E6%9C%AF%EF%BC%89"><span class="toc-number">5.11.</span> <span class="toc-text">SPOOLing（假脱机技术）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%85%E5%AE%8C%E5%96%84%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">6.</span> <span class="toc-text">待完善的内容</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列"><img src="/img/cover5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="剑指Offer系列"/></a><div class="content"><a class="title" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列">剑指Offer系列</a><time datetime="2022-04-06T11:10:42.000Z" title="发表于 2022-04-06 19:10:42">2022-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（五）——离线推荐"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐">基于大数据的图书推荐系统系统（五）——离线推荐</a><time datetime="2021-12-06T13:21:55.000Z" title="发表于 2021-12-06 21:21:55">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（四）——数据统计"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计">基于大数据的图书推荐系统系统（四）——数据统计</a><time datetime="2021-12-06T13:20:26.000Z" title="发表于 2021-12-06 21:20:26">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（三）——数据加载与存储"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储">基于大数据的图书推荐系统系统（三）——数据加载与存储</a><time datetime="2021-12-06T13:18:41.000Z" title="发表于 2021-12-06 21:18:41">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（二）——软件安装"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装">基于大数据的图书推荐系统系统（二）——软件安装</a><time datetime="2021-12-06T13:14:21.000Z" title="发表于 2021-12-06 21:14:21">2021-12-06</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/cover5.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By 月落</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

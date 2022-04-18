@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>数据库系统原理知识点整理 | 月落晓山的博客</title><meta name="keywords" content="复试,数据库"><meta name="author" content="月落"><meta name="copyright" content="月落"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="数据库知识点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库系统原理知识点整理">
+<meta property="og:url" content="https://wanfengyueluo.github.io/2020/04/05/shu-ju-ku-xi-tong-yuan-li-zhi-shi-dian-zheng-li/index.html">
+<meta property="og:site_name" content="月落晓山的博客">
+<meta property="og:description" content="数据库知识点">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wanfengyueluo.github.io/img/cover4.jpg">
+<meta property="article:published_time" content="2020-04-05T00:50:04.000Z">
+<meta property="article:modified_time" content="2021-06-03T13:31:51.773Z">
+<meta property="article:author" content="月落">
+<meta property="article:tag" content="复试">
+<meta property="article:tag" content="数据库">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wanfengyueluo.github.io/img/cover4.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://wanfengyueluo.github.io/2020/04/05/shu-ju-ku-xi-tong-yuan-li-zhi-shi-dian-zheng-li/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 月落","link":"链接: ","source":"来源: 月落晓山的博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数据库系统原理知识点整理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-06-03 21:31:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="月落晓山的博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover4.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">月落晓山的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据库系统原理知识点整理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-05T00:50:04.000Z" title="发表于 2020-04-05 08:50:04">2020-04-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-03T13:31:51.773Z" title="更新于 2021-06-03 21:31:51">2021-06-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%8D%E8%AF%95/">复试</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据库系统原理知识点整理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="数据库系统原理"><a href="#数据库系统原理" class="headerlink" title="数据库系统原理"></a>数据库系统原理</h1><h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><p>事务指满足<code>ACID</code>特性的一组操作，可以通过<code>Commit</code>提交一个事务，也可以使用<code>Rollback</code>进行回滚 。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/事务.png" alt="1583059258400"></p>
+<span id="more"></span>
+<h3 id="ACID"><a href="#ACID" class="headerlink" title="ACID"></a><code>ACID</code></h3><ol>
+<li>原子性(<code>Atomicity</code>)：事务是不可分割的最小单元，要么所有操作全部<code>Commit</code>成功，要么全部失败<code>Rollback</code></li>
+<li>一致性(<code>Consistency</code>)：数据库在事务执行前后保持一致性状态。在一致性状态下，所有事务对同一数据的读取结果都是相同的</li>
+<li>隔离性(<code>Isolation</code>)：一个事务所做修改在最终提交之前，对其他事务不可见</li>
+<li>持久性(<code>Durability</code>)：一旦事务提交，则所做的修改将会永远保存到数据库中</li>
+</ol>
+<ul>
+<li>只有满足一致性，事务执行结果才能正确</li>
+<li>无并发情况下，只要满足原子性，就可以满足一致性</li>
+<li>并发情况下，多个事务并发执行，需要满足原子性和隔离性，才能满足一致性</li>
+<li>事务持久性是为了应对系统崩溃的情况</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/ACID关系.png" alt="1583061131652"></p>
+<h2 id="并发一致性问题"><a href="#并发一致性问题" class="headerlink" title="并发一致性问题"></a>并发一致性问题</h2><p>在并发环境下，事务的隔离性难以保证，会出现很多并发一致性问题</p>
+<ol>
+<li>丢失修改：<code>T1</code>和<code>T2</code>都修改了一个数据<code>A</code>，<code>T1</code>先修改<code>A=10</code>，<code>T2</code>后修改<code>A=20</code>，<code>T2</code>的修改会覆盖<code>T1</code>的修改。</li>
+<li>读脏数据：<code>T1</code>修改了数据<code>A</code>，<code>T2</code>随后读取了数据<code>A</code>。若<code>T1</code>撤销了此次修改，<code>T2</code>读取的数据就是脏数据。</li>
+<li>不可重复读：<code>T1</code>读取了数据<code>A</code>，<code>T2</code>随后修改了数据<code>A</code>。若<code>T1</code>再次读取数据<code>A</code>，两次读取结果不同。</li>
+<li>幻影读：<code>T1</code>读取了某个范围的数据，<code>T2</code>随后在这个范围内插入数据，若<code>T1</code>再次读取这个范围内数据，两次读取结果不同。</li>
+</ol>
+<blockquote>
+<p>不可重复读与幻读相似，区别在于：不可重复读的重点在于修改，而幻读的重点在于新增或删除</p>
+</blockquote>
+<h2 id="封锁"><a href="#封锁" class="headerlink" title="封锁"></a>封锁</h2><h3 id="封锁粒度"><a href="#封锁粒度" class="headerlink" title="封锁粒度"></a>封锁粒度</h3><ul>
+<li>行级锁</li>
+<li>表级锁</li>
+</ul>
+<p>锁定的数据量越少，发生锁争用的可能就越小，系统并发程度就越高。</p>
+<p>加锁需要消耗资源，锁的各种操作（如获取锁、释放锁以及检查锁状态）都会增加系统开销，封锁粒度越小，系统开销越大。</p>
+<h3 id="封锁类型"><a href="#封锁类型" class="headerlink" title="封锁类型"></a>封锁类型</h3><ul>
+<li>读写锁<ul>
+<li>互斥锁（<code>Exclusive</code>），简写为<code>X</code>锁，又称写锁</li>
+<li>共享锁（<code>Shared</code>），简写为<code>S</code>锁，又称读锁</li>
+<li>一个事务对数据对象<code>A</code>加了<code>X</code>锁，可以对<code>A</code>进行读取和更新。加锁期间其他事务不能对<code>A</code>加任何锁</li>
+<li>一个事务对数据对象<code>A</code>加了<code>S</code>锁，可以对<code>A</code>进行读取操作，但是不能进行更新操作。加锁期间其他事务能对<code>A</code>加<code>S</code>锁，但是不能加<code>X</code>锁</li>
+</ul>
+</li>
+<li>意向锁<ul>
+<li>在存在行级锁和表级锁的情况下，事务<code>T</code>想要对表<code>A</code>加<code>X</code>锁，就需要先检测是否存在其他事务对表<code>A</code>或者表<code>A</code>中的任意一行加了锁，对<code>A</code>的每一行都检测一次，非常耗时</li>
+<li>意向锁在<code>X/S</code>锁之上引入<code>IX/IS</code>，<code>IX/IS</code>都是表锁，用来表示一个事务想要在表中的某个数据行上加了<code>X</code>锁或者<code>S</code>锁，有如下规定：<ul>
+<li>一个事务获得某个数据行对象的<code>S</code>锁之前，必须先获得表的<code>IS</code>锁或者更强的锁</li>
+<li>一个事务获得某个数据行对象的<code>X</code>锁之前，必须先获得表的<code>IX</code>锁</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>任意<code>IX/IS</code>锁之间兼容，它们只表示想要对表加锁，而不是真正的加锁</li>
+</ul>
+<h3 id="封锁协议"><a href="#封锁协议" class="headerlink" title="封锁协议"></a>封锁协议</h3><ul>
+<li><p>三级封锁协议</p>
+<ul>
+<li><p>一级封锁协议</p>
+<p>事务<code>T</code>想要修改数据<code>A</code>时必须加<code>X</code>锁，直到<code>T</code>结束才释放锁，可以解决丢失修改问题，因为不能同时有两个事务对同一个数据进行修改，事务的修改不会被覆盖</p>
+</li>
+<li><p>二级封锁协议</p>
+<p>在一级的基础上，要求读取数据<code>A</code>时必须加<code>S</code>锁，读取完释放<code>S</code>锁，可以解决读脏数据问题，因为根据一级封锁协议，数据加了<code>X</code>锁，其他事务就不能加<code>S</code>锁，也就不能读入数据</p>
+</li>
+<li><p>三级封锁协议</p>
+<p>在二级的基础上，要求读取数据<code>A</code>时必须加<code>S</code>锁，直到事务结束才释放<code>S</code>锁，可以解决不可重复读问题，因为读取<code>A</code>时，其他事务不能对数据<code>A</code>加<code>X</code>锁，避免在读期间数据发生变化</p>
+</li>
+</ul>
+</li>
+<li><p>两段锁协议</p>
+<p>加锁和解锁分为两个阶段进行</p>
+</li>
+</ul>
+<blockquote>
+<p><code>MySQL</code>实现事务<code>ACID</code>特性的方式总结：</p>
+<ul>
+<li>原子性：使用<code>undo log</code>来实现，如果事务执行过程中出错或者用户执行了<code>rollback</code>，系统通过<code>undo log</code>日志返回事务开始的状态</li>
+<li>持久性：使用<code>redo log</code>来实现，只要<code>redo log</code>日志持久化了，当系统崩溃，可以通过<code>redo log</code>把数据恢复</li>
+<li>隔离性：通过锁以及<code>MVCC</code>来实现</li>
+<li>一致性：通过回滚、恢复以及并发情况下的隔离性从而实现一致性</li>
+</ul>
+</blockquote>
+<h2 id="隔离级别"><a href="#隔离级别" class="headerlink" title="隔离级别"></a>隔离级别</h2><ul>
+<li><p>未提交读（<code>READ UNCOMMITED</code>）</p>
+<p>事务中的修改，即使没有提交，对其它事务也是可见的</p>
+</li>
+<li><p>提交读（<code>READ COMMITED</code>）</p>
+<p>一个事务所做修改在提交之前对其它事务不可见</p>
+</li>
+<li><p>可重复读（<code>REPEATABLE READ</code>）</p>
+<p>保证在同一个事务中多次读取同一数据的结果是一样的</p>
+</li>
+<li><p>可串行化（<code>SERIALIZABLE</code>）</p>
+<p>强制事务串行执行，不会出现并发一致性问题，需要加锁保证同一时间只有一个事务执行</p>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/隔离级别能解决的并发一致性问题.png" alt="1583138319664"></p>
+<h2 id="多版本并发控制"><a href="#多版本并发控制" class="headerlink" title="多版本并发控制"></a>多版本并发控制</h2><h2 id="Next-Key-Locks"><a href="#Next-Key-Locks" class="headerlink" title="Next-Key Locks"></a>Next-Key Locks</h2><h2 id="关系数据库设计理论"><a href="#关系数据库设计理论" class="headerlink" title="关系数据库设计理论"></a>关系数据库设计理论</h2><ul>
+<li><p>函数依赖</p>
+</li>
+<li><p>异常</p>
+<ul>
+<li>冗余数据</li>
+<li>修改异常</li>
+<li>删除异常</li>
+<li>插入异常</li>
+</ul>
+</li>
+<li><p>范式</p>
+<p>范式理论是为了解决上述四种异常</p>
+<p>高级别范式依赖于低级别范式，<code>1NF</code>是最低级别的范式</p>
+<ul>
+<li><p>第一范式（<code>1NF</code>）</p>
+<p>属性不可分</p>
+</li>
+<li><p>第二范式（<code>2NF</code>）</p>
+<p>每个非主属性完全函数依赖于键码</p>
+<p>可以通过分解来满足</p>
+<p>分解前</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/2NF-1.png" alt="1583139160746"></p>
+<p>以上学生课程关系中，{Sno，Cname}为键码，有如下函数依赖：</p>
+<ul>
+<li>Sno -&gt; Sname,Sdept</li>
+<li>Sdept -&gt; Mname</li>
+<li>Sno ，Cname -&gt; Grade</li>
+</ul>
+<p>Grade完全函数依赖于键码，没有任何冗余数据</p>
+<p>Sname,Sdept,Mname部分依赖于键码，当一个学生选修多门课时，就会出现冗余</p>
+<p>分解后</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/2NF-2.png" alt="1583139435346"></p>
+<p>函数依赖：</p>
+<ul>
+<li>Sno -&gt; Sname,Sdept</li>
+<li>Sdept -&gt; Mname</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/2NF-3.png" alt="1583139483382"></p>
+<p>函数依赖：</p>
+<ul>
+<li>Sno,Cname -&gt; Grade</li>
+</ul>
+</li>
+<li><p>第三范式（<code>3NF</code>）</p>
+<p>非主属性不传递函数依赖于键码</p>
+<p>上面<code>关系-1</code>中存在如下传递函数依赖</p>
+<ul>
+<li>Sno -&gt; Sdept -&gt; Mname</li>
+</ul>
+<p>可以进行分解：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/3NF-1.png" alt="1583139714931"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/3NF-2.png" alt="1583139749745"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ER图"><a href="#ER图" class="headerlink" title="ER图"></a>ER图</h2><p>Entity-Relationship，由实体、属性、联系组成</p>
+<ul>
+<li><p>实体的三种联系</p>
+<p>包含一对一、一对多、多对多</p>
+<ul>
+<li>若A到B是一对多关系，一个带箭头的线段指向B</li>
+<li>若A到B是一对一，两个带箭头的线段</li>
+<li>若A到B是多对多，两个不带箭头的线段</li>
+</ul>
+</li>
+</ul>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><h3 id="索引使用的场景"><a href="#索引使用的场景" class="headerlink" title="索引使用的场景"></a>索引使用的场景</h3><ul>
+<li>对于非常小的表，大部分情况下简单的全表扫描比建立索引更高效</li>
+<li>对于中大型的表，索引非常有效</li>
+<li>对于特大的表，建立和维护索引的代价会变大，需要用到一种技术直接区分出需要查询的一组数据而不是一条条记录的匹配，例如使用分区技术</li>
+</ul>
+<h3 id="索引的原则"><a href="#索引的原则" class="headerlink" title="索引的原则"></a>索引的原则</h3><ul>
+<li>选择唯一性索引</li>
+<li>为经常需要排序、分组和联合操作的字段建立索引</li>
+<li>为经常作为查询条件的字段建立索引</li>
+<li>限制索引的数目</li>
+<li>尽量使用数据量少的索引</li>
+<li>尽量使用前缀来索引</li>
+<li>删除不再使用或者很少使用的索引</li>
+<li>最左前缀匹配原则</li>
+<li>尽量选择区分度高的列作为索引</li>
+<li>索引列不能参与计算，带函数的查询不参与索引</li>
+<li>尽量的扩展索引，不要新建索引</li>
+</ul>
+<h3 id="B-Tree原理"><a href="#B-Tree原理" class="headerlink" title="B Tree原理"></a>B Tree原理</h3><ul>
+<li>B-Tree</li>
+<li>B+Tree</li>
+</ul>
+<h2 id="MySQL事物实现原理"><a href="#MySQL事物实现原理" class="headerlink" title="MySQL事物实现原理"></a>MySQL事物实现原理</h2><h3 id="redo-log"><a href="#redo-log" class="headerlink" title="redo log"></a>redo log</h3><h3 id="undo-log"><a href="#undo-log" class="headerlink" title="undo log"></a>undo log</h3><h3 id="MVCC"><a href="#MVCC" class="headerlink" title="MVCC"></a>MVCC</h3><blockquote>
+<p>参考文章：</p>
+<p><a target="_blank" rel="noopener" href="https://cyc2018.github.io/CS-Notes/#/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86">cyc2018的数据库系统原理</a></p>
+<p><a target="_blank" rel="noopener" href="https://frank-lam.github.io/fullstack-tutorial/#/MySQL">https://frank-lam.github.io/fullstack-tutorial/#/MySQL</a></p>
+<p>朱小厮的博客：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzU0MzQ5MDA0Mw==&amp;mid=2247489849&amp;idx=1&amp;sn=cbac2a6ad99ac466f2ba8d69507fd2fe&amp;chksm=fb0bf3adcc7c7abb565a9865e14b357888f7b7b78874b74c18bfdc5a4278ec2503b258c27730&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1586483972757&amp;sharer_shareid=e3463ca9628feab22dbf5fc497900b41&amp;key=6d5af8aaa0ed9df559207539055a6813af266c37302309a632bc6c07968283391f554512599ed10c1beaa097ded2ff1a0266e8ee7fddcbe20266483a50b219f2b55714f8f7705908e16de18aaad16cc7&amp;ascene=1&amp;uin=MzM1NjEzNzAyNA%3D%3D&amp;devicetype=Windows+10&amp;version=62080079&amp;lang=zh_CN&amp;exportkey=A27MC6usOkCWf1X%2BX3TqWbo%3D&amp;pass_ticket=CGHJEHpFsnbf0i0YNRDqRwSZLKgGqSn91iH6%2FFs2FB4MvnptwIs6DIrYZFOlG6SX">分布式事务科普</a></p>
+</blockquote>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%A4%8D%E8%AF%95/">复试</a><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></div><div class="post_share"><div class="social-share" data-image="/img/cover4.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/04/05/tu-jie-http-du-shu-bi-ji/"><img class="prev-cover" src="/img/cover4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">图解HTTP读书笔记</div></div></a></div><div class="next-post pull-right"><a href="/2020/04/04/2020-4-4/"><img class="next-cover" src="/img/cover4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">2020-4-4</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/04/05/tu-jie-http-du-shu-bi-ji/" title="图解HTTP读书笔记"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-05</div><div class="title">图解HTTP读书笔记</div></div></a></div><div><a href="/2020/04/02/ji-suan-ji-wang-luo-zhi-shi-dian-zheng-li/" title="计算机网络知识点整理"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-02</div><div class="title">计算机网络知识点整理</div></div></a></div><div><a href="/2020/03/31/cao-zuo-xi-tong-zhi-shi-dian-zheng-li/" title="操作系统知识点整理"><img class="cover" src="/img/cover5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-03-31</div><div class="title">操作系统知识点整理</div></div></a></div><div><a href="/2020/04/01/ruan-jian-gong-cheng-zhi-shi-dian-zheng-li/" title="软件工程知识点整理"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-01</div><div class="title">软件工程知识点整理</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">月落</div><div class="author-info__description">学习记录，日常随笔</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Wanfengyueluo/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Wanfengyueluo" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wanfengwind@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">但行好事，莫问前程~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">数据库系统原理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-number">1.1.</span> <span class="toc-text">事务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ACID"><span class="toc-number">1.1.1.</span> <span class="toc-text">ACID</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text">并发一致性问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%81%E9%94%81"><span class="toc-number">1.3.</span> <span class="toc-text">封锁</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E9%94%81%E7%B2%92%E5%BA%A6"><span class="toc-number">1.3.1.</span> <span class="toc-text">封锁粒度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E9%94%81%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.3.2.</span> <span class="toc-text">封锁类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E9%94%81%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.3.3.</span> <span class="toc-text">封锁协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB"><span class="toc-number">1.4.</span> <span class="toc-text">隔离级别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E7%89%88%E6%9C%AC%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6"><span class="toc-number">1.5.</span> <span class="toc-text">多版本并发控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Key-Locks"><span class="toc-number">1.6.</span> <span class="toc-text">Next-Key Locks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E7%90%86%E8%AE%BA"><span class="toc-number">1.7.</span> <span class="toc-text">关系数据库设计理论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ER%E5%9B%BE"><span class="toc-number">1.8.</span> <span class="toc-text">ER图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95"><span class="toc-number">1.9.</span> <span class="toc-text">索引</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E4%BD%BF%E7%94%A8%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-number">1.9.1.</span> <span class="toc-text">索引使用的场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E5%8E%9F%E5%88%99"><span class="toc-number">1.9.2.</span> <span class="toc-text">索引的原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#B-Tree%E5%8E%9F%E7%90%86"><span class="toc-number">1.9.3.</span> <span class="toc-text">B Tree原理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL%E4%BA%8B%E7%89%A9%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-number">1.10.</span> <span class="toc-text">MySQL事物实现原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#redo-log"><span class="toc-number">1.10.1.</span> <span class="toc-text">redo log</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undo-log"><span class="toc-number">1.10.2.</span> <span class="toc-text">undo log</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MVCC"><span class="toc-number">1.10.3.</span> <span class="toc-text">MVCC</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列"><img src="/img/cover5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="剑指Offer系列"/></a><div class="content"><a class="title" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列">剑指Offer系列</a><time datetime="2022-04-06T11:10:42.000Z" title="发表于 2022-04-06 19:10:42">2022-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（五）——离线推荐"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐">基于大数据的图书推荐系统系统（五）——离线推荐</a><time datetime="2021-12-06T13:21:55.000Z" title="发表于 2021-12-06 21:21:55">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（四）——数据统计"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计">基于大数据的图书推荐系统系统（四）——数据统计</a><time datetime="2021-12-06T13:20:26.000Z" title="发表于 2021-12-06 21:20:26">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（三）——数据加载与存储"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储">基于大数据的图书推荐系统系统（三）——数据加载与存储</a><time datetime="2021-12-06T13:18:41.000Z" title="发表于 2021-12-06 21:18:41">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（二）——软件安装"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装">基于大数据的图书推荐系统系统（二）——软件安装</a><time datetime="2021-12-06T13:14:21.000Z" title="发表于 2021-12-06 21:14:21">2021-12-06</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/cover4.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By 月落</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

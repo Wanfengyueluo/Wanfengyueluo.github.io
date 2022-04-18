@@ -1,0 +1,365 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Java核心技术卷一 | 月落晓山的博客</title><meta name="keywords" content="Java,Java核心技术卷"><meta name="author" content="月落"><meta name="copyright" content="月落"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Java核心技术卷一笔记，从零开始摸爬滚打~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java核心技术卷一">
+<meta property="og:url" content="https://wanfengyueluo.github.io/2020/08/19/java-he-xin-ji-zhu-juan-yi/index.html">
+<meta property="og:site_name" content="月落晓山的博客">
+<meta property="og:description" content="Java核心技术卷一笔记，从零开始摸爬滚打~">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wanfengyueluo.github.io/img/cover2.jpg">
+<meta property="article:published_time" content="2020-08-19T12:22:53.000Z">
+<meta property="article:modified_time" content="2021-06-03T13:31:51.760Z">
+<meta property="article:author" content="月落">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Java核心技术卷">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wanfengyueluo.github.io/img/cover2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://wanfengyueluo.github.io/2020/08/19/java-he-xin-ji-zhu-juan-yi/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 月落","link":"链接: ","source":"来源: 月落晓山的博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Java核心技术卷一',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-06-03 21:31:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="月落晓山的博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover2.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">月落晓山的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java核心技术卷一</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-19T12:22:53.000Z" title="发表于 2020-08-19 20:22:53">2020-08-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-03T13:31:51.760Z" title="更新于 2021-06-03 21:31:51">2021-06-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java/">Java</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java核心技术卷一"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Day01"><a href="#Day01" class="headerlink" title="Day01"></a>Day01</h1><ul>
+<li>[x] P164</li>
+</ul>
+<h3 id="安装库源文件和文档"><a href="#安装库源文件和文档" class="headerlink" title="安装库源文件和文档"></a>安装库源文件和文档</h3><p>库源文件在jdk/src.zip中</p>
+<p>使用<code>jar xvf  jdk/src.zip</code>解压</p>
+<p>更多源代码访问<a target="_blank" rel="noopener" href="http://jdk8.java.net">网站</a></p>
+<p>文档独立于JDK，需要单独下载</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a += b += c <span class="comment">//等价于a += (b += c)  右结合运算符</span></span><br></pre></td></tr></tbody></table></figure>
+<p>不要使用<code>==</code>来检测两个字符串是否相等，该运算符只能确定两个字符串是否放置在同一位置上</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String s1 = "Hello";</span><br><span class="line">if(s1=="Hello")...//可能为true</span><br><span class="line">if(s1.substring(0,3)=="Hel")...//可能为false</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="多态与动态绑定"><a href="#多态与动态绑定" class="headerlink" title="多态与动态绑定"></a>多态与动态绑定</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Manager是Employee的子类</span></span><br><span class="line">Manager boss = <span class="keyword">new</span> Manager();</span><br><span class="line">Employee employee = <span class="keyword">new</span> Employee();</span><br><span class="line">Employee[] staff = <span class="keyword">new</span> Employee[<span class="number">2</span>];</span><br><span class="line">staff[<span class="number">0</span>] = boss;</span><br><span class="line">staff[<span class="number">1</span>] = employee;</span><br><span class="line"><span class="keyword">for</span>(Employee e:staff){</span><br><span class="line">    System.out.plintln(e.getSalaty())</span><br><span class="line">}</span><br><span class="line"><span class="comment">//当e引用Employee对象是，调用Employee类中的getSalary()</span></span><br><span class="line"><span class="comment">//当e引用Manager对象是，调用Manager类中的getSalary()</span></span><br><span class="line"><span class="comment">//一个对象变量(如：e)可以指示多种实际类型的现象叫多态(polymorphism)</span></span><br><span class="line"><span class="comment">//在运行时能够自动选择调用哪个方法的现象叫做动态绑定(dynamic binding)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//对象的类型转换</span></span><br><span class="line">Manager boss = (Manager)staff[<span class="number">0</span>];  <span class="comment">//</span></span><br><span class="line">Manager boss = (Manager)staff[<span class="number">1</span>];  <span class="comment">//由上向下的转换 error</span></span><br><span class="line"><span class="comment">//可以在转换之前进行判断</span></span><br><span class="line"><span class="keyword">if</span>(staff[<span class="number">1</span>] <span class="keyword">instanceof</span> Manager){</span><br><span class="line">    boss = (Manager)staff[<span class="number">1</span>];</span><br><span class="line">    ...</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="一般情况下，应该尽量少用类型转换和instanceof"><a href="#一般情况下，应该尽量少用类型转换和instanceof" class="headerlink" title="一般情况下，应该尽量少用类型转换和instanceof"></a>一般情况下，应该尽量少用类型转换和instanceof</h5><h3 id="hashCode"><a href="#hashCode" class="headerlink" title="hashCode"></a>hashCode</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//hashCode方法定义在Object类中，因此每个对象都有一个默认的散列码，其值为对象的存储地址</span></span><br><span class="line">String s = <span class="string">"OK"</span>;</span><br><span class="line">StringBuilder sb = <span class="keyword">new</span> StringBuilder(s);</span><br><span class="line">System.out.println(s.hasCode()+<span class="string">" "</span>+sb.hashCode());</span><br><span class="line">String t = <span class="keyword">new</span> String(<span class="string">"OK"</span>);</span><br><span class="line">StringBuilder tb = <span class="keyword">new</span> StringBuilder(t);</span><br><span class="line">System.out.println(t.hasCode()+<span class="string">" "</span>+tb.hashCode());</span><br><span class="line"><span class="comment">//结果:   对象     散列码</span></span><br><span class="line"><span class="comment">//		  s       2556</span></span><br><span class="line"><span class="comment">//        sb      20526976</span></span><br><span class="line"><span class="comment">//        t       2556</span></span><br><span class="line"><span class="comment">//        tb      20527144</span></span><br><span class="line"><span class="comment">//s和t的散列码相同，因为字符串的散列码是由内容导出的</span></span><br><span class="line"><span class="comment">//sb和tb散列码不同，因为StringBuilder没有定义hashCode方法，其散列码由Object类默认的hashCode方法导出的对象存储地址</span></span><br></pre></td></tr></tbody></table></figure>
+<h5 id="建议自定义类中添加toString方法"><a href="#建议自定义类中添加toString方法" class="headerlink" title="建议自定义类中添加toString方法"></a>建议自定义类中添加toString方法</h5><h3 id="自动装箱与自动拆箱"><a href="#自动装箱与自动拆箱" class="headerlink" title="自动装箱与自动拆箱"></a>自动装箱与自动拆箱</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自动装箱</span></span><br><span class="line">ArrayList&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">list.add(<span class="number">3</span>);<span class="comment">//将会自动变成</span></span><br><span class="line">list.add(Integer.valueOf(<span class="number">3</span>));</span><br><span class="line"><span class="comment">//自动拆箱</span></span><br><span class="line"><span class="keyword">int</span> n = list.get(i);<span class="comment">//将会自动变成</span></span><br><span class="line"><span class="keyword">int</span> n = list.get(i).intValue();</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li><h5 id="自动装箱规范要求boolean-byte-char-lt-127-介于-128-127之间的short和int被包装到固定的对象中。"><a href="#自动装箱规范要求boolean-byte-char-lt-127-介于-128-127之间的short和int被包装到固定的对象中。" class="headerlink" title="自动装箱规范要求boolean,byte,char<=127,介于 -128~127之间的short和int被包装到固定的对象中。"></a>自动装箱规范要求boolean,byte,char&lt;=127,介于 -128~127之间的short和int被包装到固定的对象中。</h5></li>
+<li><h5 id="如果在一个表达式中混合使用Integer和Double类型，Integer就会自动拆箱，提升为double，再装箱为Double"><a href="#如果在一个表达式中混合使用Integer和Double类型，Integer就会自动拆箱，提升为double，再装箱为Double" class="headerlink" title="如果在一个表达式中混合使用Integer和Double类型，Integer就会自动拆箱，提升为double，再装箱为Double"></a>如果在一个表达式中混合使用Integer和Double类型，Integer就会自动拆箱，提升为double，再装箱为Double</h5></li>
+</ul>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>{</span><br><span class="line">    ...</span><br><span class="line">}<span class="keyword">catch</span>(Exception e){</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>[x] P239</li>
+</ul>
+<h1 id="Day02"><a href="#Day02" class="headerlink" title="Day02"></a>Day02</h1><h3 id="浅拷贝与深拷贝"><a href="#浅拷贝与深拷贝" class="headerlink" title="浅拷贝与深拷贝"></a>浅拷贝与深拷贝</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//根据对象属性的拷贝程度（基本数据类型和引用类型）分为浅拷贝和深拷贝</span></span><br><span class="line"><span class="comment">//浅拷贝：创建一个新对象，拥有原始对象属性值的精确拷贝。若属性是基本数据类型，拷贝的就是属性的值；</span></span><br><span class="line"><span class="comment">//如果属性是引用类型，拷贝的就是内存地址</span></span><br><span class="line"><span class="comment">//因此当一个对象改变了这个地址就会影响到另外的对象</span></span><br><span class="line"><span class="comment">//即默认拷贝构造函数只是对对象进行浅拷贝复制（逐个成员一次拷贝），即只复制对象空间而不复制资源</span></span><br><span class="line"><span class="comment">//实现浅拷贝的类需要实现Cloneable接口，覆盖clone方法</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//深拷贝：在拷贝引用类型属性时，为其另辟独立的内存空间，实现真正内容上的拷贝</span></span><br><span class="line"><span class="comment">//逐层实现Cloneable接口</span></span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>[x] 258</li>
+</ul>
+<h3 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h3><h3 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h3><h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//所有的异常都是由Throwable继承而来，在下一层分解为Error和Exception两个分支</span></span><br><span class="line"><span class="comment">//Error类描述Java运行时系统的内部错误和资源耗尽错误</span></span><br><span class="line"><span class="comment">//Exception又分解为两个分支</span></span><br><span class="line"><span class="comment">//一个分支派生于RuntimeException，另一个分支包含其他异常</span></span><br><span class="line"><span class="comment">//由程序错误导致的异常属于RuntimeException</span></span><br><span class="line"><span class="comment">//程序本身没有问题，但由于像I/O错误这类问题导致的异常属于其他异常</span></span><br></pre></td></tr></tbody></table></figure>
+<h5 id="派生于RuntimeException的异常包含以下情况："><a href="#派生于RuntimeException的异常包含以下情况：" class="headerlink" title="派生于RuntimeException的异常包含以下情况："></a>派生于RuntimeException的异常包含以下情况：</h5><ul>
+<li>错误的类型转换</li>
+<li>数组访问越界</li>
+<li>访问null指针</li>
+</ul>
+<h5 id="不是派生于RuntimeException的异常："><a href="#不是派生于RuntimeException的异常：" class="headerlink" title="不是派生于RuntimeException的异常："></a>不是派生于RuntimeException的异常：</h5><ul>
+<li>试图在文件尾部后面读取数据</li>
+<li>试图打开一个不存在的文件</li>
+<li>试图根据给定的字符串查找Class对象，但这个字符串表示的类并不存在</li>
+</ul>
+<h5 id="规则：如果出现RuntimeException异常，那么就一定是你的问题"><a href="#规则：如果出现RuntimeException异常，那么就一定是你的问题" class="headerlink" title="规则：如果出现RuntimeException异常，那么就一定是你的问题"></a>规则：如果出现RuntimeException异常，那么就一定是你的问题</h5><ul>
+<li>数组下标越界异常：ArrayIndexOutOfBoundsException</li>
+<li>null指针异常：NullPointerException</li>
+</ul>
+<h5 id="Java语言规范将派生于Error类或者RuntimeException类的所有异常称为非受查异常-unchecked-其他异常称为受查异常-checked"><a href="#Java语言规范将派生于Error类或者RuntimeException类的所有异常称为非受查异常-unchecked-其他异常称为受查异常-checked" class="headerlink" title="Java语言规范将派生于Error类或者RuntimeException类的所有异常称为非受查异常(unchecked),其他异常称为受查异常(checked)"></a>Java语言规范将派生于Error类或者RuntimeException类的所有异常称为<em>非受查异常</em>(unchecked),其他异常称为受查异常(checked)</h5><p>运行时异常,不可查，不需要显示捕捉</p>
+<p>可查异常，必须显示捕捉或者抛出</p>
+<h4 id="断言和日志"><a href="#断言和日志" class="headerlink" title="断言和日志"></a>断言和日志</h4><h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><h1 id="Java核心技术与面试指南"><a href="#Java核心技术与面试指南" class="headerlink" title="Java核心技术与面试指南"></a>Java核心技术与面试指南</h1><ul>
+<li>[ ] P96</li>
+<li>[ ] P87</li>
+<li>[ ] P107</li>
+</ul>
+<p>定义基本数据类型的变量，对象的引用，还有函数调用的现场保存都使用<code>JVM</code>栈空间</p>
+<p>通过<code>new</code>和构造器创建的对象放在堆空间，堆事垃圾收集器管理的主要区域</p>
+<p>栈用光StackOverflowError</p>
+<p>堆和常量池不足OutOfMemoryError</p>
+<ul>
+<li>两个对象相同(equals返回true)，则对象的hashCode值一定相同</li>
+<li>当两个对象的hashCode相同，它们并不一定相同</li>
+<li>equals：<ul>
+<li>自反性(x.equals(x)==true)</li>
+<li>对称性(x.equals(y)==true)(y.equals(x)==true)</li>
+<li>传递性(x.equals(y)==true)(y.equals(z)==true)(x.equals(z)==true)</li>
+<li>一致性(x,y引用的对象信息没有改变时，x.equals(y)返回值不变)</li>
+</ul>
+</li>
+</ul>
+<p>sleep()进入阻塞态 对应TIMED_WAITING</p>
+<p>yield()进入就绪态 </p>
+<p>join() 对应WAITING</p>
+<h5 id="两阶段终止模式"><a href="#两阶段终止模式" class="headerlink" title="两阶段终止模式"></a>两阶段终止模式</h5><p>InterruptException会重置isInterrupted为false</p>
+<p>isInterrupted不会清除打断标记</p>
+<p>Interrupted会清除打断标记</p>
+<h5 id="Transient-阻止用此关键字修饰的变量序列化，当对象反序列化时该变量不会被持久化和恢复，只能修饰变量"><a href="#Transient-阻止用此关键字修饰的变量序列化，当对象反序列化时该变量不会被持久化和恢复，只能修饰变量" class="headerlink" title="Transient:阻止用此关键字修饰的变量序列化，当对象反序列化时该变量不会被持久化和恢复，只能修饰变量"></a>Transient:阻止用此关键字修饰的变量序列化，当对象反序列化时该变量不会被持久化和恢复，只能修饰变量</h5><h5 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h5><ul>
+<li>按流向分：输入流和输出流</li>
+<li>按操作单元分：字节流和字符流</li>
+<li><p>按流的角色分：节点流和处理流</p>
+</li>
+<li><p>InputStream/Reader:所有输入流的基类，前者字节输入流，后者字符输入流</p>
+</li>
+<li><p>OutputStream/Writer：所有输出流的基类，前者字节输出流，后者字符输出流</p>
+</li>
+<li><p>Reader-字符读取</p>
+<ul>
+<li>节点流<ul>
+<li>FileReader(文件操作)</li>
+<li>PipedReader(管道操作)</li>
+<li>CharArrayReader(数组操作)</li>
+</ul>
+</li>
+<li>处理流<ul>
+<li>BufferedReader(缓冲操作)</li>
+<li>InputStreamReader(转化控制)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Writer-字符写出<ul>
+<li>节点流<ul>
+<li>FileWriter</li>
+<li>PipedWriter</li>
+<li>CharArrayWriter</li>
+</ul>
+</li>
+<li>处理流<ul>
+<li>BufferedWriter</li>
+<li>OutputStreamWriter</li>
+<li>PrintWriter(打印控制)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>InputStream-字节读取<ul>
+<li>节点流<ul>
+<li>FileInputStream</li>
+<li>PipedInputStream</li>
+<li>ByteArrayInputStream</li>
+</ul>
+</li>
+<li>处理流<ul>
+<li>BufferedInputStream</li>
+<li>DataInputStream(基本数据类型操作)</li>
+<li>ObjectInputStream(对象序列化操作)</li>
+<li>SequenceInputStream</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>OutputStream-字节读出</p>
+<ul>
+<li>节点流<ul>
+<li>FileOutputStream</li>
+<li>PipedOutputStream</li>
+<li>ByteArrayOutputStream</li>
+</ul>
+</li>
+<li>处理流<ul>
+<li>BufferedOutputStream</li>
+<li>DataOutputStream</li>
+<li>ObjectOutputStream</li>
+<li>PrintStream</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>BIO：同步阻塞I/O</p>
+</li>
+<li>NIO：同步非阻塞I/O</li>
+<li>AIO：异步非阻塞I/O（NIO2）</li>
+</ul>
+<p>synchronized</p>
+<p>语法</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">synchronized</span>(对象){</span><br><span class="line">    临界区</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>{</span><br><span class="line">        count++;</span><br><span class="line">    }</span><br><span class="line">	<span class="comment">//等价于</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">increment</span><span class="params">()</span></span>{</span><br><span class="line">        <span class="keyword">synchronized</span> (<span class="keyword">this</span>){</span><br><span class="line">            count++;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">//锁方法相当于锁this对象</span></span><br><span class="line"><span class="comment">//-----------------------------------------------</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>{</span><br><span class="line">        </span><br><span class="line">    }</span><br><span class="line">    <span class="comment">//等价于</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>{</span><br><span class="line">        <span class="keyword">synchronized</span> (Test.class){</span><br><span class="line">            </span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">//锁静态方法相当于锁类对象</span></span><br><span class="line">    </span><br></pre></td></tr></tbody></table></figure>
+<p>private与final提供安全的意义所在，开闭原则中的闭</p>
+<p>常见的线程安全类</p>
+<ul>
+<li>String</li>
+<li>Integer等包装类</li>
+<li>StringBuffer</li>
+<li>Random</li>
+<li>Vector</li>
+<li>HashTable</li>
+<li>java.util.concurrent包下的类</li>
+</ul>
+<p>这里线程安全是指，多个线程调用同一个实例的某个方法时，是线程安全的，即</p>
+<ul>
+<li>它们的每个方法是原子的</li>
+<li>但它们多个方法的组合不是原子的</li>
+</ul>
+<p><strong>==与equals()</strong>:</p>
+<p><strong>compareTo()</strong>:</p>
+<h2 id="关于JVM、JDK、JRE"><a href="#关于JVM、JDK、JRE" class="headerlink" title="关于JVM、JDK、JRE"></a>关于JVM、JDK、JRE</h2><p>Java虚拟机(JVM)是运行Java字节码的虚拟机，JVM针对不同系统有不同的实现。</p>
+<p>Java程序从源代码到运行一般有三步：</p>
+<p><code>*.java文件</code>—&gt;<code>*.class文件</code>—&gt;机器可执行的二进制代码</p>
+<p>JDK(Java Develpoment Kit)，是功能齐全的Java SDK，拥有JRE的一切并且还有编译器(javac)和工具(如javadoc和jdb)，能够创建和编译程序。</p>
+<p>JRE是Java运行时环境，是运行已编译Java程序所需所有内容的集合，包括JVM，Java类库，Java命令和其他的基础构件，不能创建新程序。</p>
+<h2 id="关于重写-override-与重载-overload"><a href="#关于重写-override-与重载-overload" class="headerlink" title="关于重写(override)与重载(overload)"></a>关于重写(override)与重载(overload)</h2><p><strong>重载</strong></p>
+<p>完整描述一个方法，需要指出方法名和参数类型，这就是方法的签名。当多个方法有相同名字、不同参数就会产生重载。返回类型不是方法签名的一部分。</p>
+<p><strong>重写</strong></p>
+<p>子类对父类的允许访问的方法的实现进行重新编写，方法名、参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类。</p>
+<h2 id="关于封装、继承、多态"><a href="#关于封装、继承、多态" class="headerlink" title="关于封装、继承、多态"></a>关于封装、继承、多态</h2><p><strong>封装</strong></p>
+<p>封装是把一个对象的属性私有化，并提供一些可以被外部访问的属性的方法。</p>
+<p><strong>继承</strong></p>
+<p>继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或功能，也可以使用父类的功能。</p>
+<blockquote>
+<p>需要注意的三点：</p>
+<ol>
+<li>子类拥有父类对象所有的属性和方法(包括私有属性和私有方法)，但父类中的私有属性和方法子类无法访问，只是拥有。</li>
+<li>子类可以对父类进行扩展。</li>
+<li>子类可以用自己的方式实现父类的方法。</li>
+</ol>
+</blockquote>
+<p><strong>多态</strong></p>
+<p>多态就是指程序中定义的引用变量所指向的具体类型和通过该引用变量发出的方法调用在编程时并不确定，而是在程序运行期间才确定，即一个引用变量到底会指向哪个类的实例对象，该引用变量发出的方法调用到底是哪个类中实现的方法，必须在程序运行期间才能决定。</p>
+<p>在Java中有两种方式实现多态：继承（多个子类对同一方法的重写）和接口（实现接口并覆盖接口中同一方法）。</p>
+<p><strong>继承与实现</strong></p>
+<p><strong>继承与组合</strong></p>
+<p><strong>Java只有值传递</strong></p>
+<p><strong>成员变量和方法作用域</strong></p>
+<ul>
+<li>default：表明该成员变量或者方法只有自己和其位于同一个包的内可见,其他包内的类不能访问,即便是它的子类。</li>
+<li>public：表明该成员变量或者方法是对所有类或者对象都是可见的,所有类或者对象都可以直接访问。</li>
+<li>protected：表明成员变量或者方法对类自身,与同在一个包中的其他类可见,其他包下的类不可访问,除非是他的子类。</li>
+<li>private：表明该成员变量或者方法是私有的,只有当前类对其具有访问权限,除此之外其他类或者对象都没有访问权限.子类也没有访问权限。</li>
+</ul>
+<h2 id="关于接口和抽象类"><a href="#关于接口和抽象类" class="headerlink" title="关于接口和抽象类"></a>关于接口和抽象类</h2><ul>
+<li><p>在Java中，接口不是类，而是对类的一组需求描述，并且不能通过new实例化一个接口，但是可以声明接口的变量，接口变量必须引用实现了接口的类对象。</p>
+</li>
+<li><p>接口中方法默认标记为<code>public</code>，域标记为<code>public static final</code></p>
+</li>
+<li><p>每个类只能继承一个抽象类，但是可以实现多个接口</p>
+</li>
+</ul>
+<h2 id="关于-与equals"><a href="#关于-与equals" class="headerlink" title="关于==与equals"></a>关于==与equals</h2><p>==：作用是判断两个对象的地址是否相等。若对象是基本数据类型时比较对象的值，若对象是引用数据类型则比较内存地址。</p>
+<p>equals：作用是判断两个对象是否相等，若类没有覆盖equals方法，此时equals相当于==；若类覆盖了equals方法，则通过equals来比较对象的内容是否相等。</p>
+<h2 id="关于hashCode与equals"><a href="#关于hashCode与equals" class="headerlink" title="关于hashCode与equals"></a>关于hashCode与equals</h2><p>只有在HashMap、HashSet、HashTable等本质是散列表的数据结构中使用对象时，hashCode和equals才有关系，此时需要重写hashCode和equals。</p>
+<blockquote>
+<p>对象相同，hashCode一定相同</p>
+<p>hashCode相同，对象不一定相同</p>
+</blockquote>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java/">Java</a><a class="post-meta__tags" href="/tags/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%8D%B7/">Java核心技术卷</a></div><div class="post_share"><div class="social-share" data-image="/img/cover2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/08/19/java-yi-chang-chu-li/"><img class="prev-cover" src="/img/cover4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Java异常处理</div></div></a></div><div class="next-post pull-right"><a href="/2020/08/08/docker/"><img class="next-cover" src="/img/cover4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Docker</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/08/19/java-yi-chang-chu-li/" title="Java异常处理"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-19</div><div class="title">Java异常处理</div></div></a></div><div><a href="/2020/11/07/she-ji-mo-shi-zhi-jian-dan-gong-han/" title="设计模式之简单工厂"><img class="cover" src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/design-pattern1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-11-07</div><div class="title">设计模式之简单工厂</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">月落</div><div class="author-info__description">学习记录，日常随笔</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Wanfengyueluo/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Wanfengyueluo" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wanfengwind@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">但行好事，莫问前程~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Day01"><span class="toc-number">1.</span> <span class="toc-text">Day01</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%BA%93%E6%BA%90%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E6%A1%A3"><span class="toc-number">1.0.1.</span> <span class="toc-text">安装库源文件和文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E4%B8%8E%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9A"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">多态与动态绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E6%83%85%E5%86%B5%E4%B8%8B%EF%BC%8C%E5%BA%94%E8%AF%A5%E5%B0%BD%E9%87%8F%E5%B0%91%E7%94%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E5%92%8Cinstanceof"><span class="toc-number">1.0.1.1.1.</span> <span class="toc-text">一般情况下，应该尽量少用类型转换和instanceof</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hashCode"><span class="toc-number">1.0.2.</span> <span class="toc-text">hashCode</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BB%BA%E8%AE%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E4%B8%AD%E6%B7%BB%E5%8A%A0toString%E6%96%B9%E6%B3%95"><span class="toc-number">1.0.2.0.1.</span> <span class="toc-text">建议自定义类中添加toString方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%8B%86%E7%AE%B1"><span class="toc-number">1.0.3.</span> <span class="toc-text">自动装箱与自动拆箱</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1%E8%A7%84%E8%8C%83%E8%A6%81%E6%B1%82boolean-byte-char-lt-127-%E4%BB%8B%E4%BA%8E-128-127%E4%B9%8B%E9%97%B4%E7%9A%84short%E5%92%8Cint%E8%A2%AB%E5%8C%85%E8%A3%85%E5%88%B0%E5%9B%BA%E5%AE%9A%E7%9A%84%E5%AF%B9%E8%B1%A1%E4%B8%AD%E3%80%82"><span class="toc-number">1.0.3.0.1.</span> <span class="toc-text">自动装箱规范要求boolean,byte,char&lt;&#x3D;127,介于 -128~127之间的short和int被包装到固定的对象中。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E5%9C%A8%E4%B8%80%E4%B8%AA%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%AD%E6%B7%B7%E5%90%88%E4%BD%BF%E7%94%A8Integer%E5%92%8CDouble%E7%B1%BB%E5%9E%8B%EF%BC%8CInteger%E5%B0%B1%E4%BC%9A%E8%87%AA%E5%8A%A8%E6%8B%86%E7%AE%B1%EF%BC%8C%E6%8F%90%E5%8D%87%E4%B8%BAdouble%EF%BC%8C%E5%86%8D%E8%A3%85%E7%AE%B1%E4%B8%BADouble"><span class="toc-number">1.0.3.0.2.</span> <span class="toc-text">如果在一个表达式中混合使用Integer和Double类型，Integer就会自动拆箱，提升为double，再装箱为Double</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Day02"><span class="toc-number">2.</span> <span class="toc-text">Day02</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%85%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B7%B1%E6%8B%B7%E8%B4%9D"><span class="toc-number">2.0.1.</span> <span class="toc-text">浅拷贝与深拷贝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-number">2.0.2.</span> <span class="toc-text">内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%90%86"><span class="toc-number">2.0.3.</span> <span class="toc-text">代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8"><span class="toc-number">2.0.4.</span> <span class="toc-text">异常</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B4%BE%E7%94%9F%E4%BA%8ERuntimeException%E7%9A%84%E5%BC%82%E5%B8%B8%E5%8C%85%E5%90%AB%E4%BB%A5%E4%B8%8B%E6%83%85%E5%86%B5%EF%BC%9A"><span class="toc-number">2.0.4.0.1.</span> <span class="toc-text">派生于RuntimeException的异常包含以下情况：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%8D%E6%98%AF%E6%B4%BE%E7%94%9F%E4%BA%8ERuntimeException%E7%9A%84%E5%BC%82%E5%B8%B8%EF%BC%9A"><span class="toc-number">2.0.4.0.2.</span> <span class="toc-text">不是派生于RuntimeException的异常：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%84%E5%88%99%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%87%BA%E7%8E%B0RuntimeException%E5%BC%82%E5%B8%B8%EF%BC%8C%E9%82%A3%E4%B9%88%E5%B0%B1%E4%B8%80%E5%AE%9A%E6%98%AF%E4%BD%A0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">2.0.4.0.3.</span> <span class="toc-text">规则：如果出现RuntimeException异常，那么就一定是你的问题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Java%E8%AF%AD%E8%A8%80%E8%A7%84%E8%8C%83%E5%B0%86%E6%B4%BE%E7%94%9F%E4%BA%8EError%E7%B1%BB%E6%88%96%E8%80%85RuntimeException%E7%B1%BB%E7%9A%84%E6%89%80%E6%9C%89%E5%BC%82%E5%B8%B8%E7%A7%B0%E4%B8%BA%E9%9D%9E%E5%8F%97%E6%9F%A5%E5%BC%82%E5%B8%B8-unchecked-%E5%85%B6%E4%BB%96%E5%BC%82%E5%B8%B8%E7%A7%B0%E4%B8%BA%E5%8F%97%E6%9F%A5%E5%BC%82%E5%B8%B8-checked"><span class="toc-number">2.0.4.0.4.</span> <span class="toc-text">Java语言规范将派生于Error类或者RuntimeException类的所有异常称为非受查异常(unchecked),其他异常称为受查异常(checked)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%AD%E8%A8%80%E5%92%8C%E6%97%A5%E5%BF%97"><span class="toc-number">2.0.4.1.</span> <span class="toc-text">断言和日志</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B"><span class="toc-number">2.0.5.</span> <span class="toc-text">泛型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%B8%8E%E9%9D%A2%E8%AF%95%E6%8C%87%E5%8D%97"><span class="toc-number">3.</span> <span class="toc-text">Java核心技术与面试指南</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%A4%E9%98%B6%E6%AE%B5%E7%BB%88%E6%AD%A2%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.0.0.0.1.</span> <span class="toc-text">两阶段终止模式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Transient-%E9%98%BB%E6%AD%A2%E7%94%A8%E6%AD%A4%E5%85%B3%E9%94%AE%E5%AD%97%E4%BF%AE%E9%A5%B0%E7%9A%84%E5%8F%98%E9%87%8F%E5%BA%8F%E5%88%97%E5%8C%96%EF%BC%8C%E5%BD%93%E5%AF%B9%E8%B1%A1%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%97%B6%E8%AF%A5%E5%8F%98%E9%87%8F%E4%B8%8D%E4%BC%9A%E8%A2%AB%E6%8C%81%E4%B9%85%E5%8C%96%E5%92%8C%E6%81%A2%E5%A4%8D%EF%BC%8C%E5%8F%AA%E8%83%BD%E4%BF%AE%E9%A5%B0%E5%8F%98%E9%87%8F"><span class="toc-number">3.0.0.0.2.</span> <span class="toc-text">Transient:阻止用此关键字修饰的变量序列化，当对象反序列化时该变量不会被持久化和恢复，只能修饰变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#IO%E6%B5%81"><span class="toc-number">3.0.0.0.3.</span> <span class="toc-text">IO流</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8EJVM%E3%80%81JDK%E3%80%81JRE"><span class="toc-number">3.1.</span> <span class="toc-text">关于JVM、JDK、JRE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E9%87%8D%E5%86%99-override-%E4%B8%8E%E9%87%8D%E8%BD%BD-overload"><span class="toc-number">3.2.</span> <span class="toc-text">关于重写(override)与重载(overload)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%B0%81%E8%A3%85%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E5%A4%9A%E6%80%81"><span class="toc-number">3.3.</span> <span class="toc-text">关于封装、继承、多态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB"><span class="toc-number">3.4.</span> <span class="toc-text">关于接口和抽象类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-%E4%B8%8Eequals"><span class="toc-number">3.5.</span> <span class="toc-text">关于&#x3D;&#x3D;与equals</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8EhashCode%E4%B8%8Eequals"><span class="toc-number">3.6.</span> <span class="toc-text">关于hashCode与equals</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列"><img src="/img/cover5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="剑指Offer系列"/></a><div class="content"><a class="title" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列">剑指Offer系列</a><time datetime="2022-04-06T11:10:42.000Z" title="发表于 2022-04-06 19:10:42">2022-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（五）——离线推荐"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐">基于大数据的图书推荐系统系统（五）——离线推荐</a><time datetime="2021-12-06T13:21:55.000Z" title="发表于 2021-12-06 21:21:55">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（四）——数据统计"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计">基于大数据的图书推荐系统系统（四）——数据统计</a><time datetime="2021-12-06T13:20:26.000Z" title="发表于 2021-12-06 21:20:26">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（三）——数据加载与存储"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储">基于大数据的图书推荐系统系统（三）——数据加载与存储</a><time datetime="2021-12-06T13:18:41.000Z" title="发表于 2021-12-06 21:18:41">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（二）——软件安装"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装">基于大数据的图书推荐系统系统（二）——软件安装</a><time datetime="2021-12-06T13:14:21.000Z" title="发表于 2021-12-06 21:14:21">2021-12-06</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/cover2.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By 月落</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

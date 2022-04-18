@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>基于大数据的图书推荐系统系统（二）——软件安装 | 月落晓山的博客</title><meta name="keywords" content="大数据,推荐系统"><meta name="author" content="月落"><meta name="copyright" content="月落"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="基本软件安装1.安装MongoDB 参考菜鸟教程：Linux平台安装MongoDB MongoDB下载网址：https:&#x2F;&#x2F;www.mongodb.com&#x2F;try&#x2F;download&#x2F;community   复制后的链接为：https:&#x2F;&#x2F;fastdl.mongodb.org&#x2F;linux&#x2F;mongodb-linux-x86_64-rhel62-4.2.13-rc2.tgz 具体操作如下： 12345">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于大数据的图书推荐系统系统（二）——软件安装">
+<meta property="og:url" content="https://wanfengyueluo.github.io/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/index.html">
+<meta property="og:site_name" content="月落晓山的博客">
+<meta property="og:description" content="基本软件安装1.安装MongoDB 参考菜鸟教程：Linux平台安装MongoDB MongoDB下载网址：https:&#x2F;&#x2F;www.mongodb.com&#x2F;try&#x2F;download&#x2F;community   复制后的链接为：https:&#x2F;&#x2F;fastdl.mongodb.org&#x2F;linux&#x2F;mongodb-linux-x86_64-rhel62-4.2.13-rc2.tgz 具体操作如下： 12345">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png">
+<meta property="article:published_time" content="2021-12-06T13:14:21.000Z">
+<meta property="article:modified_time" content="2022-04-18T12:58:29.614Z">
+<meta property="article:author" content="月落">
+<meta property="article:tag" content="大数据">
+<meta property="article:tag" content="推荐系统">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://wanfengyueluo.github.io/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 月落","link":"链接: ","source":"来源: 月落晓山的博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '基于大数据的图书推荐系统系统（二）——软件安装',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-18 20:58:29'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="月落晓山的博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">月落晓山的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%85%A7%E7%89%87"><i class="fa-fw /Gallery/"></i><span> 1</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 2</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">基于大数据的图书推荐系统系统（二）——软件安装</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-06T13:14:21.000Z" title="发表于 2021-12-06 21:14:21">2021-12-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-18T12:58:29.614Z" title="更新于 2022-04-18 20:58:29">2022-04-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">推荐系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="基于大数据的图书推荐系统系统（二）——软件安装"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="基本软件安装"><a href="#基本软件安装" class="headerlink" title="基本软件安装"></a>基本软件安装</h1><h2 id="1-安装MongoDB"><a href="#1-安装MongoDB" class="headerlink" title="1.安装MongoDB"></a>1.安装MongoDB</h2><blockquote>
+<p>参考菜鸟教程：<a target="_blank" rel="noopener" href="https://www.runoob.com/mongodb/mongodb-linux-install.html">Linux平台安装MongoDB</a></p>
+<p>MongoDB下载网址：<a target="_blank" rel="noopener" href="https://www.mongodb.com/try/download/community">https://www.mongodb.com/try/download/community</a></p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20210310194520446.png" alt="image-20210310194520446"></p>
+<p>复制后的链接为：<a target="_blank" rel="noopener" href="https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-4.2.13-rc2.tgz">https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-4.2.13-rc2.tgz</a></p>
+<p>具体操作如下：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-4.2.13-rc2.tgz</span><br><span class="line">tar -zxvf mongodb-linux-x86_64-rhel62-4.2.13-rc2.tgz </span><br><span class="line">mv mongodb-linux-x86_64-rhel62-4.2.13-rc2 mongodb</span><br><span class="line">cd mongodb</span><br><span class="line">mkdir data</span><br><span class="line">cd data</span><br><span class="line">mkdir db</span><br><span class="line">mkdir logs</span><br><span class="line">cd logs</span><br><span class="line">touch mongodb.log</span><br><span class="line">cd ..</span><br><span class="line">touch mongodb.conf</span><br><span class="line">vim mongodb.conf</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#####################################</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">端口号port = 27017</span></span><br><span class="line"><span class="meta">#</span><span class="bash">数据目录</span></span><br><span class="line">dbpath = /usr/local/mongodb/data/db</span><br><span class="line"><span class="meta">#</span><span class="bash">日志目录</span></span><br><span class="line">logpath = /usr/local/mongodb/data/logs/mongodb.log</span><br><span class="line"><span class="meta">#</span><span class="bash">设置后台运行</span></span><br><span class="line">fork = true</span><br><span class="line"><span class="meta">#</span><span class="bash">日志输出方式</span></span><br><span class="line">logappend = true</span><br><span class="line"><span class="meta">#</span><span class="bash">开启认证</span></span><br><span class="line"><span class="meta">#</span><span class="bash">auth = <span class="literal">true</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">用于远程连结</span></span><br><span class="line">bind_ip = 0.0.0.0</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################</span></span></span><br><span class="line">sudo /usr/local/mongodb/bin/mongod -config /usr/local/mongodb/data/mongodb.conf</span><br><span class="line"></span><br><span class="line">/usr/local/mongodb/bin/mongo</span><br><span class="line"></span><br><span class="line">sudo /usr/local/mongodb/bin/mongod -shutdown -config /usr/local/mongodb/data/mongodb.conf</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20210310204740834.png" alt="image-20210310204740834"></p>
+<h2 id="2-卸载系统自带JDK"><a href="#2-卸载系统自带JDK" class="headerlink" title="2.卸载系统自带JDK"></a>2.卸载系统自带JDK</h2><p>因为安装的CentOS 6.8自带的JDK版本为1.7，而Spark在2.2版本之后不再支持JDK1.7，所以需要重新安装JDK1.8</p>
+<h3 id="1-卸载JDK1-7"><a href="#1-卸载JDK1-7" class="headerlink" title="1.卸载JDK1.7"></a>1.卸载JDK1.7</h3><p>输入命令<code>yum list installed | grep java</code>就可以查看系统中的JDK，如图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20210312201952060.png" alt="image-20210312201952060"></p>
+<p>卸载<code>yum -y remove java-1.6.0-openjdk.x86_64</code>,<code>yum -y remove java-1.7.0-openjdk.x86_64</code></p>
+<p>完成后，输入命令<code>java -version</code>会发现JDK已经完全卸载，接下来安装JDK1.8</p>
+<h3 id="2-安装JDK1-8"><a href="#2-安装JDK1-8" class="headerlink" title="2.安装JDK1.8"></a>2.安装JDK1.8</h3><p>1.首先需要在Oracle的官网下载JDK1.8的安装包（官网下载需要注册账号），这里我本地有JDK1.8的包，直接上传到虚拟机中进行安装，上传过程略过，安装包位置在<code>/usr/local/java</code></p>
+<p>2.解压</p>
+<p><code>tar -zxvf jdk-8u251-linux-x64.tar.gz</code></p>
+<p>3.重命名</p>
+<p><code>mv jdk1.8.0_251/ jdk</code></p>
+<p>4.配置环境变量</p>
+<p><code>vim /etc/profile</code></p>
+<p>5.在文件末尾添加如下内容</p>
+<figure class="highlight profile"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/local/java/jdk</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin</span><br></pre></td></tr></tbody></table></figure>
+<p>6.保存退出后，使配置生效</p>
+<p><code>source /etc/profile</code></p>
+<p>7.再次输入<code>java -version</code>会出现相应的JDK版本信息，JDK安装完成！</p>
+<h2 id="3-安装Spark"><a href="#3-安装Spark" class="headerlink" title="3.安装Spark"></a>3.安装Spark</h2><p>Spark的下载官网：<a target="_blank" rel="noopener" href="https://spark.apache.org/downloads.html">https://spark.apache.org/downloads.html</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20210312193903621.png" alt="image-20210312193903621"></p>
+<p>1.选择相应的版本后点击紫色箭头会出现清华镜像的下载地址，复制链接地址在虚拟机中通过wget下载，具体操作如下：</p>
+<blockquote>
+<p>注意：这里我开始选择2.4.7版本的Spark，在运行程序时会与原视频教程所给出依赖的版本不一致，为简单起见，选择与原视频教程相同的Spark版本，即Spark2.1.1</p>
+<p>下载地址为：<a target="_blank" rel="noopener" href="https://archive.apache.org/dist/spark/spark-2.1.1/spark-2.1.1-bin-hadoop2.7.tgz">https://archive.apache.org/dist/spark/spark-2.1.1/spark-2.1.1-bin-hadoop2.7.tgz</a></p>
+</blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 下载Spark</span></span><br><span class="line">wget https://archive.apache.org/dist/spark/spark-2.1.1/spark-2.1.1-bin-hadoop2.7.tgz</span><br><span class="line"><span class="meta">#</span><span class="bash"> 解压</span></span><br><span class="line">tar -zxvf spark-2.1.1-bin-hadoop2.7.tgz</span><br><span class="line"><span class="meta">#</span><span class="bash"> 重命名</span></span><br><span class="line">mv spark-2.1.1-bin-hadoop2.7 spark</span><br><span class="line"><span class="meta">#</span><span class="bash"> 进入spark目录</span></span><br><span class="line">cd spark</span><br><span class="line"><span class="meta">#</span><span class="bash"> 复制slave配置文件</span></span><br><span class="line"> cp ./conf/slaves.template ./conf/slaves</span><br><span class="line"><span class="meta"> #</span><span class="bash"> 编辑slaves文件，在文件末尾添加本机主机名</span></span><br><span class="line"> vim ./conf/slaves</span><br><span class="line"> -------</span><br><span class="line"> localhost #原文件内容，将这个覆盖为自己的主机名</span><br><span class="line"> book #主机名</span><br><span class="line"> -------</span><br><span class="line"><span class="meta">#</span><span class="bash"> 复制Spark-Env文件</span></span><br><span class="line">cp ./conf/spark-env.sh.template ./conf/spark-env.sh</span><br><span class="line"><span class="meta">#</span><span class="bash"> 编辑Spark-Env文件,添加spark master的主机名和端口</span></span><br><span class="line">vim ./conf/spark-env.sh</span><br><span class="line">-------</span><br><span class="line">SPARK_MASTER_HOST=book       #添加spark master的主机名</span><br><span class="line">SPARK_MASTER_PORT=7077       #添加spark master的端口号</span><br><span class="line">JAVA_HOME=/usr/local/java/jdk  #这里我开始没有添加会报错，请注意</span><br><span class="line">-------</span><br></pre></td></tr></tbody></table></figure>
+<p>2.上述操作完成后，启动Spark：</p>
+<p><code>./sbin/start-all.sh</code></p>
+<blockquote>
+<p>启动时会让输入root账户密码</p>
+</blockquote>
+<p>3.此时访问<code>http://192.168.2.88:8080</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20210312204119546.png" alt="image-20210312204119546"></p>
+<p>4.Spark关闭命令</p>
+<p><code>./sbin/stop-all.sh</code></p>
+<p>5.Spark安装完成！</p>
+<h2 id="4-安装Redis"><a href="#4-安装Redis" class="headerlink" title="4.安装Redis"></a>4.安装Redis</h2><p>1.下载Redis安装包</p>
+<p><code>wget http://download.redis.io/releases/redis-4.0.2.tar.gz</code></p>
+<p>2.解压</p>
+<p><code>tar -zxvf redis-4.0.2.tar.gz</code></p>
+<p>3.重命名</p>
+<p><code>mv redis-4.0.2 redis</code></p>
+<p>4.进入Redis源码目录</p>
+<p><code>cd redis</code></p>
+<p>5.安装编译软件GCC</p>
+<p><code>yum install -y gcc</code></p>
+<blockquote>
+<p>如果这里安装失败，出现yum的错误，可参见问题文档部分的说明</p>
+</blockquote>
+<p>6.<code>make</code></p>
+<p>7.<code>cd src</code></p>
+<p>8.<code>make install</code></p>
+<p>9.将redis根目录下的<code>redis.conf</code>复制到<code>/etc/</code>下</p>
+<p>10.<code>vim /etc/redis.conf</code></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">daemonize yes</span><br><span class="line">bind 0.0.0.0</span><br></pre></td></tr></tbody></table></figure>
+<p>11.运行redis，在<code>/redis/src</code>目录下</p>
+<p><code>redis-server /etc/redis.conf</code></p>
+<p>12.进入redis</p>
+<p><code>redis-cli</code></p>
+<p>13.停止redis</p>
+<p><code>redis-cli shutdown</code></p>
+<p>14.完成</p>
+<h2 id="5-安装Zookeeper"><a href="#5-安装Zookeeper" class="headerlink" title="5.安装Zookeeper"></a>5.安装Zookeeper</h2><blockquote>
+<p>官网下载地址：<a target="_blank" rel="noopener" href="http://archive.apache.org/dist/zookeeper/zookeeper-3.4.10/">http://archive.apache.org/dist/zookeeper/zookeeper-3.4.10/</a></p>
+</blockquote>
+<ol>
+<li><p>下载Zookeeper安装包</p>
+<p><code>wget http://archive.apache.org/dist/zookeeper/zookeeper-3.4.10/zookeeper-3.4.10.tar.gz</code></p>
+</li>
+<li><p>解压</p>
+<p><code>tar -zxvf zookeeper-3.4.10.tar.gz</code></p>
+</li>
+<li><p>重命名</p>
+<p><code>mv zookeeper-3.4.10 zookeeper</code></p>
+</li>
+<li><p>进入Zookeeper根目录并创建data数据目录</p>
+<p><code>cd zookeeper</code></p>
+<p><code>mkdir data</code></p>
+</li>
+<li><p>复制Zookeeper配置文件</p>
+<p><code>cp ./conf/zoo_sample.cfg ./conf/zoo.cfg</code></p>
+</li>
+<li><p>修改Zookeeper配置文件</p>
+<p><code>vim ./conf/zoo.cfg</code></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#将dataDIr修改为刚刚创建的data目录路径</span><br><span class="line">dataDir=/usr/local/zookeeper/data</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ol>
+<ol>
+<li><p>启动Zookeeper服务</p>
+<p><code>./bin/zkServer.sh start</code></p>
+</li>
+<li><p>查看Zookeeper服务</p>
+<p><code>./bin/zkServer.sh status</code></p>
+</li>
+<li><p>停止Zookeeper服务</p>
+<p><code>./bin/zkServer.sh stop</code></p>
+</li>
+</ol>
+<h2 id="6-安装Kafka"><a href="#6-安装Kafka" class="headerlink" title="6.安装Kafka"></a>6.安装Kafka</h2><blockquote>
+<p>官网下载地址：<a target="_blank" rel="noopener" href="http://kafka.apache.org/downloads.html">http://kafka.apache.org/downloads.html</a></p>
+</blockquote>
+<ol>
+<li><p>下载Kafka安装包</p>
+<p><code>wget https://archive.apache.org/dist/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz</code></p>
+</li>
+<li><p>解压</p>
+<p><code>tar -zxvf kafka_2.12-0.10.2.1.tgz</code></p>
+</li>
+<li><p>重命名</p>
+<p><code>mv kafka_2.12-0.10.2.1 kafka</code></p>
+</li>
+<li><p>进入Kafka根目录并修改配置文件</p>
+<p><code>cd kafka</code></p>
+<p><code>vim ./config/server.properties</code></p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">添加如下内容</span></span><br><span class="line">host.name=book</span><br><span class="line">port=9092</span><br><span class="line">zookeeper.connect=book:2181</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>启动Kafka服务</p>
+<blockquote>
+<p>注意！启动Kafka之前需要启动Zookeeper服务</p>
+</blockquote>
+<p><code>./bin/kafka-server-start.sh -daemon ./config/server.properties</code></p>
+</li>
+<li><p>关闭Kafka服务</p>
+<p><code>./bin/kafka-server-stop.sh</code></p>
+</li>
+</ol>
+<h2 id="7-安装Flume"><a href="#7-安装Flume" class="headerlink" title="7.安装Flume"></a>7.安装Flume</h2><blockquote>
+<p>官网下载地址：<a target="_blank" rel="noopener" href="http://archive.apache.org/dist/flume/1.8.0/">http://archive.apache.org/dist/flume/1.8.0/</a></p>
+</blockquote>
+<ol>
+<li><p>下载Flume安装包</p>
+<p><code>wget http://archive.apache.org/dist/flume/1.8.0/apache-flume-1.8.0-bin.tar.gz</code></p>
+</li>
+<li><p>解压</p>
+<p><code>tar -zxvf apache-flume-1.8.0-bin.tar.gz</code></p>
+</li>
+<li><p>重命名</p>
+<p><code>mv apache-flume-1.8.0-bin flume</code></p>
+</li>
+<li><p>等待系统部署</p>
+</li>
+</ol>
+<h2 id="8-安装Node"><a href="#8-安装Node" class="headerlink" title="8.安装Node"></a>8.安装Node</h2></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><a class="post-meta__tags" href="/tags/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">推荐系统</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">基于大数据的图书推荐系统系统（三）——数据加载与存储</div></div></a></div><div class="next-post pull-right"><a href="/2021/05/25/jian-zhi-offer35-fu-za-lian-biao-de-fu-zhi/"><img class="next-cover" src="/img/cover3.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">剑指Offer35-复杂链表的复制</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/03/19/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-lie-yi-ji-chu-huan-jing-da-jian/" title="基于大数据的图书推荐系统系列(一)——基础环境搭建"><img class="cover" src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-19</div><div class="title">基于大数据的图书推荐系统系列(一)——基础环境搭建</div></div></a></div><div><a href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储"><img class="cover" src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-06</div><div class="title">基于大数据的图书推荐系统系统（三）——数据加载与存储</div></div></a></div><div><a href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计"><img class="cover" src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-06</div><div class="title">基于大数据的图书推荐系统系统（四）——数据统计</div></div></a></div><div><a href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐"><img class="cover" src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-06</div><div class="title">基于大数据的图书推荐系统系统（五）——离线推荐</div></div></a></div><div><a href="/2020/06/07/hadoop-xue-xi-bi-ji/" title="Hadoop学习笔记"><img class="cover" src="/img/cover2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-06-07</div><div class="title">Hadoop学习笔记</div></div></a></div><div><a href="/2020/06/01/da-shu-ju-kai-fa-huan-jing-da-jian/" title="大数据开发环境搭建"><img class="cover" src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-06-01</div><div class="title">大数据开发环境搭建</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">月落</div><div class="author-info__description">学习记录，日常随笔</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Wanfengyueluo/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Wanfengyueluo" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wanfengwind@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">但行好事，莫问前程~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">基本软件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85MongoDB"><span class="toc-number">1.1.</span> <span class="toc-text">1.安装MongoDB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%8D%B8%E8%BD%BD%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6JDK"><span class="toc-number">1.2.</span> <span class="toc-text">2.卸载系统自带JDK</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8D%B8%E8%BD%BDJDK1-7"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.卸载JDK1.7</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85JDK1-8"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.安装JDK1.8</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%AE%89%E8%A3%85Spark"><span class="toc-number">1.3.</span> <span class="toc-text">3.安装Spark</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%AE%89%E8%A3%85Redis"><span class="toc-number">1.4.</span> <span class="toc-text">4.安装Redis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%AE%89%E8%A3%85Zookeeper"><span class="toc-number">1.5.</span> <span class="toc-text">5.安装Zookeeper</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%AE%89%E8%A3%85Kafka"><span class="toc-number">1.6.</span> <span class="toc-text">6.安装Kafka</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E5%AE%89%E8%A3%85Flume"><span class="toc-number">1.7.</span> <span class="toc-text">7.安装Flume</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E5%AE%89%E8%A3%85Node"><span class="toc-number">1.8.</span> <span class="toc-text">8.安装Node</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列"><img src="/img/cover5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="剑指Offer系列"/></a><div class="content"><a class="title" href="/2022/04/06/jian-zhi-offer-xi-lie/" title="剑指Offer系列">剑指Offer系列</a><time datetime="2022-04-06T11:10:42.000Z" title="发表于 2022-04-06 19:10:42">2022-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（五）——离线推荐"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-wu-chi-xian-tui-jian/" title="基于大数据的图书推荐系统系统（五）——离线推荐">基于大数据的图书推荐系统系统（五）——离线推荐</a><time datetime="2021-12-06T13:21:55.000Z" title="发表于 2021-12-06 21:21:55">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（四）——数据统计"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-si-shu-ju-tong-ji/" title="基于大数据的图书推荐系统系统（四）——数据统计">基于大数据的图书推荐系统系统（四）——数据统计</a><time datetime="2021-12-06T13:20:26.000Z" title="发表于 2021-12-06 21:20:26">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（三）——数据加载与存储"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-san-shu-ju-jia-zai-yu-cun-chu/" title="基于大数据的图书推荐系统系统（三）——数据加载与存储">基于大数据的图书推荐系统系统（三）——数据加载与存储</a><time datetime="2021-12-06T13:18:41.000Z" title="发表于 2021-12-06 21:18:41">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装"><img src="https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于大数据的图书推荐系统系统（二）——软件安装"/></a><div class="content"><a class="title" href="/2021/12/06/ji-yu-da-shu-ju-de-tu-shu-tui-jian-xi-tong-xi-tong-er-ruan-jian-an-zhuang/" title="基于大数据的图书推荐系统系统（二）——软件安装">基于大数据的图书推荐系统系统（二）——软件安装</a><time datetime="2021-12-06T13:14:21.000Z" title="发表于 2021-12-06 21:14:21">2021-12-06</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/Wanfengyueluo/images/image-20211206214617246.png')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By 月落</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
