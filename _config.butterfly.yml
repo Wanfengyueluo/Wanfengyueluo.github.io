@@ -11,10 +11,10 @@ menu:
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  清单||fas fa-list:
-    - 音乐 || /music/ || fas fa-music
-    - 照片 || /Gallery/ || fas fa-images
-    - 电影 || /movies/ || fas fa-video
+  # 清单||fas fa-list:
+  #   - 音乐 || /music/ || fas fa-music
+  #   - 照片 || /Gallery/ || fas fa-images
+  #   - 电影 || /movies/ || fas fa-video
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
@@ -34,10 +34,10 @@ code_word_wrap: false
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
-  enable: false
+  enable: true
   copyright:
     enable: true
-    limit_count: 50
+    limit_count: 500
 
 # social settings (社交圖標設置)
 # formal:
@@ -385,7 +385,7 @@ footer:
   owner:
     enable: true
     since: 2018
-  custom_text:
+  custom_text: <a href="http://www.beian.miit.gov.cn/"><img class="icp-icon" src="/images/icp.png"><span>备案号：浙ICP备20029443号</span></a>
   copyright: true # Copyright of theme and framework
   ICP: # Chinese ICP License
     enable: true
@@ -393,6 +393,7 @@ footer:
     text: 浙ICP备20029443号
     icon: /img/icp.png
 
+# <a href="icp链接"><img class="icp-icon" src="icp图片"><span>备案号：xxxxxx</span></a>
 # Analysis
 # --------------------------------------
 
